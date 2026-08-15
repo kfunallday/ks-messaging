@@ -88,7 +88,7 @@ android {
 			includeAndroidResources = true
 		}
 	}
-	namespace 'org.briarproject.briar'
+	namespace 'com.ksmessaging'
 	lint {
 		warning 'MissingTranslation', 'MissingDefaultResource', 'ImpliedQuantity', 'ExtraTranslation', 'InvalidPackage'
 	}
