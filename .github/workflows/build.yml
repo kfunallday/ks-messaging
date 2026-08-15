@@ -1,0 +1,45 @@
+name: Build Ks-messaging APK
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      - name: Make Gradle Wrapper Executable
+        run: chmod +x gradlew
+
+      # Optional: Uncomment if using the auto-replace assets script
+       - name: Run Asset Replacer Script
+         run: bash replace_assets.sh
+
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug --stacktrace
+
+      - name: Prepare APK for Artifact Upload
+        run: |
+          mkdir -p build-output
+          find briar-android/build/outputs/apk/ -name "*.apk" -exec cp {} build-output/ksmessaging-android-official.apk \;
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ksmessaging-apk
+          path: build-output/ksmessaging-android-official.apk
+          retention-days: 7

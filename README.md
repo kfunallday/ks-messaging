@@ -1,3 +1,7 @@
+This is a custom fork of Briar it is a work in progress but I am working to integrate a encrypted cloud backup sync that is optional for the users not required. below is the description and readme.md from briar's official repo.
+
+Please check it out:
+
 # Briar
 Briar is a messaging app designed for activists, journalists, and anyone else who needs a safe, easy and robust way to communicate.
 
