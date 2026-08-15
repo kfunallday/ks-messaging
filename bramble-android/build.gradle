@@ -25,7 +25,7 @@ android {
 		sourceCompatibility JavaVersion.VERSION_1_8
 		targetCompatibility JavaVersion.VERSION_1_8
 	}
-	namespace 'com.ksmessaging'
+	namespace "com.ksmessaging.bramble"
 	lint {
 		warning 'LintError', 'InvalidPackage', 'MissingPermission', 'InlinedApi', 'ObsoleteSdkInt', 'Override', 'NewApi', 'UnusedAttribute'
 	}
