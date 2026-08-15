@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationRequest;
-import org.briarproject.briar.api.sharing.InvitationRequest;
-import org.briarproject.briar.api.sharing.Shareable;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationRequest;
+import com.ksmessaging.api.sharing.InvitationRequest;
+import com.ksmessaging.api.sharing.Shareable;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

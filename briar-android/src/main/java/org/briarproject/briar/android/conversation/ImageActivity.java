@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.content.ActivityNotFoundException;
 import android.content.DialogInterface.OnClickListener;
@@ -17,13 +17,13 @@ import android.widget.TextView;
 import com.google.android.material.appbar.AppBarLayout;
 
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.android.attachment.AttachmentItem;
-import org.briarproject.briar.android.util.ActivityLaunchers.CreateDocumentAdvanced;
-import org.briarproject.briar.android.util.BriarSnackbarBuilder;
-import org.briarproject.briar.android.view.PullDownLayout;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.android.attachment.AttachmentItem;
+import com.ksmessaging.android.util.ActivityLaunchers.CreateDocumentAdvanced;
+import com.ksmessaging.android.util.BriarSnackbarBuilder;
+import com.ksmessaging.android.view.PullDownLayout;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 import org.jetbrains.annotations.NotNull;
@@ -49,8 +49,8 @@ import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
 import static android.view.View.VISIBLE;
 import static com.google.android.material.snackbar.Snackbar.LENGTH_LONG;
 import static java.util.Objects.requireNonNull;
-import static org.briarproject.briar.android.util.UiUtils.formatDateAbsolute;
-import static org.briarproject.briar.android.util.UiUtils.getDialogIcon;
+import static com.ksmessaging.android.util.UiUtils.formatDateAbsolute;
+import static com.ksmessaging.android.util.UiUtils.getDialogIcon;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

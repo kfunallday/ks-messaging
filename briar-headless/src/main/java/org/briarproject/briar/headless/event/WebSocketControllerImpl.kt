@@ -1,10 +1,10 @@
-package org.briarproject.briar.headless.event
+package com.ksmessaging.headless.event
 
 import io.javalin.plugin.json.JavalinJson.toJson
 import io.javalin.websocket.WsContext
 import org.briarproject.bramble.api.lifecycle.IoExecutor
 import org.briarproject.bramble.util.LogUtils.logException
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.headless.json.JsonDict
 import org.eclipse.jetty.websocket.api.WebSocketException
 import java.io.IOException
 import java.util.concurrent.ConcurrentHashMap

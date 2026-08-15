@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.contact.add.nearby;
+package com.ksmessaging.android.contact.add.nearby;
 
-import org.briarproject.briar.android.viewmodel.ViewModelKey;
+import com.ksmessaging.android.viewmodel.ViewModelKey;
 
 import androidx.lifecycle.ViewModel;
 import dagger.Binds;

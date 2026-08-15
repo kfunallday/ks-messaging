@@ -1,4 +1,4 @@
-package org.briarproject.briar.autodelete;
+package com.ksmessaging.autodelete;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.contact.ContactId;
@@ -8,14 +8,14 @@ import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.system.TimeTravelModule;
 import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.conversation.ConversationManager.ConversationClient;
-import org.briarproject.briar.api.conversation.ConversationMessageHeader;
-import org.briarproject.briar.test.BriarIntegrationTest;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
-import org.briarproject.briar.test.DaggerBriarIntegrationTestComponent;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.conversation.ConversationManager.ConversationClient;
+import com.ksmessaging.api.conversation.ConversationMessageHeader;
+import com.ksmessaging.test.BriarIntegrationTest;
+import com.ksmessaging.test.BriarIntegrationTestComponent;
+import com.ksmessaging.test.DaggerBriarIntegrationTestComponent;
 import org.junit.Before;
 
 import java.util.ArrayList;

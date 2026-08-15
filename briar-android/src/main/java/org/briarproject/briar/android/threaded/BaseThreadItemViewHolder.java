@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.threaded;
+package com.ksmessaging.android.threaded;
 
 import android.animation.Animator;
 import android.animation.ArgbEvaluator;
@@ -11,9 +11,9 @@ import android.view.animation.AccelerateInterpolator;
 import android.widget.TextView;
 
 import org.briarproject.bramble.util.StringUtils;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.threaded.ThreadItemAdapter.ThreadItemListener;
-import org.briarproject.briar.android.view.AuthorView;
+import com.ksmessaging.R;
+import com.ksmessaging.android.threaded.ThreadItemAdapter.ThreadItemListener;
+import com.ksmessaging.android.view.AuthorView;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.CallSuper;
@@ -21,7 +21,7 @@ import androidx.annotation.UiThread;
 import androidx.recyclerview.widget.RecyclerView;
 
 import static androidx.core.content.ContextCompat.getColor;
-import static org.briarproject.briar.android.util.UiUtils.makeLinksClickable;
+import static com.ksmessaging.android.util.UiUtils.makeLinksClickable;
 
 @UiThread
 @NotNullByDefault

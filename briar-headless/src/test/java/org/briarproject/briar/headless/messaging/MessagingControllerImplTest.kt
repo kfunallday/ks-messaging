@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless.messaging
+package com.ksmessaging.headless.messaging
 
 import io.javalin.http.BadRequestResponse
 import io.javalin.http.Context
@@ -20,23 +20,23 @@ import org.briarproject.bramble.api.sync.event.MessagesSentEvent
 import org.briarproject.bramble.test.ImmediateExecutor
 import org.briarproject.bramble.test.TestUtils.getRandomId
 import org.briarproject.bramble.util.StringUtils.getRandomString
-import org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER
-import org.briarproject.briar.api.client.SessionId
-import org.briarproject.briar.api.conversation.DeletionResult
-import org.briarproject.briar.api.identity.AuthorInfo
-import org.briarproject.briar.api.identity.AuthorInfo.Status.UNVERIFIED
-import org.briarproject.briar.api.identity.AuthorInfo.Status.VERIFIED
-import org.briarproject.briar.api.introduction.IntroductionRequest
-import org.briarproject.briar.api.messaging.MessagingConstants.MAX_PRIVATE_MESSAGE_TEXT_LENGTH
-import org.briarproject.briar.api.messaging.MessagingManager
-import org.briarproject.briar.api.messaging.PrivateMessage
-import org.briarproject.briar.api.messaging.PrivateMessageFactory
-import org.briarproject.briar.api.messaging.PrivateMessageHeader
-import org.briarproject.briar.api.messaging.event.PrivateMessageReceivedEvent
-import org.briarproject.briar.headless.ControllerTest
-import org.briarproject.briar.headless.event.output
-import org.briarproject.briar.headless.getFromJson
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER
+import com.ksmessaging.api.client.SessionId
+import com.ksmessaging.api.conversation.DeletionResult
+import com.ksmessaging.api.identity.AuthorInfo
+import com.ksmessaging.api.identity.AuthorInfo.Status.UNVERIFIED
+import com.ksmessaging.api.identity.AuthorInfo.Status.VERIFIED
+import com.ksmessaging.api.introduction.IntroductionRequest
+import com.ksmessaging.api.messaging.MessagingConstants.MAX_PRIVATE_MESSAGE_TEXT_LENGTH
+import com.ksmessaging.api.messaging.MessagingManager
+import com.ksmessaging.api.messaging.PrivateMessage
+import com.ksmessaging.api.messaging.PrivateMessageFactory
+import com.ksmessaging.api.messaging.PrivateMessageHeader
+import com.ksmessaging.api.messaging.event.PrivateMessageReceivedEvent
+import com.ksmessaging.headless.ControllerTest
+import com.ksmessaging.headless.event.output
+import com.ksmessaging.headless.getFromJson
+import com.ksmessaging.headless.json.JsonDict
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Test
@@ -212,7 +212,7 @@ internal class MessagingControllerImplTest : ControllerTest() {
 
     @Test
     fun markMessageRead() {
-        mockkStatic("org.briarproject.briar.headless.RouterKt")
+        mockkStatic("com.ksmessaging.headless.RouterKt")
         mockkStatic("org.bouncycastle.util.encoders.Base64")
         expectGetContact()
 

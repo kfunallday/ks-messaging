@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.conversation.glide;
+package com.ksmessaging.android.conversation.glide;
 
 import com.bumptech.glide.load.model.ModelLoader;
 import com.bumptech.glide.load.model.ModelLoaderFactory;
 import com.bumptech.glide.load.model.MultiModelLoaderFactory;
 
-import org.briarproject.briar.android.BriarApplication;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
+import com.ksmessaging.android.BriarApplication;
+import com.ksmessaging.api.attachment.AttachmentHeader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.InputStream;

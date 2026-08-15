@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.nullsafety.NotNullByDefault;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.mailbox;
+package com.ksmessaging.android.mailbox;
 
 import android.app.Application;
 
@@ -25,19 +25,19 @@ import org.briarproject.bramble.api.plugin.TorConstants;
 import org.briarproject.bramble.api.plugin.TransportId;
 import org.briarproject.bramble.api.plugin.event.TransportInactiveEvent;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.mailbox.MailboxState.CameraError;
-import org.briarproject.briar.android.mailbox.MailboxState.IsPaired;
-import org.briarproject.briar.android.mailbox.MailboxState.NotSetup;
-import org.briarproject.briar.android.mailbox.MailboxState.OfflineWhenPairing;
-import org.briarproject.briar.android.mailbox.MailboxState.Pairing;
-import org.briarproject.briar.android.mailbox.MailboxState.ScanningQrCode;
-import org.briarproject.briar.android.mailbox.MailboxState.ShowDownload;
-import org.briarproject.briar.android.mailbox.MailboxState.WasUnpaired;
-import org.briarproject.briar.android.qrcode.QrCodeDecoder;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
-import org.briarproject.briar.android.viewmodel.LiveEvent;
-import org.briarproject.briar.android.viewmodel.MutableLiveEvent;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
+import com.ksmessaging.android.mailbox.MailboxState.CameraError;
+import com.ksmessaging.android.mailbox.MailboxState.IsPaired;
+import com.ksmessaging.android.mailbox.MailboxState.NotSetup;
+import com.ksmessaging.android.mailbox.MailboxState.OfflineWhenPairing;
+import com.ksmessaging.android.mailbox.MailboxState.Pairing;
+import com.ksmessaging.android.mailbox.MailboxState.ScanningQrCode;
+import com.ksmessaging.android.mailbox.MailboxState.ShowDownload;
+import com.ksmessaging.android.mailbox.MailboxState.WasUnpaired;
+import com.ksmessaging.android.qrcode.QrCodeDecoder;
+import com.ksmessaging.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.LiveEvent;
+import com.ksmessaging.android.viewmodel.MutableLiveEvent;
+import com.ksmessaging.api.android.AndroidNotificationManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.concurrent.Executor;

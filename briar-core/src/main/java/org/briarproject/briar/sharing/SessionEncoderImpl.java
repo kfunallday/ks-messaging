@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.data.BdfDictionary;
 import org.briarproject.bramble.api.sync.MessageId;
@@ -8,14 +8,14 @@ import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
 import static org.briarproject.bramble.api.data.BdfDictionary.NULL_VALUE;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_INVITE_TIMESTAMP;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_IS_SESSION;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_LAST_LOCAL_MESSAGE_ID;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_LAST_REMOTE_MESSAGE_ID;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_LOCAL_TIMESTAMP;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_SESSION_ID;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_SHAREABLE_ID;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_STATE;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_INVITE_TIMESTAMP;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_IS_SESSION;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_LAST_LOCAL_MESSAGE_ID;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_LAST_REMOTE_MESSAGE_ID;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_LOCAL_TIMESTAMP;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_SESSION_ID;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_SHAREABLE_ID;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_STATE;
 
 @Immutable
 @NotNullByDefault

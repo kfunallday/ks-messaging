@@ -1,7 +1,7 @@
-package org.briarproject.briar.android.forum;
+package com.ksmessaging.android.forum;
 
-import org.briarproject.briar.android.threaded.ThreadItem;
-import org.briarproject.briar.api.forum.ForumPostHeader;
+import com.ksmessaging.android.threaded.ThreadItem;
+import com.ksmessaging.api.forum.ForumPostHeader;
 
 import javax.annotation.concurrent.NotThreadSafe;
 

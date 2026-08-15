@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless
+package com.ksmessaging.headless
 
 import com.fasterxml.jackson.core.JsonParseException
 import com.fasterxml.jackson.databind.ObjectMapper
@@ -14,11 +14,11 @@ import io.javalin.http.BadRequestResponse
 import io.javalin.http.Context
 import io.javalin.http.NotFoundResponse
 import org.briarproject.bramble.api.contact.ContactId
-import org.briarproject.briar.headless.blogs.BlogController
-import org.briarproject.briar.headless.contact.ContactController
-import org.briarproject.briar.headless.event.WebSocketController
-import org.briarproject.briar.headless.forums.ForumController
-import org.briarproject.briar.headless.messaging.MessagingController
+import com.ksmessaging.headless.blogs.BlogController
+import com.ksmessaging.headless.contact.ContactController
+import com.ksmessaging.headless.event.WebSocketController
+import com.ksmessaging.headless.forums.ForumController
+import com.ksmessaging.headless.messaging.MessagingController
 import java.lang.Runtime.getRuntime
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.logging.Level.INFO

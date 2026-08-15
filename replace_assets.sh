@@ -1,13 +1,32 @@
-#!/bin/bash
-echo "Replacing custom assets..."
+#!/usr/bin/env bash
 
-# Find every file in my_assets and replace matching files anywhere in the source tree
-for filepath in $(find my_assets -type f); do
-    filename=$(basename "$filepath")
-    echo "Searching and replacing: $filename"
-    
-    # Locate all instances of this file in the project (excluding the my_assets folder itself)
-    find . -path "./my_assets" -prune -o -name "$filename" -type f -exec cp "$filepath" {} \;
+SOURCE_DIR="my_assets"
+
+if [ ! -d "$SOURCE_DIR" ]; then
+  echo "Error: $SOURCE_DIR directory not found!"
+  exit 1
+fi
+
+echo "Replacing strictly PNG and SVG assets across entire repo..."
+
+for asset in "$SOURCE_DIR"/*; do
+  if [ -f "$asset" ]; then
+    filename=$(basename "$asset")
+    basename_no_ext="${filename%.*}"
+
+    echo "----------------------------------------"
+    echo "Processing asset: $filename"
+
+    # Search entire workspace for matching .png or .svg files (case-insensitive extension match)
+    find . -type f \( -iname "${basename_no_ext}.png" -o -iname "${basename_no_ext}.svg" \) \
+      -not -path "./.git/*" \
+      -not -path "./$SOURCE_DIR/*" | while read -r target; do
+      
+      cp -f "$asset" "$target"
+      echo "  [✓] OVERWRITTEN: $target"
+    done
+  fi
 done
 
-echo "Asset replacement complete!"
+echo "----------------------------------------"
+echo "Strict SVG/PNG replacement complete!"

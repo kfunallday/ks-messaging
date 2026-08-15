@@ -1,16 +1,16 @@
-package org.briarproject.briar.api.identity;
+package com.ksmessaging.api.identity;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.test.BrambleTestCase;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.AttachmentHeader;
 import org.junit.Test;
 
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.NONE;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.VERIFIED;
+import static com.ksmessaging.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.NONE;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.VERIFIED;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 

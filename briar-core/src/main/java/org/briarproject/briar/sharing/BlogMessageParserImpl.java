@@ -1,11 +1,11 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.data.BdfList;
 import org.briarproject.bramble.api.identity.Author;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogFactory;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

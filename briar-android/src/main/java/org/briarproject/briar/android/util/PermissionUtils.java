@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.util;
+package com.ksmessaging.android.util;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -8,7 +8,7 @@ import android.net.Uri;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -30,8 +30,8 @@ import static android.os.Build.VERSION.SDK_INT;
 import static android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS;
 import static androidx.core.content.ContextCompat.checkSelfPermission;
 import static java.lang.Boolean.TRUE;
-import static org.briarproject.briar.BuildConfig.APPLICATION_ID;
-import static org.briarproject.briar.android.util.UiUtils.tryToStartActivity;
+import static com.ksmessaging.BuildConfig.APPLICATION_ID;
+import static com.ksmessaging.android.util.UiUtils.tryToStartActivity;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

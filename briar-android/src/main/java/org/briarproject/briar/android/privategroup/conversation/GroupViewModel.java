@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.conversation;
+package com.ksmessaging.android.privategroup.conversation;
 
 import android.app.Application;
 
@@ -18,23 +18,23 @@ import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.AndroidExecutor;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.android.sharing.SharingController;
-import org.briarproject.briar.android.threaded.ThreadListViewModel;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
-import org.briarproject.briar.api.privategroup.GroupMember;
-import org.briarproject.briar.api.privategroup.GroupMessage;
-import org.briarproject.briar.api.privategroup.GroupMessageFactory;
-import org.briarproject.briar.api.privategroup.GroupMessageHeader;
-import org.briarproject.briar.api.privategroup.JoinMessageHeader;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.event.ContactRelationshipRevealedEvent;
-import org.briarproject.briar.api.privategroup.event.GroupDissolvedEvent;
-import org.briarproject.briar.api.privategroup.event.GroupInvitationResponseReceivedEvent;
-import org.briarproject.briar.api.privategroup.event.GroupMessageAddedEvent;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationResponse;
+import com.ksmessaging.android.sharing.SharingController;
+import com.ksmessaging.android.threaded.ThreadListViewModel;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.privategroup.GroupMember;
+import com.ksmessaging.api.privategroup.GroupMessage;
+import com.ksmessaging.api.privategroup.GroupMessageFactory;
+import com.ksmessaging.api.privategroup.GroupMessageHeader;
+import com.ksmessaging.api.privategroup.JoinMessageHeader;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.event.ContactRelationshipRevealedEvent;
+import com.ksmessaging.api.privategroup.event.GroupDissolvedEvent;
+import com.ksmessaging.api.privategroup.event.GroupInvitationResponseReceivedEvent;
+import com.ksmessaging.api.privategroup.event.GroupMessageAddedEvent;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationResponse;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

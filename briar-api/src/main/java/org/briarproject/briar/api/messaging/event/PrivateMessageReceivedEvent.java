@@ -1,8 +1,8 @@
-package org.briarproject.briar.api.messaging.event;
+package com.ksmessaging.api.messaging.event;
 
 import org.briarproject.bramble.api.contact.ContactId;
-import org.briarproject.briar.api.conversation.event.ConversationMessageReceivedEvent;
-import org.briarproject.briar.api.messaging.PrivateMessageHeader;
+import com.ksmessaging.api.conversation.event.ConversationMessageReceivedEvent;
+import com.ksmessaging.api.messaging.PrivateMessageHeader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

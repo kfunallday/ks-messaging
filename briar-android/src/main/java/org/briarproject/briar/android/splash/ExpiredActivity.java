@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.splash;
+package com.ksmessaging.android.splash;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,15 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.Localizer;
+import com.ksmessaging.R;
+import com.ksmessaging.android.Localizer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import static android.content.Intent.ACTION_VIEW;
 import static android.os.Build.VERSION.SDK_INT;
 import static android.view.WindowManager.LayoutParams.FLAG_SECURE;
-import static org.briarproject.briar.android.TestingConstants.PREVENT_SCREENSHOTS;
+import static com.ksmessaging.android.TestingConstants.PREVENT_SCREENSHOTS;
 
 public class ExpiredActivity extends AppCompatActivity
 		implements OnClickListener {

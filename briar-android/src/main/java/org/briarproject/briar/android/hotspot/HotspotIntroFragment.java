@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.hotspot;
+package com.ksmessaging.android.hotspot;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -30,8 +30,8 @@ import static android.view.View.INVISIBLE;
 import static android.view.View.VISIBLE;
 import static androidx.transition.TransitionManager.beginDelayedTransition;
 import static com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_LONG;
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

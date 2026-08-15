@@ -1,13 +1,13 @@
-package org.briarproject.briar.android.privategroup;
+package com.ksmessaging.android.privategroup;
 
 import android.content.Context;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.api.privategroup.Visibility;
+import com.ksmessaging.R;
+import com.ksmessaging.api.privategroup.Visibility;
 
 import androidx.annotation.DrawableRes;
 
-import static org.briarproject.briar.api.privategroup.Visibility.INVISIBLE;
+import static com.ksmessaging.api.privategroup.Visibility.INVISIBLE;
 
 public class VisibilityHelper {
 

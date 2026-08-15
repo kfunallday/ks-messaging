@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact.connect;
+package com.ksmessaging.android.contact.connect;
 
 import androidx.annotation.StringRes;
 

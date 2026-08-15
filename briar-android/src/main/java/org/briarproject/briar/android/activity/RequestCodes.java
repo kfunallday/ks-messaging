@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.activity;
+package com.ksmessaging.android.activity;
 
 public interface RequestCodes {
 

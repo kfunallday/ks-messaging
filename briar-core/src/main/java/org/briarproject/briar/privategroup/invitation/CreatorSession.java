@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
@@ -7,8 +7,8 @@ import org.briarproject.nullsafety.NotNullByDefault;
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 
-import static org.briarproject.briar.privategroup.invitation.CreatorState.START;
-import static org.briarproject.briar.privategroup.invitation.Role.CREATOR;
+import static com.ksmessaging.privategroup.invitation.CreatorState.START;
+import static com.ksmessaging.privategroup.invitation.Role.CREATOR;
 
 @Immutable
 @NotNullByDefault

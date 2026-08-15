@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.forum;
+package com.ksmessaging.api.forum;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.crypto.CryptoExecutor;
@@ -11,7 +11,7 @@ import java.security.GeneralSecurityException;
 
 import javax.annotation.Nullable;
 
-import static org.briarproject.briar.api.forum.ForumManager.CLIENT_ID;
+import static com.ksmessaging.api.forum.ForumManager.CLIENT_ID;
 
 @NotNullByDefault
 public interface ForumPostFactory {

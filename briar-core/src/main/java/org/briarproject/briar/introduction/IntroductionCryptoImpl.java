@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -10,9 +10,9 @@ import org.briarproject.bramble.api.crypto.SecretKey;
 import org.briarproject.bramble.api.data.BdfList;
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.identity.AuthorId;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.introduction.IntroduceeSession.Common;
-import org.briarproject.briar.introduction.IntroduceeSession.Remote;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.introduction.IntroduceeSession.Common;
+import com.ksmessaging.introduction.IntroduceeSession.Remote;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -20,16 +20,16 @@ import java.security.GeneralSecurityException;
 import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
-import static org.briarproject.briar.api.introduction.IntroductionConstants.LABEL_ACTIVATE_MAC;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.LABEL_ALICE_MAC_KEY;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.LABEL_AUTH_MAC;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.LABEL_AUTH_NONCE;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.LABEL_AUTH_SIGN;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.LABEL_BOB_MAC_KEY;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.LABEL_MASTER_KEY;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.LABEL_SESSION_ID;
-import static org.briarproject.briar.api.introduction.IntroductionManager.MAJOR_VERSION;
-import static org.briarproject.briar.introduction.IntroduceeSession.Local;
+import static com.ksmessaging.api.introduction.IntroductionConstants.LABEL_ACTIVATE_MAC;
+import static com.ksmessaging.api.introduction.IntroductionConstants.LABEL_ALICE_MAC_KEY;
+import static com.ksmessaging.api.introduction.IntroductionConstants.LABEL_AUTH_MAC;
+import static com.ksmessaging.api.introduction.IntroductionConstants.LABEL_AUTH_NONCE;
+import static com.ksmessaging.api.introduction.IntroductionConstants.LABEL_AUTH_SIGN;
+import static com.ksmessaging.api.introduction.IntroductionConstants.LABEL_BOB_MAC_KEY;
+import static com.ksmessaging.api.introduction.IntroductionConstants.LABEL_MASTER_KEY;
+import static com.ksmessaging.api.introduction.IntroductionConstants.LABEL_SESSION_ID;
+import static com.ksmessaging.api.introduction.IntroductionManager.MAJOR_VERSION;
+import static com.ksmessaging.introduction.IntroduceeSession.Local;
 
 @Immutable
 @NotNullByDefault

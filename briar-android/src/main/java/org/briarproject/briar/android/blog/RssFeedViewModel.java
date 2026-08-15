@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.app.Application;
 import android.content.ContentResolver;
@@ -13,16 +13,16 @@ import org.briarproject.bramble.api.lifecycle.IoExecutor;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.blog.RssImportResult.FileImportError;
-import org.briarproject.briar.android.blog.RssImportResult.FileImportSuccess;
-import org.briarproject.briar.android.blog.RssImportResult.UrlImportError;
-import org.briarproject.briar.android.blog.RssImportResult.UrlImportSuccess;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
-import org.briarproject.briar.android.viewmodel.LiveEvent;
-import org.briarproject.briar.android.viewmodel.LiveResult;
-import org.briarproject.briar.android.viewmodel.MutableLiveEvent;
-import org.briarproject.briar.api.feed.Feed;
-import org.briarproject.briar.api.feed.FeedManager;
+import com.ksmessaging.android.blog.RssImportResult.FileImportError;
+import com.ksmessaging.android.blog.RssImportResult.FileImportSuccess;
+import com.ksmessaging.android.blog.RssImportResult.UrlImportError;
+import com.ksmessaging.android.blog.RssImportResult.UrlImportSuccess;
+import com.ksmessaging.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.LiveEvent;
+import com.ksmessaging.android.viewmodel.LiveResult;
+import com.ksmessaging.android.viewmodel.MutableLiveEvent;
+import com.ksmessaging.api.feed.Feed;
+import com.ksmessaging.api.feed.FeedManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.IOException;

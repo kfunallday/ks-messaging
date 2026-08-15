@@ -1,10 +1,10 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.BdfMessageContext;
 import org.briarproject.bramble.api.data.BdfList;
 import org.briarproject.bramble.api.identity.Author;
-import org.briarproject.briar.api.blog.Blog;
+import com.ksmessaging.api.blog.Blog;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -12,11 +12,11 @@ import javax.annotation.Nullable;
 
 import static org.briarproject.bramble.test.TestUtils.getAuthor;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.sharing.SharingConstants.MAX_INVITATION_TEXT_LENGTH;
-import static org.briarproject.briar.sharing.MessageType.INVITE;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.sharing.SharingConstants.MAX_INVITATION_TEXT_LENGTH;
+import static com.ksmessaging.sharing.MessageType.INVITE;
 import static org.junit.Assert.fail;
 
 public class BlogSharingValidatorTest extends SharingValidatorTest {

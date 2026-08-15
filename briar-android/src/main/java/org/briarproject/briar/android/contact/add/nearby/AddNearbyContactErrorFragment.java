@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact.add.nearby;
+package com.ksmessaging.android.contact.add.nearby;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.util.UiUtils;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.util.UiUtils;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -23,8 +23,8 @@ import androidx.lifecycle.ViewModelProvider;
 
 import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP;
 import static android.view.View.GONE;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
-import static org.briarproject.briar.android.util.UiUtils.onSingleLinkClick;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.util.UiUtils.onSingleLinkClick;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

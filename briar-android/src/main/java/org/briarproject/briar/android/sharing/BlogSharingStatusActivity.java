@@ -1,14 +1,14 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.db.DatabaseExecutor;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.event.Event;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.api.blog.BlogInvitationResponse;
-import org.briarproject.briar.api.blog.BlogSharingManager;
-import org.briarproject.briar.api.blog.event.BlogInvitationResponseReceivedEvent;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.api.blog.BlogInvitationResponse;
+import com.ksmessaging.api.blog.BlogSharingManager;
+import com.ksmessaging.api.blog.event.BlogInvitationResponseReceivedEvent;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

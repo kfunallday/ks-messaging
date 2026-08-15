@@ -1,4 +1,4 @@
-package org.briarproject.briar.avatar;
+package com.ksmessaging.avatar;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.Pair;
@@ -27,9 +27,9 @@ import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
 import org.briarproject.bramble.test.BrambleMockTestCase;
 import org.briarproject.bramble.test.DbExpectations;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.avatar.AvatarMessageEncoder;
-import org.briarproject.briar.api.avatar.event.AvatarUpdatedEvent;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.avatar.AvatarMessageEncoder;
+import com.ksmessaging.api.avatar.event.AvatarUpdatedEvent;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -52,13 +52,13 @@ import static org.briarproject.bramble.test.TestUtils.getMessage;
 import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
-import static org.briarproject.briar.api.avatar.AvatarManager.CLIENT_ID;
-import static org.briarproject.briar.api.avatar.AvatarManager.MAJOR_VERSION;
-import static org.briarproject.briar.avatar.AvatarConstants.GROUP_KEY_CONTACT_ID;
-import static org.briarproject.briar.avatar.AvatarConstants.MSG_KEY_VERSION;
+import static com.ksmessaging.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
+import static com.ksmessaging.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
+import static com.ksmessaging.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
+import static com.ksmessaging.api.avatar.AvatarManager.CLIENT_ID;
+import static com.ksmessaging.api.avatar.AvatarManager.MAJOR_VERSION;
+import static com.ksmessaging.avatar.AvatarConstants.GROUP_KEY_CONTACT_ID;
+import static com.ksmessaging.avatar.AvatarConstants.MSG_KEY_VERSION;
 import static org.junit.Assert.assertEquals;
 
 public class AvatarManagerImplTest extends BrambleMockTestCase {

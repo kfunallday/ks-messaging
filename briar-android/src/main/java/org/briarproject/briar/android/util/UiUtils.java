@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.util;
+package com.ksmessaging.android.util;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -35,10 +35,10 @@ import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.system.AndroidExecutor;
 import org.briarproject.bramble.util.StringUtils;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.reporting.FeedbackActivity;
-import org.briarproject.briar.android.view.ArticleMovementMethod;
-import org.briarproject.briar.api.android.MemoryStats;
+import com.ksmessaging.R;
+import com.ksmessaging.android.reporting.FeedbackActivity;
+import com.ksmessaging.android.view.ArticleMovementMethod;
+import com.ksmessaging.api.android.MemoryStats;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -105,12 +105,12 @@ import static java.util.concurrent.TimeUnit.DAYS;
 import static java.util.logging.Level.WARNING;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.util.LogUtils.logException;
-import static org.briarproject.briar.android.TestingConstants.EXPIRY_DATE;
-import static org.briarproject.briar.android.reporting.CrashReportActivity.EXTRA_APP_LOGCAT;
-import static org.briarproject.briar.android.reporting.CrashReportActivity.EXTRA_APP_START_TIME;
-import static org.briarproject.briar.android.reporting.CrashReportActivity.EXTRA_INITIAL_COMMENT;
-import static org.briarproject.briar.android.reporting.CrashReportActivity.EXTRA_MEMORY_STATS;
-import static org.briarproject.briar.android.reporting.CrashReportActivity.EXTRA_THROWABLE;
+import static com.ksmessaging.android.TestingConstants.EXPIRY_DATE;
+import static com.ksmessaging.android.reporting.CrashReportActivity.EXTRA_APP_LOGCAT;
+import static com.ksmessaging.android.reporting.CrashReportActivity.EXTRA_APP_START_TIME;
+import static com.ksmessaging.android.reporting.CrashReportActivity.EXTRA_INITIAL_COMMENT;
+import static com.ksmessaging.android.reporting.CrashReportActivity.EXTRA_MEMORY_STATS;
+import static com.ksmessaging.android.reporting.CrashReportActivity.EXTRA_THROWABLE;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

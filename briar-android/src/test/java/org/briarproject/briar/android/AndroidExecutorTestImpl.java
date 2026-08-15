@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import org.briarproject.bramble.api.system.AndroidExecutor;
 

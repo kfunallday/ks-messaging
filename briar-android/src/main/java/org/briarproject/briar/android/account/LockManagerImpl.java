@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 import android.app.AlarmManager;
 import android.app.Application;
@@ -14,10 +14,10 @@ import org.briarproject.bramble.api.lifecycle.Service;
 import org.briarproject.bramble.api.settings.Settings;
 import org.briarproject.bramble.api.settings.SettingsManager;
 import org.briarproject.bramble.api.settings.event.SettingsUpdatedEvent;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.BriarService;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.android.LockManager;
+import com.ksmessaging.R;
+import com.ksmessaging.android.BriarService;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.android.LockManager;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -41,10 +41,10 @@ import static java.util.concurrent.TimeUnit.MINUTES;
 import static java.util.logging.Level.WARNING;
 import static org.briarproject.bramble.util.AndroidUtils.getImmutableFlags;
 import static org.briarproject.bramble.util.LogUtils.logException;
-import static org.briarproject.briar.android.settings.SecurityFragment.PREF_SCREEN_LOCK;
-import static org.briarproject.briar.android.settings.SecurityFragment.PREF_SCREEN_LOCK_TIMEOUT;
-import static org.briarproject.briar.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
-import static org.briarproject.briar.android.util.UiUtils.hasScreenLock;
+import static com.ksmessaging.android.settings.SecurityFragment.PREF_SCREEN_LOCK;
+import static com.ksmessaging.android.settings.SecurityFragment.PREF_SCREEN_LOCK_TIMEOUT;
+import static com.ksmessaging.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
+import static com.ksmessaging.android.util.UiUtils.hasScreenLock;
 
 @ThreadSafe
 @MethodsNotNullByDefault

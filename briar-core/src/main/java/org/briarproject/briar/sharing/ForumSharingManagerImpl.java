@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.client.ContactGroupFactory;
@@ -8,12 +8,12 @@ import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.db.Transaction;
 import org.briarproject.bramble.api.sync.ClientId;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumInvitationResponse;
-import org.briarproject.briar.api.forum.ForumManager;
-import org.briarproject.briar.api.forum.ForumManager.RemoveForumHook;
-import org.briarproject.briar.api.forum.ForumSharingManager;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.forum.ForumInvitationResponse;
+import com.ksmessaging.api.forum.ForumManager;
+import com.ksmessaging.api.forum.ForumManager.RemoveForumHook;
+import com.ksmessaging.api.forum.ForumSharingManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.inject.Inject;

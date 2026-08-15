@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.viewmodel;
+package com.ksmessaging.android.viewmodel;
 
 import org.briarproject.nullsafety.NotNullByDefault;
 

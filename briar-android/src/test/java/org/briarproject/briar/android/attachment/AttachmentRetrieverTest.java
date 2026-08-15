@@ -1,15 +1,15 @@
-package org.briarproject.briar.android.attachment;
+package com.ksmessaging.android.attachment;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.test.BrambleMockTestCase;
 import org.briarproject.bramble.test.ImmediateExecutor;
-import org.briarproject.briar.android.attachment.media.ImageHelper;
-import org.briarproject.briar.android.attachment.media.ImageSizeCalculator;
-import org.briarproject.briar.android.attachment.media.Size;
-import org.briarproject.briar.api.attachment.Attachment;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.attachment.AttachmentReader;
+import com.ksmessaging.android.attachment.media.ImageHelper;
+import com.ksmessaging.android.attachment.media.ImageSizeCalculator;
+import com.ksmessaging.android.attachment.media.Size;
+import com.ksmessaging.api.attachment.Attachment;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.AttachmentReader;
 import org.jmock.Expectations;
 import org.jmock.imposters.ByteBuddyClassImposteriser;
 import org.junit.Test;
@@ -20,8 +20,8 @@ import java.util.concurrent.Executor;
 
 import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.briar.android.attachment.AttachmentItem.State.AVAILABLE;
-import static org.briarproject.briar.android.attachment.AttachmentItem.State.ERROR;
+import static com.ksmessaging.android.attachment.AttachmentItem.State.AVAILABLE;
+import static com.ksmessaging.android.attachment.AttachmentItem.State.ERROR;
 import static org.junit.Assert.assertEquals;
 
 public class AttachmentRetrieverTest extends BrambleMockTestCase {

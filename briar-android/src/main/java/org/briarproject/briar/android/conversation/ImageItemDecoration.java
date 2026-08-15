@@ -1,22 +1,22 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.view.View;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration;
 import androidx.recyclerview.widget.RecyclerView.State;
 
-import static org.briarproject.briar.android.conversation.ImageAdapter.isBottomRow;
-import static org.briarproject.briar.android.conversation.ImageAdapter.isLeft;
-import static org.briarproject.briar.android.conversation.ImageAdapter.isTopRow;
-import static org.briarproject.briar.android.conversation.ImageAdapter.singleInRow;
-import static org.briarproject.briar.android.util.UiUtils.isRtl;
+import static com.ksmessaging.android.conversation.ImageAdapter.isBottomRow;
+import static com.ksmessaging.android.conversation.ImageAdapter.isLeft;
+import static com.ksmessaging.android.conversation.ImageAdapter.isTopRow;
+import static com.ksmessaging.android.conversation.ImageAdapter.singleInRow;
+import static com.ksmessaging.android.util.UiUtils.isRtl;
 
 @NotNullByDefault
 class ImageItemDecoration extends ItemDecoration {

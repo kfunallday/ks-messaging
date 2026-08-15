@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.fragment;
+package com.ksmessaging.android.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -15,10 +15,10 @@ import android.widget.TextView;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.BaseActivity;
-import org.briarproject.briar.api.android.ScreenFilterMonitor;
-import org.briarproject.briar.api.android.ScreenFilterMonitor.AppDetails;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.BaseActivity;
+import com.ksmessaging.api.android.ScreenFilterMonitor;
+import com.ksmessaging.api.android.ScreenFilterMonitor.AppDetails;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 import org.jetbrains.annotations.NotNull;
@@ -34,7 +34,7 @@ import androidx.fragment.app.DialogFragment;
 import static android.os.Build.VERSION.SDK_INT;
 import static android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION;
 import static android.view.View.GONE;
-import static org.briarproject.briar.android.util.UiUtils.tryToStartActivity;
+import static com.ksmessaging.android.util.UiUtils.tryToStartActivity;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

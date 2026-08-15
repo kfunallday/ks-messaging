@@ -1,9 +1,9 @@
-package org.briarproject.briar.android.contact;
+package com.ksmessaging.android.contact;
 
 import android.view.View;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Locale;
@@ -12,7 +12,7 @@ import javax.annotation.Nullable;
 
 import androidx.annotation.UiThread;
 
-import static org.briarproject.briar.android.util.UiUtils.formatDate;
+import static com.ksmessaging.android.util.UiUtils.formatDate;
 
 @UiThread
 @NotNullByDefault

@@ -1,7 +1,7 @@
-package org.briarproject.briar.android.privategroup.creation;
+package com.ksmessaging.android.privategroup.creation;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.sharing.BaseMessageFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.sharing.BaseMessageFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

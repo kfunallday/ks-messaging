@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup;
+package com.ksmessaging.privategroup;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -7,8 +7,8 @@ import org.briarproject.bramble.api.identity.LocalAuthor;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.privategroup.GroupMessage;
-import org.briarproject.briar.api.privategroup.GroupMessageFactory;
+import com.ksmessaging.api.privategroup.GroupMessage;
+import com.ksmessaging.api.privategroup.GroupMessageFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -17,8 +17,8 @@ import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
-import static org.briarproject.briar.api.privategroup.MessageType.JOIN;
-import static org.briarproject.briar.api.privategroup.MessageType.POST;
+import static com.ksmessaging.api.privategroup.MessageType.JOIN;
+import static com.ksmessaging.api.privategroup.MessageType.POST;
 
 @Immutable
 @NotNullByDefault

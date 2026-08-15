@@ -1,10 +1,10 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.data.BdfDictionary;
 import org.briarproject.bramble.api.data.BdfList;
 import org.briarproject.bramble.api.sync.Message;
-import org.briarproject.briar.api.client.SessionId;
+import com.ksmessaging.api.client.SessionId;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 @NotNullByDefault

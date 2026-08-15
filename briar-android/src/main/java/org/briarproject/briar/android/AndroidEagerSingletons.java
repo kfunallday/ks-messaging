@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 interface AndroidEagerSingletons {
 

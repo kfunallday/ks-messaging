@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.reporting;
+package com.ksmessaging.android.reporting;
 
 import android.os.Bundle;
 

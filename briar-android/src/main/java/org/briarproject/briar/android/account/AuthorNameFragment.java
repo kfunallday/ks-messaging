@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -18,9 +18,9 @@ import javax.annotation.Nullable;
 
 import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_AUTHOR_NAME_LENGTH;
 import static org.briarproject.bramble.util.StringUtils.toUtf8;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
-import static org.briarproject.briar.android.util.UiUtils.setError;
-import static org.briarproject.briar.android.util.UiUtils.showOnboardingDialog;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.util.UiUtils.setError;
+import static com.ksmessaging.android.util.UiUtils.showOnboardingDialog;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

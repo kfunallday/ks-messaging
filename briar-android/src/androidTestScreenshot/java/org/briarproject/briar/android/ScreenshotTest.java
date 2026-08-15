@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.app.Activity;
 import android.util.Log;
@@ -7,7 +7,7 @@ import com.jraska.falcon.Falcon.UnableToTakeScreenshotException;
 
 import org.briarproject.bramble.api.connection.ConnectionRegistry;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.test.TestDataCreator;
+import com.ksmessaging.api.test.TestDataCreator;
 import org.junit.ClassRule;
 
 import javax.inject.Inject;

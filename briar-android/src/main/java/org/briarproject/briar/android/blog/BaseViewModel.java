@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.app.Application;
 
@@ -14,14 +14,14 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
-import org.briarproject.briar.android.viewmodel.LiveResult;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogCommentHeader;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogPostHeader;
-import org.briarproject.briar.util.HtmlUtils;
+import com.ksmessaging.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.LiveResult;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogCommentHeader;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogPostHeader;
+import com.ksmessaging.util.HtmlUtils;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;

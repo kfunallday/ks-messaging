@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.android;
+package com.ksmessaging.api.android;
 
 import org.briarproject.bramble.api.lifecycle.Service;
 import org.briarproject.nullsafety.NotNullByDefault;

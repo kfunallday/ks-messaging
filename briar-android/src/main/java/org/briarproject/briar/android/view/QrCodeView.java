@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -8,7 +8,7 @@ import android.view.animation.AlphaAnimation;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

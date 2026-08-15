@@ -1,7 +1,7 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
-import org.briarproject.briar.api.conversation.ConversationRequest;
-import org.briarproject.briar.api.conversation.ConversationResponse;
+import com.ksmessaging.api.conversation.ConversationRequest;
+import com.ksmessaging.api.conversation.ConversationResponse;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

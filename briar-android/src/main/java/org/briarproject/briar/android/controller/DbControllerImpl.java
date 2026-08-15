@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.controller;
+package com.ksmessaging.android.controller;
 
 import org.briarproject.bramble.api.db.DatabaseExecutor;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;

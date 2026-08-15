@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.sharing;
+package com.ksmessaging.api.sharing;
 
 import static org.briarproject.bramble.api.sync.SyncConstants.MAX_MESSAGE_BODY_LENGTH;
 

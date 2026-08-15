@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless
+package com.ksmessaging.headless
 
 import dagger.Component
 import org.briarproject.bramble.BrambleCoreEagerSingletons
@@ -6,9 +6,9 @@ import org.briarproject.bramble.BrambleCoreModule
 import org.briarproject.bramble.BrambleJavaEagerSingletons
 import org.briarproject.bramble.BrambleJavaModule
 import org.briarproject.bramble.api.crypto.CryptoComponent
-import org.briarproject.briar.BriarCoreEagerSingletons
-import org.briarproject.briar.BriarCoreModule
-import org.briarproject.briar.api.test.TestDataCreator
+import com.ksmessaging.BriarCoreEagerSingletons
+import com.ksmessaging.BriarCoreModule
+import com.ksmessaging.api.test.TestDataCreator
 import javax.inject.Singleton
 
 @Component(

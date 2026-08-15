@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.util;
+package com.ksmessaging.android.util;
 
 import android.content.Context;
 import android.content.res.Resources;
 
 import org.briarproject.bramble.test.BrambleMockTestCase;
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.jmock.Expectations;
 import org.jmock.imposters.ByteBuddyClassImposteriser;
 import org.junit.Test;
@@ -13,7 +13,7 @@ import static java.util.concurrent.TimeUnit.DAYS;
 import static java.util.concurrent.TimeUnit.HOURS;
 import static java.util.concurrent.TimeUnit.MINUTES;
 import static java.util.concurrent.TimeUnit.SECONDS;
-import static org.briarproject.briar.android.util.UiUtils.formatDuration;
+import static com.ksmessaging.android.util.UiUtils.formatDuration;
 
 public class UiUtilsFormatDurationTest extends BrambleMockTestCase {
 

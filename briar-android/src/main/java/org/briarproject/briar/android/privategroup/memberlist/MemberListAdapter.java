@@ -1,16 +1,16 @@
-package org.briarproject.briar.android.privategroup.memberlist;
+package com.ksmessaging.android.privategroup.memberlist;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.util.BriarAdapter;
+import com.ksmessaging.R;
+import com.ksmessaging.android.util.BriarAdapter;
 
 import androidx.annotation.NonNull;
 
-import static org.briarproject.briar.android.util.UiUtils.getContactDisplayName;
+import static com.ksmessaging.android.util.UiUtils.getContactDisplayName;
 
 class MemberListAdapter extends
 		BriarAdapter<MemberListItem, MemberListItemHolder> {

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -12,9 +12,9 @@ import android.widget.TextView;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.BaseActivity;
-import org.briarproject.briar.android.conversation.glide.GlideApp;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.BaseActivity;
+import com.ksmessaging.android.conversation.glide.GlideApp;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

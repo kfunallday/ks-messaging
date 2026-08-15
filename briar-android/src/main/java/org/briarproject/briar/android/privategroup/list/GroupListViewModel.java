@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.list;
+package com.ksmessaging.android.privategroup.list;
 
 import android.app.Application;
 
@@ -16,19 +16,19 @@ import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.event.GroupAddedEvent;
 import org.briarproject.bramble.api.sync.event.GroupRemovedEvent;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
-import org.briarproject.briar.android.viewmodel.LiveResult;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.privategroup.GroupMessageHeader;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.event.GroupDissolvedEvent;
-import org.briarproject.briar.api.privategroup.event.GroupInvitationRequestReceivedEvent;
-import org.briarproject.briar.api.privategroup.event.GroupMessageAddedEvent;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager;
+import com.ksmessaging.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.LiveResult;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.privategroup.GroupMessageHeader;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.event.GroupDissolvedEvent;
+import com.ksmessaging.api.privategroup.event.GroupInvitationRequestReceivedEvent;
+import com.ksmessaging.api.privategroup.event.GroupMessageAddedEvent;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationManager;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -51,7 +51,7 @@ import static java.util.Objects.requireNonNull;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.util.LogUtils.logDuration;
 import static org.briarproject.bramble.util.LogUtils.now;
-import static org.briarproject.briar.api.privategroup.PrivateGroupManager.CLIENT_ID;
+import static com.ksmessaging.api.privategroup.PrivateGroupManager.CLIENT_ID;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

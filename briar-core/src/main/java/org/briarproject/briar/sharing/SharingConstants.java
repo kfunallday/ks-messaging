@@ -1,6 +1,6 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
-import org.briarproject.briar.client.MessageTrackerConstants;
+import com.ksmessaging.client.MessageTrackerConstants;
 
 interface SharingConstants {
 

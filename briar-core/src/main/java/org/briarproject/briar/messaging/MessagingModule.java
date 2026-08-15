@@ -1,4 +1,4 @@
-package org.briarproject.briar.messaging;
+package com.ksmessaging.messaging;
 
 import org.briarproject.bramble.api.FeatureFlags;
 import org.briarproject.bramble.api.cleanup.CleanupManager;
@@ -9,9 +9,9 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.validation.ValidationManager;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.messaging.MessagingManager;
-import org.briarproject.briar.api.messaging.PrivateMessageFactory;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.messaging.MessagingManager;
+import com.ksmessaging.api.messaging.PrivateMessageFactory;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -19,9 +19,9 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-import static org.briarproject.briar.api.messaging.MessagingManager.CLIENT_ID;
-import static org.briarproject.briar.api.messaging.MessagingManager.MAJOR_VERSION;
-import static org.briarproject.briar.api.messaging.MessagingManager.MINOR_VERSION;
+import static com.ksmessaging.api.messaging.MessagingManager.CLIENT_ID;
+import static com.ksmessaging.api.messaging.MessagingManager.MAJOR_VERSION;
+import static com.ksmessaging.api.messaging.MessagingManager.MINOR_VERSION;
 
 @Module
 public class MessagingModule {

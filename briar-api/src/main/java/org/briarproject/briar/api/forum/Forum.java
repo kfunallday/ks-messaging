@@ -1,8 +1,8 @@
-package org.briarproject.briar.api.forum;
+package com.ksmessaging.api.forum;
 
 import org.briarproject.bramble.api.sync.Group;
-import org.briarproject.briar.api.client.NamedGroup;
-import org.briarproject.briar.api.sharing.Shareable;
+import com.ksmessaging.api.client.NamedGroup;
+import com.ksmessaging.api.sharing.Shareable;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

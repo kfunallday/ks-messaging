@@ -1,6 +1,6 @@
-package org.briarproject.briar.identity;
+package com.ksmessaging.identity;
 
-import org.briarproject.briar.api.identity.AuthorManager;
+import com.ksmessaging.api.identity.AuthorManager;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

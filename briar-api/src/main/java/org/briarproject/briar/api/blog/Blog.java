@@ -1,9 +1,9 @@
-package org.briarproject.briar.api.blog;
+package com.ksmessaging.api.blog;
 
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.sync.Group;
-import org.briarproject.briar.api.client.BaseGroup;
-import org.briarproject.briar.api.sharing.Shareable;
+import com.ksmessaging.api.client.BaseGroup;
+import com.ksmessaging.api.sharing.Shareable;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

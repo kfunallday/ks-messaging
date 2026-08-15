@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.privategroup;
+package com.ksmessaging.api.privategroup;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.db.DbException;
@@ -8,7 +8,7 @@ import org.briarproject.bramble.api.identity.AuthorId;
 import org.briarproject.bramble.api.sync.ClientId;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;
@@ -20,7 +20,7 @@ public interface PrivateGroupManager {
 	/**
 	 * The unique ID of the private group client.
 	 */
-	ClientId CLIENT_ID = new ClientId("org.briarproject.briar.privategroup");
+	ClientId CLIENT_ID = new ClientId("com.ksmessaging.privategroup");
 
 	/**
 	 * The current major version of the private group client.

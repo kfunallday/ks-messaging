@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;
@@ -14,7 +14,7 @@ import androidx.annotation.UiThread;
 
 import static org.briarproject.android.dontkillmelib.HuaweiUtils.getHuaweiProtectedAppsIntent;
 import static org.briarproject.android.dontkillmelib.HuaweiUtils.protectedAppsNeedsToBeShown;
-import static org.briarproject.briar.android.util.UiUtils.tryToStartActivity;
+import static com.ksmessaging.android.util.UiUtils.tryToStartActivity;
 
 @UiThread
 @NotNullByDefault

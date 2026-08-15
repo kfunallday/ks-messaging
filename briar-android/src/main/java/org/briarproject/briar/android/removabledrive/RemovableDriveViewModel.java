@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.removabledrive;
+package com.ksmessaging.android.removabledrive;
 
 import android.app.Application;
 import android.net.Uri;
@@ -15,9 +15,9 @@ import org.briarproject.bramble.api.plugin.file.RemovableDriveTask;
 import org.briarproject.bramble.api.plugin.file.RemovableDriveTask.State;
 import org.briarproject.bramble.api.properties.TransportProperties;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
-import org.briarproject.briar.android.viewmodel.LiveEvent;
-import org.briarproject.briar.android.viewmodel.MutableLiveEvent;
+import com.ksmessaging.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.LiveEvent;
+import com.ksmessaging.android.viewmodel.MutableLiveEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.text.SimpleDateFormat;

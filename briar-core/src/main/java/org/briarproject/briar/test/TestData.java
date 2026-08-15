@@ -1,8 +1,8 @@
-package org.briarproject.briar.test;
+package com.ksmessaging.test;
 
 import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_AUTHOR_NAME_LENGTH;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH;
+import static com.ksmessaging.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH;
 
 public interface TestData {
 

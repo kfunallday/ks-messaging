@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.view.MotionEvent;
 import android.view.View;

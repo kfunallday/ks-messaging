@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.mailbox;
+package com.ksmessaging.android.mailbox;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,14 +10,14 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import org.briarproject.bramble.api.plugin.TorConstants;
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import static org.briarproject.briar.android.util.UiUtils.formatDuration;
+import static com.ksmessaging.android.util.UiUtils.formatDuration;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

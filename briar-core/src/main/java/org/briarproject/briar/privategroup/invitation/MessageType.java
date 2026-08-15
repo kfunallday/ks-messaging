@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.nullsafety.NotNullByDefault;

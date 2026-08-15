@@ -1,7 +1,7 @@
-package org.briarproject.briar.api.introduction.event;
+package com.ksmessaging.api.introduction.event;
 
 import org.briarproject.bramble.api.event.Event;
-import org.briarproject.briar.api.client.SessionId;
+import com.ksmessaging.api.client.SessionId;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

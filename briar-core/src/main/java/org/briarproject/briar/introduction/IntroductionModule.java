@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.cleanup.CleanupManager;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -8,8 +8,8 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.validation.ValidationManager;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.introduction.IntroductionManager;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.introduction.IntroductionManager;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -17,9 +17,9 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-import static org.briarproject.briar.api.introduction.IntroductionManager.CLIENT_ID;
-import static org.briarproject.briar.api.introduction.IntroductionManager.MAJOR_VERSION;
-import static org.briarproject.briar.api.introduction.IntroductionManager.MINOR_VERSION;
+import static com.ksmessaging.api.introduction.IntroductionManager.CLIENT_ID;
+import static com.ksmessaging.api.introduction.IntroductionManager.MAJOR_VERSION;
+import static com.ksmessaging.api.introduction.IntroductionManager.MINOR_VERSION;
 
 @Module
 public class IntroductionModule {

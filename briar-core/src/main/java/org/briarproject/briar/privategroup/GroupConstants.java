@@ -1,6 +1,6 @@
-package org.briarproject.briar.privategroup;
+package com.ksmessaging.privategroup;
 
-import static org.briarproject.briar.client.MessageTrackerConstants.MSG_KEY_READ;
+import static com.ksmessaging.client.MessageTrackerConstants.MSG_KEY_READ;
 
 interface GroupConstants {
 

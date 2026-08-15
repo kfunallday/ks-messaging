@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.panic;
+package com.ksmessaging.android.panic;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
 
 import androidx.appcompat.app.ActionBar;
 

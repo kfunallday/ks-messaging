@@ -1,14 +1,14 @@
-package org.briarproject.briar.android.contact;
+package com.ksmessaging.android.contact;
 
 import android.content.Context;
 
-import org.briarproject.briar.android.util.BriarAdapter;
+import com.ksmessaging.android.util.BriarAdapter;
 
 import javax.annotation.Nullable;
 
 import androidx.annotation.NonNull;
 
-import static org.briarproject.briar.android.util.UiUtils.getContactDisplayName;
+import static com.ksmessaging.android.util.UiUtils.getContactDisplayName;
 
 public abstract class BaseContactListAdapter<I extends ContactItem, VH extends ContactItemViewHolder<I>>
 		extends BriarAdapter<I, VH> {

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.app.Activity;
 import android.util.Log;

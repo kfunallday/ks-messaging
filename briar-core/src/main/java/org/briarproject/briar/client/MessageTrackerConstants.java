@@ -1,4 +1,4 @@
-package org.briarproject.briar.client;
+package com.ksmessaging.client;
 
 public interface MessageTrackerConstants {
 

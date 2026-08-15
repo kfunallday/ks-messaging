@@ -1,8 +1,8 @@
-package org.briarproject.briar.api.privategroup.event;
+package com.ksmessaging.api.privategroup.event;
 
 import org.briarproject.bramble.api.event.Event;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.api.privategroup.GroupMessageHeader;
+import com.ksmessaging.api.privategroup.GroupMessageHeader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

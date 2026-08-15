@@ -1,4 +1,4 @@
-package org.briarproject.briar.messaging;
+package com.ksmessaging.messaging;
 
 import org.briarproject.bramble.api.UniqueId;
 import org.briarproject.bramble.api.data.BdfDictionary;
@@ -27,22 +27,22 @@ import static org.briarproject.bramble.test.TestUtils.getMessage;
 import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.messaging.MessagingConstants.MAX_ATTACHMENTS_PER_MESSAGE;
-import static org.briarproject.briar.api.messaging.MessagingConstants.MAX_PRIVATE_MESSAGE_TEXT_LENGTH;
-import static org.briarproject.briar.client.MessageTrackerConstants.MSG_KEY_READ;
-import static org.briarproject.briar.messaging.MessageTypes.ATTACHMENT;
-import static org.briarproject.briar.messaging.MessageTypes.PRIVATE_MESSAGE;
-import static org.briarproject.briar.messaging.MessagingConstants.MSG_KEY_ATTACHMENT_HEADERS;
-import static org.briarproject.briar.messaging.MessagingConstants.MSG_KEY_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.messaging.MessagingConstants.MSG_KEY_HAS_TEXT;
-import static org.briarproject.briar.messaging.MessagingConstants.MSG_KEY_LOCAL;
-import static org.briarproject.briar.messaging.MessagingConstants.MSG_KEY_MSG_TYPE;
-import static org.briarproject.briar.messaging.MessagingConstants.MSG_KEY_TIMESTAMP;
+import static com.ksmessaging.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
+import static com.ksmessaging.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
+import static com.ksmessaging.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.messaging.MessagingConstants.MAX_ATTACHMENTS_PER_MESSAGE;
+import static com.ksmessaging.api.messaging.MessagingConstants.MAX_PRIVATE_MESSAGE_TEXT_LENGTH;
+import static com.ksmessaging.client.MessageTrackerConstants.MSG_KEY_READ;
+import static com.ksmessaging.messaging.MessageTypes.ATTACHMENT;
+import static com.ksmessaging.messaging.MessageTypes.PRIVATE_MESSAGE;
+import static com.ksmessaging.messaging.MessagingConstants.MSG_KEY_ATTACHMENT_HEADERS;
+import static com.ksmessaging.messaging.MessagingConstants.MSG_KEY_AUTO_DELETE_TIMER;
+import static com.ksmessaging.messaging.MessagingConstants.MSG_KEY_HAS_TEXT;
+import static com.ksmessaging.messaging.MessagingConstants.MSG_KEY_LOCAL;
+import static com.ksmessaging.messaging.MessagingConstants.MSG_KEY_MSG_TYPE;
+import static com.ksmessaging.messaging.MessagingConstants.MSG_KEY_TIMESTAMP;
 import static org.junit.Assert.assertEquals;
 
 public class PrivateMessageValidatorTest extends BrambleMockTestCase {

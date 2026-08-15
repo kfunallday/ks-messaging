@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless.blogs
+package com.ksmessaging.headless.blogs
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import io.javalin.http.BadRequestResponse
@@ -8,11 +8,11 @@ import org.briarproject.bramble.api.db.TransactionManager
 import org.briarproject.bramble.api.identity.IdentityManager
 import org.briarproject.bramble.api.system.Clock
 import org.briarproject.bramble.util.StringUtils.utf8IsTooLong
-import org.briarproject.briar.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH
-import org.briarproject.briar.api.blog.BlogManager
-import org.briarproject.briar.api.blog.BlogPostFactory
-import org.briarproject.briar.api.blog.BlogPostHeader
-import org.briarproject.briar.headless.getFromJson
+import com.ksmessaging.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH
+import com.ksmessaging.api.blog.BlogManager
+import com.ksmessaging.api.blog.BlogPostFactory
+import com.ksmessaging.api.blog.BlogPostHeader
+import com.ksmessaging.headless.getFromJson
 import javax.annotation.concurrent.Immutable
 import javax.inject.Inject
 import javax.inject.Singleton

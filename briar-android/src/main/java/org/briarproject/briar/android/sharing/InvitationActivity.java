@@ -1,17 +1,17 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.Toast;
 
 import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.android.controller.handler.UiExceptionHandler;
-import org.briarproject.briar.android.controller.handler.UiResultExceptionHandler;
-import org.briarproject.briar.android.sharing.InvitationController.InvitationListener;
-import org.briarproject.briar.android.view.BriarRecyclerView;
-import org.briarproject.briar.api.sharing.InvitationItem;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.android.controller.handler.UiExceptionHandler;
+import com.ksmessaging.android.controller.handler.UiResultExceptionHandler;
+import com.ksmessaging.android.sharing.InvitationController.InvitationListener;
+import com.ksmessaging.android.view.BriarRecyclerView;
+import com.ksmessaging.api.sharing.InvitationItem;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -24,7 +24,7 @@ import androidx.annotation.StringRes;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import static android.widget.Toast.LENGTH_SHORT;
-import static org.briarproject.briar.android.sharing.InvitationAdapter.InvitationClickListener;
+import static com.ksmessaging.android.sharing.InvitationAdapter.InvitationClickListener;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

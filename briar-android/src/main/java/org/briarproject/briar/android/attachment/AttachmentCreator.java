@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.attachment;
+package com.ksmessaging.android.attachment;
 
 import android.net.Uri;
 
 import org.briarproject.bramble.api.lifecycle.IoExecutor;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.AttachmentHeader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;

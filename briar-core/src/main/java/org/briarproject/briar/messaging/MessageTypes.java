@@ -1,4 +1,4 @@
-package org.briarproject.briar.messaging;
+package com.ksmessaging.messaging;
 
 interface MessageTypes {
 

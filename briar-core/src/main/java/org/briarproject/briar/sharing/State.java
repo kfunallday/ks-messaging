@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.sync.Group.Visibility;

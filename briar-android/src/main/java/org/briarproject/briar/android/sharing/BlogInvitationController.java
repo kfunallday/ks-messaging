@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
-import org.briarproject.briar.api.sharing.SharingInvitationItem;
+import com.ksmessaging.api.sharing.SharingInvitationItem;
 
 public interface BlogInvitationController
 		extends InvitationController<SharingInvitationItem> {

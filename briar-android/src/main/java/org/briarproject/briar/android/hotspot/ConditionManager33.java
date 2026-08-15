@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.hotspot;
+package com.ksmessaging.android.hotspot;
 
 import android.provider.Settings;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.util.Permission;
-import org.briarproject.briar.android.util.PermissionUtils;
+import com.ksmessaging.R;
+import com.ksmessaging.android.util.Permission;
+import com.ksmessaging.android.util.PermissionUtils;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.logging.Logger;

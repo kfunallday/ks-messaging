@@ -1,15 +1,15 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.event.BlogInvitationResponseReceivedEvent;
-import org.briarproject.briar.api.conversation.ConversationManager.ConversationClient;
-import org.briarproject.briar.api.conversation.event.ConversationMessageReceivedEvent;
-import org.briarproject.briar.api.sharing.InvitationResponse;
-import org.briarproject.briar.api.sharing.Shareable;
-import org.briarproject.briar.api.sharing.SharingManager;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.event.BlogInvitationResponseReceivedEvent;
+import com.ksmessaging.api.conversation.ConversationManager.ConversationClient;
+import com.ksmessaging.api.conversation.event.ConversationMessageReceivedEvent;
+import com.ksmessaging.api.sharing.InvitationResponse;
+import com.ksmessaging.api.sharing.Shareable;
+import com.ksmessaging.api.sharing.SharingManager;
+import com.ksmessaging.test.BriarIntegrationTestComponent;
 import org.junit.Before;
 
 import java.util.Collection;

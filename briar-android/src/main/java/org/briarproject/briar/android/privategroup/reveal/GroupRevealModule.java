@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.privategroup.reveal;
+package com.ksmessaging.android.privategroup.reveal;
 
-import org.briarproject.briar.android.activity.ActivityScope;
+import com.ksmessaging.android.activity.ActivityScope;
 
 import dagger.Module;
 import dagger.Provides;

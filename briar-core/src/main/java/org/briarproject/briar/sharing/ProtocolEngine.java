@@ -1,9 +1,9 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.db.Transaction;
-import org.briarproject.briar.api.sharing.Shareable;
+import com.ksmessaging.api.sharing.Shareable;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

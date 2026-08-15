@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningAppProcessInfo;
@@ -17,10 +17,10 @@ import com.vanniktech.emoji.google.GoogleEmojiProvider;
 import org.briarproject.bramble.BrambleAndroidEagerSingletons;
 import org.briarproject.bramble.BrambleAppComponent;
 import org.briarproject.bramble.BrambleCoreEagerSingletons;
-import org.briarproject.briar.BriarCoreEagerSingletons;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.logging.CachingLogHandler;
-import org.briarproject.briar.android.util.UiUtils;
+import com.ksmessaging.BriarCoreEagerSingletons;
+import com.ksmessaging.R;
+import com.ksmessaging.android.logging.CachingLogHandler;
+import com.ksmessaging.android.util.UiUtils;
 
 import java.lang.Thread.UncaughtExceptionHandler;
 import java.util.logging.Handler;
@@ -32,8 +32,8 @@ import static android.app.ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREG
 import static java.util.logging.Level.FINE;
 import static java.util.logging.Level.INFO;
 import static java.util.logging.Logger.getLogger;
-import static org.briarproject.briar.android.TestingConstants.IS_DEBUG_BUILD;
-import static org.briarproject.briar.android.settings.DisplayFragment.PREF_THEME;
+import static com.ksmessaging.android.TestingConstants.IS_DEBUG_BUILD;
+import static com.ksmessaging.android.settings.DisplayFragment.PREF_THEME;
 
 public class BriarApplicationImpl extends Application
 		implements BriarApplication {

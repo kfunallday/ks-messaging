@@ -1,9 +1,9 @@
-package org.briarproject.briar.android.viewmodel;
+package com.ksmessaging.android.viewmodel;
 
-import org.briarproject.briar.android.contact.add.remote.AddContactViewModel;
-import org.briarproject.briar.android.contact.add.remote.PendingContactListViewModel;
-import org.briarproject.briar.android.conversation.ConversationViewModel;
-import org.briarproject.briar.android.conversation.ImageViewModel;
+import com.ksmessaging.android.contact.add.remote.AddContactViewModel;
+import com.ksmessaging.android.contact.add.remote.PendingContactListViewModel;
+import com.ksmessaging.android.conversation.ConversationViewModel;
+import com.ksmessaging.android.conversation.ImageViewModel;
 
 import javax.inject.Singleton;
 

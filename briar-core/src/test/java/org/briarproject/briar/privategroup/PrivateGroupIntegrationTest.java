@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup;
+package com.ksmessaging.privategroup;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.contact.ContactId;
@@ -7,16 +7,16 @@ import org.briarproject.bramble.api.identity.AuthorId;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.privategroup.GroupMember;
-import org.briarproject.briar.api.privategroup.GroupMessage;
-import org.briarproject.briar.api.privategroup.GroupMessageHeader;
-import org.briarproject.briar.api.privategroup.JoinMessageHeader;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager;
-import org.briarproject.briar.test.BriarIntegrationTest;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
-import org.briarproject.briar.test.DaggerBriarIntegrationTestComponent;
+import com.ksmessaging.api.privategroup.GroupMember;
+import com.ksmessaging.api.privategroup.GroupMessage;
+import com.ksmessaging.api.privategroup.GroupMessageHeader;
+import com.ksmessaging.api.privategroup.JoinMessageHeader;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationManager;
+import com.ksmessaging.test.BriarIntegrationTest;
+import com.ksmessaging.test.BriarIntegrationTestComponent;
+import com.ksmessaging.test.DaggerBriarIntegrationTestComponent;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -24,11 +24,11 @@ import java.util.Collection;
 
 import javax.annotation.Nullable;
 
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.OURSELVES;
-import static org.briarproject.briar.api.privategroup.Visibility.INVISIBLE;
-import static org.briarproject.briar.api.privategroup.Visibility.REVEALED_BY_CONTACT;
-import static org.briarproject.briar.api.privategroup.Visibility.REVEALED_BY_US;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.OURSELVES;
+import static com.ksmessaging.api.privategroup.Visibility.INVISIBLE;
+import static com.ksmessaging.api.privategroup.Visibility.REVEALED_BY_CONTACT;
+import static com.ksmessaging.api.privategroup.Visibility.REVEALED_BY_US;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;

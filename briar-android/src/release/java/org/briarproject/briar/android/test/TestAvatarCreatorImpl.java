@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.test;
+package com.ksmessaging.android.test;
 
-import org.briarproject.briar.api.test.TestAvatarCreator;
+import com.ksmessaging.api.test.TestAvatarCreator;
 
 import java.io.InputStream;
 

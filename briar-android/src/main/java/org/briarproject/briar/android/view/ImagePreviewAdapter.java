@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.attachment.AttachmentItemResult;
+import com.ksmessaging.R;
+import com.ksmessaging.android.attachment.AttachmentItemResult;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;

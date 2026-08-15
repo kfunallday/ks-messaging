@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,15 +13,15 @@ import android.widget.Toast;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.blog.BaseViewModel.ListUpdate;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.sharing.BlogSharingStatusActivity;
-import org.briarproject.briar.android.sharing.ShareBlogActivity;
-import org.briarproject.briar.android.util.BriarSnackbarBuilder;
-import org.briarproject.briar.android.view.BriarRecyclerView;
-import org.briarproject.briar.android.widget.LinkDialogFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.blog.BaseViewModel.ListUpdate;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.sharing.BlogSharingStatusActivity;
+import com.ksmessaging.android.sharing.ShareBlogActivity;
+import com.ksmessaging.android.util.BriarSnackbarBuilder;
+import com.ksmessaging.android.view.BriarRecyclerView;
+import com.ksmessaging.android.widget.LinkDialogFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -37,8 +37,8 @@ import static android.app.Activity.RESULT_OK;
 import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP;
 import static android.widget.Toast.LENGTH_SHORT;
 import static com.google.android.material.snackbar.Snackbar.LENGTH_LONG;
-import static org.briarproject.briar.android.activity.BriarActivity.GROUP_ID;
-import static org.briarproject.briar.android.activity.RequestCodes.REQUEST_SHARE_BLOG;
+import static com.ksmessaging.android.activity.BriarActivity.GROUP_ID;
+import static com.ksmessaging.android.activity.RequestCodes.REQUEST_SHARE_BLOG;
 
 @UiThread
 @MethodsNotNullByDefault

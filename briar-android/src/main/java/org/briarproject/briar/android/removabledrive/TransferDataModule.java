@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.removabledrive;
+package com.ksmessaging.android.removabledrive;
 
-import org.briarproject.briar.android.viewmodel.ViewModelKey;
+import com.ksmessaging.android.viewmodel.ViewModelKey;
 
 import androidx.lifecycle.ViewModel;
 import dagger.Binds;

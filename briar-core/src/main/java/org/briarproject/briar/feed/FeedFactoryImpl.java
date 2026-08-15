@@ -1,4 +1,4 @@
-package org.briarproject.briar.feed;
+package com.ksmessaging.feed;
 
 import com.rometools.rome.feed.synd.SyndFeed;
 
@@ -13,27 +13,27 @@ import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.identity.AuthorFactory;
 import org.briarproject.bramble.api.identity.LocalAuthor;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogFactory;
-import org.briarproject.briar.api.feed.Feed;
-import org.briarproject.briar.api.feed.RssProperties;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogFactory;
+import com.ksmessaging.api.feed.Feed;
+import com.ksmessaging.api.feed.RssProperties;
 
 import javax.annotation.Nullable;
 import javax.inject.Inject;
 
 import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_AUTHOR_NAME_LENGTH;
 import static org.briarproject.bramble.util.StringUtils.truncateUtf8;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_ADDED;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_AUTHOR;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_DESC;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_LAST_ENTRY;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_PRIVATE_KEY;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_RSS_AUTHOR;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_RSS_LINK;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_RSS_TITLE;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_RSS_URI;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_UPDATED;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEED_URL;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_ADDED;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_AUTHOR;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_DESC;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_LAST_ENTRY;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_PRIVATE_KEY;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_RSS_AUTHOR;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_RSS_LINK;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_RSS_TITLE;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_RSS_URI;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_UPDATED;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEED_URL;
 
 class FeedFactoryImpl implements FeedFactory {
 

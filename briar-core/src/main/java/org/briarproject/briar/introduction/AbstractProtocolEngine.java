@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -22,14 +22,14 @@ import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.introduction.IntroductionResponse;
-import org.briarproject.briar.api.introduction.event.IntroductionResponseReceivedEvent;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.introduction.IntroductionResponse;
+import com.ksmessaging.api.introduction.event.IntroductionResponseReceivedEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Map;
@@ -37,16 +37,16 @@ import java.util.Map;
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.introduction.IntroductionManager.CLIENT_ID;
-import static org.briarproject.briar.api.introduction.IntroductionManager.MAJOR_VERSION;
-import static org.briarproject.briar.api.introduction.Role.INTRODUCEE;
-import static org.briarproject.briar.introduction.MessageType.ABORT;
-import static org.briarproject.briar.introduction.MessageType.ACCEPT;
-import static org.briarproject.briar.introduction.MessageType.ACTIVATE;
-import static org.briarproject.briar.introduction.MessageType.AUTH;
-import static org.briarproject.briar.introduction.MessageType.DECLINE;
-import static org.briarproject.briar.introduction.MessageType.REQUEST;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.introduction.IntroductionManager.CLIENT_ID;
+import static com.ksmessaging.api.introduction.IntroductionManager.MAJOR_VERSION;
+import static com.ksmessaging.api.introduction.Role.INTRODUCEE;
+import static com.ksmessaging.introduction.MessageType.ABORT;
+import static com.ksmessaging.introduction.MessageType.ACCEPT;
+import static com.ksmessaging.introduction.MessageType.ACTIVATE;
+import static com.ksmessaging.introduction.MessageType.AUTH;
+import static com.ksmessaging.introduction.MessageType.DECLINE;
+import static com.ksmessaging.introduction.MessageType.REQUEST;
 
 @Immutable
 @NotNullByDefault

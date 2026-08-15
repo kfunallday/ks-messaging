@@ -1,8 +1,8 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import android.content.Context;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.briarproject.onionwrapper.CircumventionProvider;
 import org.briarproject.onionwrapper.LocationUtils;
@@ -11,7 +11,7 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference.SummaryProvider;
 
 import static org.briarproject.bramble.api.plugin.TorConstants.PREF_TOR_NETWORK_AUTOMATIC;
-import static org.briarproject.briar.android.util.UiUtils.getCountryDisplayName;
+import static com.ksmessaging.android.util.UiUtils.getCountryDisplayName;
 
 @NotNullByDefault
 class TorSummaryProvider implements SummaryProvider<ListPreference> {

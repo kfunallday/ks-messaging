@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.blog;
+package com.ksmessaging.api.blog;
 
 public enum MessageType {
 

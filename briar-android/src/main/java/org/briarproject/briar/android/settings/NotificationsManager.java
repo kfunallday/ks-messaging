@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import android.content.Context;
 import android.media.Ringtone;
@@ -9,7 +9,7 @@ import android.widget.Toast;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.settings.Settings;
 import org.briarproject.bramble.api.settings.SettingsManager;
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -27,15 +27,15 @@ import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.util.LogUtils.logDuration;
 import static org.briarproject.bramble.util.LogUtils.logException;
 import static org.briarproject.bramble.util.LogUtils.now;
-import static org.briarproject.briar.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_BLOG;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_FORUM;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_GROUP;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_PRIVATE;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_RINGTONE_NAME;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_RINGTONE_URI;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_SOUND;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_VIBRATION;
+import static com.ksmessaging.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_BLOG;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_FORUM;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_GROUP;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_PRIVATE;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_RINGTONE_NAME;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_RINGTONE_URI;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_SOUND;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_VIBRATION;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

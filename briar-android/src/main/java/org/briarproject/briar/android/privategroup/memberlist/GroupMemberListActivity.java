@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.memberlist;
+package com.ksmessaging.android.privategroup.memberlist;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,13 +11,13 @@ import org.briarproject.bramble.api.event.EventBus;
 import org.briarproject.bramble.api.event.EventListener;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.event.GroupRemovedEvent;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.android.controller.handler.UiResultExceptionHandler;
-import org.briarproject.briar.android.view.BriarRecyclerView;
-import org.briarproject.briar.api.privategroup.JoinMessageHeader;
-import org.briarproject.briar.api.privategroup.event.GroupMessageAddedEvent;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.android.controller.handler.UiResultExceptionHandler;
+import com.ksmessaging.android.view.BriarRecyclerView;
+import com.ksmessaging.api.privategroup.JoinMessageHeader;
+import com.ksmessaging.api.privategroup.event.GroupMessageAddedEvent;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

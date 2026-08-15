@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.reveal;
+package com.ksmessaging.android.privategroup.reveal;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,9 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import org.briarproject.bramble.api.contact.ContactId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.contact.OnContactClickListener;
-import org.briarproject.briar.android.contactselection.BaseContactSelectorAdapter;
+import com.ksmessaging.R;
+import com.ksmessaging.android.contact.OnContactClickListener;
+import com.ksmessaging.android.contactselection.BaseContactSelectorAdapter;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;

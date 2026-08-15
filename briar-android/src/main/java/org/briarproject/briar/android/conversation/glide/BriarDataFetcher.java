@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.conversation.glide;
+package com.ksmessaging.android.conversation.glide;
 
 import com.bumptech.glide.Priority;
 import com.bumptech.glide.load.DataSource;
@@ -6,9 +6,9 @@ import com.bumptech.glide.load.data.DataFetcher;
 
 import org.briarproject.bramble.api.db.DatabaseExecutor;
 import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.briar.api.attachment.Attachment;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.attachment.AttachmentReader;
+import com.ksmessaging.api.attachment.Attachment;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.AttachmentReader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.InputStream;

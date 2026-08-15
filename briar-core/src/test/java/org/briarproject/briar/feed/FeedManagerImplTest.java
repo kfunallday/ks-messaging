@@ -1,4 +1,4 @@
-package org.briarproject.briar.feed;
+package com.ksmessaging.feed;
 
 import com.rometools.rome.feed.synd.SyndFeed;
 
@@ -19,12 +19,12 @@ import org.briarproject.bramble.api.system.TaskScheduler;
 import org.briarproject.bramble.test.BrambleMockTestCase;
 import org.briarproject.bramble.test.DbExpectations;
 import org.briarproject.bramble.test.ImmediateExecutor;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogPost;
-import org.briarproject.briar.api.blog.BlogPostFactory;
-import org.briarproject.briar.api.feed.Feed;
-import org.briarproject.briar.api.feed.RssProperties;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogPost;
+import com.ksmessaging.api.blog.BlogPostFactory;
+import com.ksmessaging.api.feed.Feed;
+import com.ksmessaging.api.feed.RssProperties;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -45,9 +45,9 @@ import static org.briarproject.bramble.test.TestUtils.getGroup;
 import static org.briarproject.bramble.test.TestUtils.getLocalAuthor;
 import static org.briarproject.bramble.test.TestUtils.getMessage;
 import static org.briarproject.bramble.util.StringUtils.UTF_8;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEEDS;
-import static org.briarproject.briar.api.feed.FeedManager.CLIENT_ID;
-import static org.briarproject.briar.api.feed.FeedManager.MAJOR_VERSION;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEEDS;
+import static com.ksmessaging.api.feed.FeedManager.CLIENT_ID;
+import static com.ksmessaging.api.feed.FeedManager.MAJOR_VERSION;
 import static org.hamcrest.Matchers.nullValue;
 
 public class FeedManagerImplTest extends BrambleMockTestCase {

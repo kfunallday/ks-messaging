@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.activity;
+package com.ksmessaging.android.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,19 +6,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.AndroidComponent;
-import org.briarproject.briar.android.BriarApplication;
-import org.briarproject.briar.android.DestroyableContext;
-import org.briarproject.briar.android.Localizer;
-import org.briarproject.briar.android.controller.ActivityLifecycleController;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.fragment.ScreenFilterDialogFragment;
-import org.briarproject.briar.android.util.UiUtils;
-import org.briarproject.briar.android.widget.TapSafeFrameLayout;
-import org.briarproject.briar.android.widget.TapSafeFrameLayout.OnTapFilteredListener;
-import org.briarproject.briar.api.android.ScreenFilterMonitor;
-import org.briarproject.briar.api.android.ScreenFilterMonitor.AppDetails;
+import com.ksmessaging.R;
+import com.ksmessaging.android.AndroidComponent;
+import com.ksmessaging.android.BriarApplication;
+import com.ksmessaging.android.DestroyableContext;
+import com.ksmessaging.android.Localizer;
+import com.ksmessaging.android.controller.ActivityLifecycleController;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.fragment.ScreenFilterDialogFragment;
+import com.ksmessaging.android.util.UiUtils;
+import com.ksmessaging.android.widget.TapSafeFrameLayout;
+import com.ksmessaging.android.widget.TapSafeFrameLayout.OnTapFilteredListener;
+import com.ksmessaging.api.android.ScreenFilterMonitor;
+import com.ksmessaging.api.android.ScreenFilterMonitor.AppDetails;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -44,9 +44,9 @@ import static androidx.lifecycle.Lifecycle.State.STARTED;
 import static java.util.Collections.emptyList;
 import static java.util.logging.Level.INFO;
 import static java.util.logging.Logger.getLogger;
-import static org.briarproject.briar.android.TestingConstants.PREVENT_SCREENSHOTS;
-import static org.briarproject.briar.android.util.UiUtils.hideSoftKeyboard;
-import static org.briarproject.briar.android.util.UiUtils.showFragment;
+import static com.ksmessaging.android.TestingConstants.PREVENT_SCREENSHOTS;
+import static com.ksmessaging.android.util.UiUtils.hideSoftKeyboard;
+import static com.ksmessaging.android.util.UiUtils.showFragment;
 
 /**
  * Warning: Some activities don't extend {@link BaseActivity}.

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.controller.handler;
+package com.ksmessaging.android.controller.handler;
 
 public interface ResultHandler<R> {
 

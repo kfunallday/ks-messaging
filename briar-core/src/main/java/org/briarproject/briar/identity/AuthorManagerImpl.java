@@ -1,4 +1,4 @@
-package org.briarproject.briar.identity;
+package com.ksmessaging.identity;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.db.DatabaseComponent;
@@ -7,10 +7,10 @@ import org.briarproject.bramble.api.db.Transaction;
 import org.briarproject.bramble.api.identity.AuthorId;
 import org.briarproject.bramble.api.identity.IdentityManager;
 import org.briarproject.bramble.api.identity.LocalAuthor;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.avatar.AvatarManager;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.avatar.AvatarManager;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;
@@ -18,10 +18,10 @@ import java.util.Collection;
 import javax.annotation.concurrent.ThreadSafe;
 import javax.inject.Inject;
 
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.OURSELVES;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.UNKNOWN;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.UNVERIFIED;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.VERIFIED;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.OURSELVES;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.UNKNOWN;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.UNVERIFIED;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.VERIFIED;
 
 @ThreadSafe
 @NotNullByDefault

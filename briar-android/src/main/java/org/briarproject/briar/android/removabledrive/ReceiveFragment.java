@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.removabledrive;
+package com.ksmessaging.android.removabledrive;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,9 +10,9 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.util.ActivityLaunchers.GetContentAdvanced;
-import org.briarproject.briar.android.util.ActivityLaunchers.OpenDocumentAdvanced;
+import com.ksmessaging.R;
+import com.ksmessaging.android.util.ActivityLaunchers.GetContentAdvanced;
+import com.ksmessaging.android.util.ActivityLaunchers.OpenDocumentAdvanced;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -26,9 +26,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import static android.view.View.VISIBLE;
 import static android.widget.Toast.LENGTH_LONG;
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
-import static org.briarproject.briar.android.util.UiUtils.launchActivityToOpenFile;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.util.UiUtils.launchActivityToOpenFile;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

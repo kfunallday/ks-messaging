@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.activity;
+package com.ksmessaging.android.activity;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

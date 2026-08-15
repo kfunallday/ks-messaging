@@ -1,16 +1,16 @@
-package org.briarproject.briar.android.activity;
+package com.ksmessaging.android.activity;
 
 import android.app.Activity;
 
-import org.briarproject.briar.android.controller.BriarController;
-import org.briarproject.briar.android.controller.BriarControllerImpl;
-import org.briarproject.briar.android.controller.DbController;
-import org.briarproject.briar.android.controller.DbControllerImpl;
+import com.ksmessaging.android.controller.BriarController;
+import com.ksmessaging.android.controller.BriarControllerImpl;
+import com.ksmessaging.android.controller.DbController;
+import com.ksmessaging.android.controller.DbControllerImpl;
 
 import dagger.Module;
 import dagger.Provides;
 
-import static org.briarproject.briar.android.BriarService.BriarServiceConnection;
+import static com.ksmessaging.android.BriarService.BriarServiceConnection;
 
 @Module
 public class ActivityModule {

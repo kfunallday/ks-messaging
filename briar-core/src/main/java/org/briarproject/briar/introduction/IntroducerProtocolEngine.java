@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.client.ContactGroupFactory;
@@ -13,13 +13,13 @@ import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.ProtocolStateException;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.introduction.event.IntroductionAbortedEvent;
-import org.briarproject.briar.introduction.IntroducerSession.Introducee;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.ProtocolStateException;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.introduction.event.IntroductionAbortedEvent;
+import com.ksmessaging.introduction.IntroducerSession.Introducee;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;
@@ -27,18 +27,18 @@ import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
 import static java.lang.Math.max;
-import static org.briarproject.briar.introduction.IntroducerState.AWAIT_ACTIVATES;
-import static org.briarproject.briar.introduction.IntroducerState.AWAIT_ACTIVATE_A;
-import static org.briarproject.briar.introduction.IntroducerState.AWAIT_ACTIVATE_B;
-import static org.briarproject.briar.introduction.IntroducerState.AWAIT_AUTHS;
-import static org.briarproject.briar.introduction.IntroducerState.AWAIT_AUTH_A;
-import static org.briarproject.briar.introduction.IntroducerState.AWAIT_AUTH_B;
-import static org.briarproject.briar.introduction.IntroducerState.AWAIT_RESPONSES;
-import static org.briarproject.briar.introduction.IntroducerState.AWAIT_RESPONSE_A;
-import static org.briarproject.briar.introduction.IntroducerState.AWAIT_RESPONSE_B;
-import static org.briarproject.briar.introduction.IntroducerState.A_DECLINED;
-import static org.briarproject.briar.introduction.IntroducerState.B_DECLINED;
-import static org.briarproject.briar.introduction.IntroducerState.START;
+import static com.ksmessaging.introduction.IntroducerState.AWAIT_ACTIVATES;
+import static com.ksmessaging.introduction.IntroducerState.AWAIT_ACTIVATE_A;
+import static com.ksmessaging.introduction.IntroducerState.AWAIT_ACTIVATE_B;
+import static com.ksmessaging.introduction.IntroducerState.AWAIT_AUTHS;
+import static com.ksmessaging.introduction.IntroducerState.AWAIT_AUTH_A;
+import static com.ksmessaging.introduction.IntroducerState.AWAIT_AUTH_B;
+import static com.ksmessaging.introduction.IntroducerState.AWAIT_RESPONSES;
+import static com.ksmessaging.introduction.IntroducerState.AWAIT_RESPONSE_A;
+import static com.ksmessaging.introduction.IntroducerState.AWAIT_RESPONSE_B;
+import static com.ksmessaging.introduction.IntroducerState.A_DECLINED;
+import static com.ksmessaging.introduction.IntroducerState.B_DECLINED;
+import static com.ksmessaging.introduction.IntroducerState.START;
 
 
 @Immutable

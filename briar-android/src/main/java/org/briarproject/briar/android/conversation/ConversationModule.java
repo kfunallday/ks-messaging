@@ -1,7 +1,7 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
-import org.briarproject.briar.android.activity.ActivityScope;
-import org.briarproject.briar.android.conversation.glide.BriarDataFetcherFactory;
+import com.ksmessaging.android.activity.ActivityScope;
+import com.ksmessaging.android.conversation.glide.BriarDataFetcherFactory;
 
 import dagger.Module;
 import dagger.Provides;

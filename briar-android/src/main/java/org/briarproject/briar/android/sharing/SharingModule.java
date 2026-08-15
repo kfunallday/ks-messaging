@@ -1,7 +1,7 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
-import org.briarproject.briar.android.activity.ActivityScope;
-import org.briarproject.briar.android.activity.BaseActivity;
+import com.ksmessaging.android.activity.ActivityScope;
+import com.ksmessaging.android.activity.BaseActivity;
 
 import dagger.Module;
 import dagger.Provides;

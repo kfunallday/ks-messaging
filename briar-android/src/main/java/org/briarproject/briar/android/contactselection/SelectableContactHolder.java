@@ -1,9 +1,9 @@
-package org.briarproject.briar.android.contactselection;
+package com.ksmessaging.android.contactselection;
 
 import android.view.View;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.contact.OnContactClickListener;
+import com.ksmessaging.R;
+import com.ksmessaging.android.contact.OnContactClickListener;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;
@@ -13,11 +13,11 @@ import androidx.annotation.UiThread;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.ERROR;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.INVITE_RECEIVED;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.INVITE_SENT;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.NOT_SUPPORTED;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.SHARING;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.ERROR;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.INVITE_RECEIVED;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.INVITE_SENT;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.NOT_SUPPORTED;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.SHARING;
 
 @UiThread
 @NotNullByDefault

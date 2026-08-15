@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.FeatureFlags;
 import org.briarproject.bramble.api.cleanup.CleanupManager;
@@ -9,11 +9,11 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.validation.ValidationManager;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.privategroup.PrivateGroupFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationFactory;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.privategroup.PrivateGroupFactory;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationFactory;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationManager;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -21,9 +21,9 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-import static org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager.CLIENT_ID;
-import static org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager.MAJOR_VERSION;
-import static org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager.MINOR_VERSION;
+import static com.ksmessaging.api.privategroup.invitation.GroupInvitationManager.CLIENT_ID;
+import static com.ksmessaging.api.privategroup.invitation.GroupInvitationManager.MAJOR_VERSION;
+import static com.ksmessaging.api.privategroup.invitation.GroupInvitationManager.MINOR_VERSION;
 
 @Module
 public class GroupInvitationModule {

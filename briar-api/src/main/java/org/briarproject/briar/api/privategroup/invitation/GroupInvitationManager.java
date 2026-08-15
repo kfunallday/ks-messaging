@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.privategroup.invitation;
+package com.ksmessaging.api.privategroup.invitation;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.contact.ContactId;
@@ -6,11 +6,11 @@ import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.db.Transaction;
 import org.briarproject.bramble.api.sync.ClientId;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.api.client.ProtocolStateException;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationManager.ConversationClient;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.sharing.SharingManager.SharingStatus;
+import com.ksmessaging.api.client.ProtocolStateException;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationManager.ConversationClient;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.sharing.SharingManager.SharingStatus;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;
@@ -24,7 +24,7 @@ public interface GroupInvitationManager extends ConversationClient {
 	 * The unique ID of the private group invitation client.
 	 */
 	ClientId CLIENT_ID =
-			new ClientId("org.briarproject.briar.privategroup.invitation");
+			new ClientId("com.ksmessaging.privategroup.invitation");
 
 	/**
 	 * The current major version of the private group invitation client.

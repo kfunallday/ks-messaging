@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless.blogs
+package com.ksmessaging.headless.blogs
 
 import io.javalin.http.BadRequestResponse
 import io.javalin.plugin.json.JavalinJson.toJson
@@ -13,16 +13,16 @@ import org.briarproject.bramble.api.db.Transaction
 import org.briarproject.bramble.api.sync.MessageId
 import org.briarproject.bramble.identity.output
 import org.briarproject.bramble.util.StringUtils.getRandomString
-import org.briarproject.briar.api.blog.Blog
-import org.briarproject.briar.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH
-import org.briarproject.briar.api.blog.BlogManager
-import org.briarproject.briar.api.blog.BlogPost
-import org.briarproject.briar.api.blog.BlogPostFactory
-import org.briarproject.briar.api.blog.BlogPostHeader
-import org.briarproject.briar.api.blog.MessageType.POST
-import org.briarproject.briar.api.identity.AuthorInfo
-import org.briarproject.briar.api.identity.AuthorInfo.Status.OURSELVES
-import org.briarproject.briar.headless.ControllerTest
+import com.ksmessaging.api.blog.Blog
+import com.ksmessaging.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH
+import com.ksmessaging.api.blog.BlogManager
+import com.ksmessaging.api.blog.BlogPost
+import com.ksmessaging.api.blog.BlogPostFactory
+import com.ksmessaging.api.blog.BlogPostHeader
+import com.ksmessaging.api.blog.MessageType.POST
+import com.ksmessaging.api.identity.AuthorInfo
+import com.ksmessaging.api.identity.AuthorInfo.Status.OURSELVES
+import com.ksmessaging.headless.ControllerTest
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Test
 

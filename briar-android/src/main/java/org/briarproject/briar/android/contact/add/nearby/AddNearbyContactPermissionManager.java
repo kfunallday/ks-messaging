@@ -1,9 +1,9 @@
-package org.briarproject.briar.android.contact.add.nearby;
+package com.ksmessaging.android.contact.add.nearby;
 
 import android.content.Context;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.util.Permission;
+import com.ksmessaging.R;
+import com.ksmessaging.android.util.Permission;
 
 import java.util.Map;
 
@@ -19,17 +19,17 @@ import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 import static android.os.Build.VERSION.SDK_INT;
 import static androidx.core.app.ActivityCompat.shouldShowRequestPermissionRationale;
 import static androidx.core.content.ContextCompat.checkSelfPermission;
-import static org.briarproject.briar.android.util.Permission.GRANTED;
-import static org.briarproject.briar.android.util.Permission.PERMANENTLY_DENIED;
-import static org.briarproject.briar.android.util.Permission.SHOW_RATIONALE;
-import static org.briarproject.briar.android.util.Permission.UNKNOWN;
-import static org.briarproject.briar.android.util.PermissionUtils.areBluetoothPermissionsGranted;
-import static org.briarproject.briar.android.util.PermissionUtils.gotPermission;
-import static org.briarproject.briar.android.util.PermissionUtils.isLocationEnabledForBt;
-import static org.briarproject.briar.android.util.PermissionUtils.showDenialDialog;
-import static org.briarproject.briar.android.util.PermissionUtils.showLocationDialog;
-import static org.briarproject.briar.android.util.PermissionUtils.showRationale;
-import static org.briarproject.briar.android.util.PermissionUtils.wasGrantedBluetoothPermissions;
+import static com.ksmessaging.android.util.Permission.GRANTED;
+import static com.ksmessaging.android.util.Permission.PERMANENTLY_DENIED;
+import static com.ksmessaging.android.util.Permission.SHOW_RATIONALE;
+import static com.ksmessaging.android.util.Permission.UNKNOWN;
+import static com.ksmessaging.android.util.PermissionUtils.areBluetoothPermissionsGranted;
+import static com.ksmessaging.android.util.PermissionUtils.gotPermission;
+import static com.ksmessaging.android.util.PermissionUtils.isLocationEnabledForBt;
+import static com.ksmessaging.android.util.PermissionUtils.showDenialDialog;
+import static com.ksmessaging.android.util.PermissionUtils.showLocationDialog;
+import static com.ksmessaging.android.util.PermissionUtils.showRationale;
+import static com.ksmessaging.android.util.PermissionUtils.wasGrantedBluetoothPermissions;
 
 class AddNearbyContactPermissionManager {
 

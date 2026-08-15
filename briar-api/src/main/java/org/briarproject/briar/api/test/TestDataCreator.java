@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.test;
+package com.ksmessaging.api.test;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.db.DbException;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.cleanup.CleanupHook;
@@ -28,19 +28,19 @@ import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.sync.MessageStatus;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager.ClientVersioningHook;
-import org.briarproject.briar.api.autodelete.event.ConversationMessagesDeletedEvent;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationMessageHeader;
-import org.briarproject.briar.api.conversation.DeletionResult;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.introduction.IntroductionManager;
-import org.briarproject.briar.api.introduction.IntroductionRequest;
-import org.briarproject.briar.api.introduction.IntroductionResponse;
-import org.briarproject.briar.api.introduction.Role;
-import org.briarproject.briar.client.ConversationClientImpl;
-import org.briarproject.briar.introduction.IntroducerSession.Introducee;
+import com.ksmessaging.api.autodelete.event.ConversationMessagesDeletedEvent;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationMessageHeader;
+import com.ksmessaging.api.conversation.DeletionResult;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.introduction.IntroductionManager;
+import com.ksmessaging.api.introduction.IntroductionRequest;
+import com.ksmessaging.api.introduction.IntroductionResponse;
+import com.ksmessaging.api.introduction.Role;
+import com.ksmessaging.client.ConversationClientImpl;
+import com.ksmessaging.introduction.IntroducerSession.Introducee;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;
@@ -57,21 +57,21 @@ import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
 import static org.briarproject.bramble.api.sync.validation.IncomingMessageHook.DeliveryAction.ACCEPT_DO_NOT_SHARE;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.introduction.Role.INTRODUCEE;
-import static org.briarproject.briar.api.introduction.Role.INTRODUCER;
-import static org.briarproject.briar.introduction.IntroduceeState.AWAIT_RESPONSES;
-import static org.briarproject.briar.introduction.IntroduceeState.REMOTE_ACCEPTED;
-import static org.briarproject.briar.introduction.IntroduceeState.REMOTE_DECLINED;
-import static org.briarproject.briar.introduction.IntroducerState.A_DECLINED;
-import static org.briarproject.briar.introduction.IntroducerState.B_DECLINED;
-import static org.briarproject.briar.introduction.IntroducerState.START;
-import static org.briarproject.briar.introduction.MessageType.ABORT;
-import static org.briarproject.briar.introduction.MessageType.ACCEPT;
-import static org.briarproject.briar.introduction.MessageType.ACTIVATE;
-import static org.briarproject.briar.introduction.MessageType.AUTH;
-import static org.briarproject.briar.introduction.MessageType.DECLINE;
-import static org.briarproject.briar.introduction.MessageType.REQUEST;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.introduction.Role.INTRODUCEE;
+import static com.ksmessaging.api.introduction.Role.INTRODUCER;
+import static com.ksmessaging.introduction.IntroduceeState.AWAIT_RESPONSES;
+import static com.ksmessaging.introduction.IntroduceeState.REMOTE_ACCEPTED;
+import static com.ksmessaging.introduction.IntroduceeState.REMOTE_DECLINED;
+import static com.ksmessaging.introduction.IntroducerState.A_DECLINED;
+import static com.ksmessaging.introduction.IntroducerState.B_DECLINED;
+import static com.ksmessaging.introduction.IntroducerState.START;
+import static com.ksmessaging.introduction.MessageType.ABORT;
+import static com.ksmessaging.introduction.MessageType.ACCEPT;
+import static com.ksmessaging.introduction.MessageType.ACTIVATE;
+import static com.ksmessaging.introduction.MessageType.AUTH;
+import static com.ksmessaging.introduction.MessageType.DECLINE;
+import static com.ksmessaging.introduction.MessageType.REQUEST;
 
 @Immutable
 @NotNullByDefault

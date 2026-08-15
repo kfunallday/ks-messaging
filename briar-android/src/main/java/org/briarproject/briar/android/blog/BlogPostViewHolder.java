@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,10 +11,10 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.view.AuthorView;
-import org.briarproject.briar.api.blog.BlogCommentHeader;
-import org.briarproject.briar.api.blog.BlogPostHeader;
+import com.ksmessaging.R;
+import com.ksmessaging.android.view.AuthorView;
+import com.ksmessaging.api.blog.BlogCommentHeader;
+import com.ksmessaging.api.blog.BlogPostHeader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.UiThread;
@@ -23,15 +23,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
-import static org.briarproject.briar.android.activity.BriarActivity.GROUP_ID;
-import static org.briarproject.briar.android.blog.BlogPostFragment.POST_ID;
-import static org.briarproject.briar.android.util.UiUtils.TEASER_LENGTH;
-import static org.briarproject.briar.android.util.UiUtils.getSpanned;
-import static org.briarproject.briar.android.util.UiUtils.getTeaser;
-import static org.briarproject.briar.android.util.UiUtils.makeLinksClickable;
-import static org.briarproject.briar.android.view.AuthorView.COMMENTER;
-import static org.briarproject.briar.android.view.AuthorView.REBLOGGER;
-import static org.briarproject.briar.android.view.AuthorView.RSS_FEED_REBLOGGED;
+import static com.ksmessaging.android.activity.BriarActivity.GROUP_ID;
+import static com.ksmessaging.android.blog.BlogPostFragment.POST_ID;
+import static com.ksmessaging.android.util.UiUtils.TEASER_LENGTH;
+import static com.ksmessaging.android.util.UiUtils.getSpanned;
+import static com.ksmessaging.android.util.UiUtils.getTeaser;
+import static com.ksmessaging.android.util.UiUtils.makeLinksClickable;
+import static com.ksmessaging.android.view.AuthorView.COMMENTER;
+import static com.ksmessaging.android.view.AuthorView.REBLOGGER;
+import static com.ksmessaging.android.view.AuthorView.RSS_FEED_REBLOGGED;
 
 @UiThread
 @NotNullByDefault

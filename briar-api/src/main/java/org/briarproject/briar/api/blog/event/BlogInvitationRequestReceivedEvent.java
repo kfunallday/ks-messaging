@@ -1,9 +1,9 @@
-package org.briarproject.briar.api.blog.event;
+package com.ksmessaging.api.blog.event;
 
 import org.briarproject.bramble.api.contact.ContactId;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.conversation.ConversationRequest;
-import org.briarproject.briar.api.conversation.event.ConversationMessageReceivedEvent;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.conversation.ConversationRequest;
+import com.ksmessaging.api.conversation.event.ConversationMessageReceivedEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

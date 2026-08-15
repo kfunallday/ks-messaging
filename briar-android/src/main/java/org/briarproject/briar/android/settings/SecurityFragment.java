@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -19,9 +19,9 @@ import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreferenceCompat;
 
 import static java.util.Objects.requireNonNull;
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.settings.SettingsActivity.enableAndPersist;
-import static org.briarproject.briar.android.util.UiUtils.hasScreenLock;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.settings.SettingsActivity.enableAndPersist;
+import static com.ksmessaging.android.util.UiUtils.hasScreenLock;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

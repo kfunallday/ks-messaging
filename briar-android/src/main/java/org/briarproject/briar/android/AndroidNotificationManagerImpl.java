@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.annotation.TargetApi;
 import android.app.Application;
@@ -28,22 +28,22 @@ import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.system.AndroidExecutor;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.util.StringUtils;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.conversation.ConversationActivity;
-import org.briarproject.briar.android.forum.ForumActivity;
-import org.briarproject.briar.android.hotspot.HotspotActivity;
-import org.briarproject.briar.android.login.SignInReminderReceiver;
-import org.briarproject.briar.android.mailbox.MailboxActivity;
-import org.briarproject.briar.android.navdrawer.NavDrawerActivity;
-import org.briarproject.briar.android.privategroup.conversation.GroupActivity;
-import org.briarproject.briar.android.splash.SplashScreenActivity;
-import org.briarproject.briar.android.util.BriarNotificationBuilder;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.blog.event.BlogPostAddedEvent;
-import org.briarproject.briar.api.conversation.ConversationResponse;
-import org.briarproject.briar.api.conversation.event.ConversationMessageReceivedEvent;
-import org.briarproject.briar.api.forum.event.ForumPostReceivedEvent;
-import org.briarproject.briar.api.privategroup.event.GroupMessageAddedEvent;
+import com.ksmessaging.R;
+import com.ksmessaging.android.conversation.ConversationActivity;
+import com.ksmessaging.android.forum.ForumActivity;
+import com.ksmessaging.android.hotspot.HotspotActivity;
+import com.ksmessaging.android.login.SignInReminderReceiver;
+import com.ksmessaging.android.mailbox.MailboxActivity;
+import com.ksmessaging.android.navdrawer.NavDrawerActivity;
+import com.ksmessaging.android.privategroup.conversation.GroupActivity;
+import com.ksmessaging.android.splash.SplashScreenActivity;
+import com.ksmessaging.android.util.BriarNotificationBuilder;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.blog.event.BlogPostAddedEvent;
+import com.ksmessaging.api.conversation.ConversationResponse;
+import com.ksmessaging.api.conversation.event.ConversationMessageReceivedEvent;
+import com.ksmessaging.api.forum.event.ForumPostReceivedEvent;
+import com.ksmessaging.api.privategroup.event.GroupMessageAddedEvent;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -85,14 +85,14 @@ import static androidx.core.app.NotificationCompat.PRIORITY_MIN;
 import static androidx.core.app.NotificationCompat.VISIBILITY_SECRET;
 import static androidx.core.content.ContextCompat.getColor;
 import static org.briarproject.bramble.util.AndroidUtils.getImmutableFlags;
-import static org.briarproject.briar.android.activity.BriarActivity.GROUP_ID;
-import static org.briarproject.briar.android.conversation.ConversationActivity.CONTACT_ID;
-import static org.briarproject.briar.android.navdrawer.NavDrawerActivity.BLOG_URI;
-import static org.briarproject.briar.android.navdrawer.NavDrawerActivity.CONTACT_ADDED_URI;
-import static org.briarproject.briar.android.navdrawer.NavDrawerActivity.CONTACT_URI;
-import static org.briarproject.briar.android.navdrawer.NavDrawerActivity.FORUM_URI;
-import static org.briarproject.briar.android.navdrawer.NavDrawerActivity.GROUP_URI;
-import static org.briarproject.briar.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
+import static com.ksmessaging.android.activity.BriarActivity.GROUP_ID;
+import static com.ksmessaging.android.conversation.ConversationActivity.CONTACT_ID;
+import static com.ksmessaging.android.navdrawer.NavDrawerActivity.BLOG_URI;
+import static com.ksmessaging.android.navdrawer.NavDrawerActivity.CONTACT_ADDED_URI;
+import static com.ksmessaging.android.navdrawer.NavDrawerActivity.CONTACT_URI;
+import static com.ksmessaging.android.navdrawer.NavDrawerActivity.FORUM_URI;
+import static com.ksmessaging.android.navdrawer.NavDrawerActivity.GROUP_URI;
+import static com.ksmessaging.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
 
 @ThreadSafe
 @MethodsNotNullByDefault

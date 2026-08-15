@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

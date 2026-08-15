@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.sharing;
+package com.ksmessaging.api.sharing;
 
 import org.briarproject.bramble.api.Nameable;
 import org.briarproject.bramble.api.sync.GroupId;

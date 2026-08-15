@@ -1,6 +1,6 @@
-package org.briarproject.briar.client;
+package com.ksmessaging.client;
 
-import org.briarproject.briar.api.client.MessageTracker;
+import com.ksmessaging.api.client.MessageTracker;
 
 import dagger.Module;
 import dagger.Provides;

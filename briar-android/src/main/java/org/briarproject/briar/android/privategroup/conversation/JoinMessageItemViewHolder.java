@@ -1,16 +1,16 @@
-package org.briarproject.briar.android.privategroup.conversation;
+package com.ksmessaging.android.privategroup.conversation;
 
 import android.content.Context;
 import android.view.View;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.threaded.BaseThreadItemViewHolder;
-import org.briarproject.briar.android.threaded.ThreadItemAdapter.ThreadItemListener;
+import com.ksmessaging.R;
+import com.ksmessaging.android.threaded.BaseThreadItemViewHolder;
+import com.ksmessaging.android.threaded.ThreadItemAdapter.ThreadItemListener;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.UiThread;
 
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.OURSELVES;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.OURSELVES;
 
 @UiThread
 @NotNullByDefault

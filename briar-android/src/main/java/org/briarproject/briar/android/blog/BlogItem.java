@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
-import org.briarproject.briar.api.blog.Blog;
+import com.ksmessaging.api.blog.Blog;
 
 class BlogItem {
 

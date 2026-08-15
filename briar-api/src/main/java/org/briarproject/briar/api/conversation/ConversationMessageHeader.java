@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.conversation;
+package com.ksmessaging.api.conversation;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;

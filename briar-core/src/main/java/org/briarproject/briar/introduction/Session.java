@@ -1,7 +1,7 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.introduction.Role;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.introduction.Role;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

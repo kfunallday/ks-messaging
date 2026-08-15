@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.navdrawer;
+package com.ksmessaging.android.navdrawer;
 
 import android.app.Application;
 
@@ -9,8 +9,8 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.settings.Settings;
 import org.briarproject.bramble.api.settings.SettingsManager;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.BriarApplication;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.BriarApplication;
+import com.ksmessaging.android.viewmodel.DbViewModel;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.concurrent.Executor;
@@ -27,9 +27,9 @@ import static java.util.logging.Level.WARNING;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.android.dontkillmelib.DozeUtils.needsDozeWhitelisting;
 import static org.briarproject.bramble.util.LogUtils.logException;
-import static org.briarproject.briar.android.TestingConstants.EXPIRY_DATE;
-import static org.briarproject.briar.android.controller.BriarControllerImpl.DOZE_ASK_AGAIN;
-import static org.briarproject.briar.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
+import static com.ksmessaging.android.TestingConstants.EXPIRY_DATE;
+import static com.ksmessaging.android.controller.BriarControllerImpl.DOZE_ASK_AGAIN;
+import static com.ksmessaging.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
 
 @NotNullByDefault
 public class NavDrawerViewModel extends DbViewModel {

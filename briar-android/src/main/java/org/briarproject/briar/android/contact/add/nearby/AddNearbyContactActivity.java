@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact.add.nearby;
+package com.ksmessaging.android.contact.add.nearby;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,18 +7,18 @@ import android.widget.Toast;
 
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.qrcode.QrCodeClassifier.QrCodeType;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.ContactExchangeFinished;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.ContactExchangeResult;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.Failed;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.Failed.WrongQrCodeType;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.Failed.WrongQrCodeVersion;
-import org.briarproject.briar.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.fragment.BaseFragment.BaseFragmentListener;
-import org.briarproject.briar.android.util.ActivityLaunchers.RequestBluetoothDiscoverable;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.ContactExchangeFinished;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.ContactExchangeResult;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.Failed;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.Failed.WrongQrCodeType;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.Failed.WrongQrCodeVersion;
+import com.ksmessaging.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.fragment.BaseFragment.BaseFragmentListener;
+import com.ksmessaging.android.util.ActivityLaunchers.RequestBluetoothDiscoverable;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -38,8 +38,8 @@ import static android.widget.Toast.LENGTH_LONG;
 import static java.util.Objects.requireNonNull;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.api.qrcode.QrCodeClassifier.QrCodeType.MAILBOX;
-import static org.briarproject.briar.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision.ACCEPTED;
-import static org.briarproject.briar.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision.REFUSED;
+import static com.ksmessaging.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision.ACCEPTED;
+import static com.ksmessaging.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision.REFUSED;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

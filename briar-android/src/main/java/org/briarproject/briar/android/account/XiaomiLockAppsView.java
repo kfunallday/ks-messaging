@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.Toast;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.logging.Logger;

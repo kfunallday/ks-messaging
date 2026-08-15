@@ -1,9 +1,9 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;
@@ -13,7 +13,7 @@ import androidx.annotation.UiThread;
 
 import static org.briarproject.android.dontkillmelib.XiaomiUtils.isMiuiVersionAtLeast;
 import static org.briarproject.android.dontkillmelib.XiaomiUtils.xiaomiRecentAppsNeedsToBeShown;
-import static org.briarproject.briar.android.util.UiUtils.showOnboardingDialog;
+import static com.ksmessaging.android.util.UiUtils.showOnboardingDialog;
 
 @UiThread
 @NotNullByDefault

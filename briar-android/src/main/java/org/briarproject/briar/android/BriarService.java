@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -23,10 +23,10 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager.StartResult;
 import org.briarproject.bramble.api.system.AndroidExecutor;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.util.AndroidUtils;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.logout.HideUiActivity;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.android.LockManager;
+import com.ksmessaging.R;
+import com.ksmessaging.android.logout.HideUiActivity;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.android.LockManager;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -52,20 +52,20 @@ import static java.util.logging.Level.WARNING;
 import static org.briarproject.bramble.api.lifecycle.LifecycleManager.StartResult.ALREADY_RUNNING;
 import static org.briarproject.bramble.api.lifecycle.LifecycleManager.StartResult.SUCCESS;
 import static org.briarproject.bramble.util.AndroidUtils.isUiThread;
-import static org.briarproject.briar.android.BriarApplication.ENTRY_ACTIVITY;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.ONGOING_CHANNEL_ID;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.ONGOING_CHANNEL_OLD_ID;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.ONGOING_NOTIFICATION_ID;
-import static org.briarproject.briar.api.android.LockManager.ACTION_LOCK;
-import static org.briarproject.briar.api.android.LockManager.EXTRA_PID;
+import static com.ksmessaging.android.BriarApplication.ENTRY_ACTIVITY;
+import static com.ksmessaging.api.android.AndroidNotificationManager.ONGOING_CHANNEL_ID;
+import static com.ksmessaging.api.android.AndroidNotificationManager.ONGOING_CHANNEL_OLD_ID;
+import static com.ksmessaging.api.android.AndroidNotificationManager.ONGOING_NOTIFICATION_ID;
+import static com.ksmessaging.api.android.LockManager.ACTION_LOCK;
+import static com.ksmessaging.api.android.LockManager.EXTRA_PID;
 import static org.briarproject.nullsafety.NullSafety.requireNonNull;
 
 public class BriarService extends Service {
 
 	public static String EXTRA_START_RESULT =
-			"org.briarproject.briar.START_RESULT";
+			"com.ksmessaging.START_RESULT";
 	public static String EXTRA_STARTUP_FAILED =
-			"org.briarproject.briar.STARTUP_FAILED";
+			"com.ksmessaging.STARTUP_FAILED";
 
 	private static final Logger LOG =
 			Logger.getLogger(BriarService.class.getName());

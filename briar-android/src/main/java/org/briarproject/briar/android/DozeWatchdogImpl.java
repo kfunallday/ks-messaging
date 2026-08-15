@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.content.IntentFilter;
 import android.os.PowerManager;
 
 import org.briarproject.bramble.api.lifecycle.Service;
-import org.briarproject.briar.api.android.DozeWatchdog;
+import com.ksmessaging.api.android.DozeWatchdog;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.logging.Logger;

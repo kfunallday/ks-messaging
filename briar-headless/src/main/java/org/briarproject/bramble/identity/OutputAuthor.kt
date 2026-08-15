@@ -1,8 +1,8 @@
 package org.briarproject.bramble.identity
 
 import org.briarproject.bramble.api.identity.Author
-import org.briarproject.briar.api.identity.AuthorInfo
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.api.identity.AuthorInfo
+import com.ksmessaging.headless.json.JsonDict
 import java.util.Locale
 
 fun Author.output() = JsonDict(

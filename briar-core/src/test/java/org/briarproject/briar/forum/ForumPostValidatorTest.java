@@ -1,4 +1,4 @@
-package org.briarproject.briar.forum;
+package com.ksmessaging.forum;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.UniqueId;
@@ -21,12 +21,12 @@ import static org.briarproject.bramble.test.TestUtils.getAuthor;
 import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_READ;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_AUTHOR;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_PARENT;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_TIMESTAMP;
-import static org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_POST_TEXT_LENGTH;
-import static org.briarproject.briar.api.forum.ForumPostFactory.SIGNING_LABEL_POST;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_READ;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_AUTHOR;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_PARENT;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_TIMESTAMP;
+import static com.ksmessaging.api.forum.ForumConstants.MAX_FORUM_POST_TEXT_LENGTH;
+import static com.ksmessaging.api.forum.ForumPostFactory.SIGNING_LABEL_POST;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

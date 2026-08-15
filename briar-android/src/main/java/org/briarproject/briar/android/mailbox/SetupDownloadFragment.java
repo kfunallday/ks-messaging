@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.mailbox;
+package com.ksmessaging.android.mailbox;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -20,8 +20,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.ViewModelProvider;
 
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

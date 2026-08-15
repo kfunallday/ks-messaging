@@ -1,12 +1,12 @@
-package org.briarproject.briar.android.contactselection;
+package com.ksmessaging.android.contactselection;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.contact.OnContactClickListener;
+import com.ksmessaging.R;
+import com.ksmessaging.android.contact.OnContactClickListener;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 @NotNullByDefault

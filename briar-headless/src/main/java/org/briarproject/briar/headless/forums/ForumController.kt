@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless.forums
+package com.ksmessaging.headless.forums
 
 import io.javalin.http.Context
 

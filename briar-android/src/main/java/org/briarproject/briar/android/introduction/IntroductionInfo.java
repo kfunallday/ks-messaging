@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.introduction;
+package com.ksmessaging.android.introduction;
 
-import org.briarproject.briar.android.contact.ContactItem;
+import com.ksmessaging.android.contact.ContactItem;
 
 class IntroductionInfo {
 	private final ContactItem c1;

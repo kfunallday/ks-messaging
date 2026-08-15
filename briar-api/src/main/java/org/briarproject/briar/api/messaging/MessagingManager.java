@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.messaging;
+package com.ksmessaging.api.messaging;
 
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.db.DbException;
@@ -6,9 +6,9 @@ import org.briarproject.bramble.api.db.Transaction;
 import org.briarproject.bramble.api.sync.ClientId;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.attachment.FileTooBigException;
-import org.briarproject.briar.api.conversation.ConversationManager.ConversationClient;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.FileTooBigException;
+import com.ksmessaging.api.conversation.ConversationManager.ConversationClient;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.IOException;
@@ -22,7 +22,7 @@ public interface MessagingManager extends ConversationClient {
 	/**
 	 * The unique ID of the messaging client.
 	 */
-	ClientId CLIENT_ID = new ClientId("org.briarproject.briar.messaging");
+	ClientId CLIENT_ID = new ClientId("com.ksmessaging.messaging");
 
 	/**
 	 * The current major version of the messaging client.

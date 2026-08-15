@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.text.util.Linkify;
 import android.view.View;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.CallSuper;
@@ -14,7 +14,7 @@ import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 import static org.briarproject.bramble.util.StringUtils.isNullOrEmpty;
 import static org.briarproject.bramble.util.StringUtils.trim;
-import static org.briarproject.briar.android.util.UiUtils.makeLinksClickable;
+import static com.ksmessaging.android.util.UiUtils.makeLinksClickable;
 
 @UiThread
 @NotNullByDefault

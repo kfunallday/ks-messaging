@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 import android.annotation.SuppressLint;
 import android.app.KeyguardManager;
@@ -12,10 +12,10 @@ import android.os.Bundle;
 import android.os.CancellationSignal;
 import android.widget.Toast;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BaseActivity;
-import org.briarproject.briar.api.android.LockManager;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BaseActivity;
+import com.ksmessaging.api.android.LockManager;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -31,9 +31,9 @@ import static android.hardware.biometrics.BiometricPrompt.BIOMETRIC_ERROR_USER_C
 import static android.os.Build.VERSION.SDK_INT;
 import static android.view.View.INVISIBLE;
 import static android.widget.Toast.LENGTH_LONG;
-import static org.briarproject.briar.android.activity.RequestCodes.REQUEST_KEYGUARD_UNLOCK;
-import static org.briarproject.briar.android.util.UiUtils.hasKeyguardLock;
-import static org.briarproject.briar.android.util.UiUtils.hasUsableFingerprint;
+import static com.ksmessaging.android.activity.RequestCodes.REQUEST_KEYGUARD_UNLOCK;
+import static com.ksmessaging.android.util.UiUtils.hasKeyguardLock;
+import static com.ksmessaging.android.util.UiUtils.hasUsableFingerprint;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

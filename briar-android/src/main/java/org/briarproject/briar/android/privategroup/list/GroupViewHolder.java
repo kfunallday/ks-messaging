@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.list;
+package com.ksmessaging.android.privategroup.list;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,10 +8,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.privategroup.conversation.GroupActivity;
-import org.briarproject.briar.android.util.UiUtils;
-import org.briarproject.briar.android.view.TextAvatarView;
+import com.ksmessaging.R;
+import com.ksmessaging.android.privategroup.conversation.GroupActivity;
+import com.ksmessaging.android.util.UiUtils;
+import com.ksmessaging.android.view.TextAvatarView;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -19,9 +19,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
-import static org.briarproject.briar.android.activity.BriarActivity.GROUP_ID;
-import static org.briarproject.briar.android.activity.BriarActivity.GROUP_NAME;
-import static org.briarproject.briar.android.util.UiUtils.getContactDisplayName;
+import static com.ksmessaging.android.activity.BriarActivity.GROUP_ID;
+import static com.ksmessaging.android.activity.BriarActivity.GROUP_NAME;
+import static com.ksmessaging.android.util.UiUtils.getContactDisplayName;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

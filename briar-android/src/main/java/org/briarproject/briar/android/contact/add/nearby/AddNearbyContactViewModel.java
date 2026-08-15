@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact.add.nearby;
+package com.ksmessaging.android.contact.add.nearby;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
@@ -46,22 +46,22 @@ import org.briarproject.bramble.api.plugin.event.TransportStateEvent;
 import org.briarproject.bramble.api.qrcode.WrongQrCodeTypeException;
 import org.briarproject.bramble.api.system.AndroidExecutor;
 import org.briarproject.bramble.plugin.bluetooth.BluetoothPlugin;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.ContactExchangeFinished;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.ContactExchangeResult.Error;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.ContactExchangeResult.Success;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.ContactExchangeStarted;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.Failed;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.Failed.WrongQrCodeType;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.Failed.WrongQrCodeVersion;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.KeyAgreementListening;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.KeyAgreementStarted;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.KeyAgreementWaiting;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.QrCodeScanned;
-import org.briarproject.briar.android.qrcode.QrCodeDecoder;
-import org.briarproject.briar.android.qrcode.QrCodeUtils;
-import org.briarproject.briar.android.viewmodel.LiveEvent;
-import org.briarproject.briar.android.viewmodel.MutableLiveEvent;
+import com.ksmessaging.R;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.ContactExchangeFinished;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.ContactExchangeResult.Error;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.ContactExchangeResult.Success;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.ContactExchangeStarted;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.Failed;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.Failed.WrongQrCodeType;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.Failed.WrongQrCodeVersion;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.KeyAgreementListening;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.KeyAgreementStarted;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.KeyAgreementWaiting;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.QrCodeScanned;
+import com.ksmessaging.android.qrcode.QrCodeDecoder;
+import com.ksmessaging.android.qrcode.QrCodeUtils;
+import com.ksmessaging.android.viewmodel.LiveEvent;
+import com.ksmessaging.android.viewmodel.MutableLiveEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.IOException;
@@ -91,12 +91,12 @@ import static org.briarproject.bramble.api.plugin.Plugin.State.STARTING_STOPPING
 import static org.briarproject.bramble.util.AndroidUtils.registerReceiver;
 import static org.briarproject.bramble.util.LogUtils.logException;
 import static org.briarproject.bramble.util.StringUtils.ISO_8859_1;
-import static org.briarproject.briar.android.contact.add.nearby.AddNearbyContactPermissionManager.areEssentialPermissionsGranted;
-import static org.briarproject.briar.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision.NO_ADAPTER;
-import static org.briarproject.briar.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision.REFUSED;
-import static org.briarproject.briar.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision.UNKNOWN;
-import static org.briarproject.briar.android.util.PermissionUtils.isLocationEnabledForBt;
-import static org.briarproject.briar.android.util.UiUtils.handleException;
+import static com.ksmessaging.android.contact.add.nearby.AddNearbyContactPermissionManager.areEssentialPermissionsGranted;
+import static com.ksmessaging.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision.NO_ADAPTER;
+import static com.ksmessaging.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision.REFUSED;
+import static com.ksmessaging.android.contact.add.nearby.AddNearbyContactViewModel.BluetoothDecision.UNKNOWN;
+import static com.ksmessaging.android.util.PermissionUtils.isLocationEnabledForBt;
+import static com.ksmessaging.android.util.UiUtils.handleException;
 
 @NotNullByDefault
 class AddNearbyContactViewModel extends AndroidViewModel

@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -12,12 +12,12 @@ import org.briarproject.bramble.api.identity.IdentityManager;
 import org.briarproject.bramble.api.identity.LocalAuthor;
 import org.briarproject.bramble.api.sync.ClientId;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogInvitationResponse;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogManager.RemoveBlogHook;
-import org.briarproject.briar.api.blog.BlogSharingManager;
-import org.briarproject.briar.api.client.MessageTracker;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogInvitationResponse;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogManager.RemoveBlogHook;
+import com.ksmessaging.api.blog.BlogSharingManager;
+import com.ksmessaging.api.client.MessageTracker;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
@@ -7,7 +7,7 @@ import org.briarproject.nullsafety.NotNullByDefault;
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 
-import static org.briarproject.briar.sharing.State.START;
+import static com.ksmessaging.sharing.State.START;
 
 @Immutable
 @NotNullByDefault

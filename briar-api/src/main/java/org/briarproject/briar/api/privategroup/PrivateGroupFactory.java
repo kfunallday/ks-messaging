@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.privategroup;
+package com.ksmessaging.api.privategroup;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.identity.Author;

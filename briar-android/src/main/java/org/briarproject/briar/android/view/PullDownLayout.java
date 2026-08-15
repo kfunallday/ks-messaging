@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

@@ -1,9 +1,9 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import android.content.Context;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.api.sharing.SharingInvitationItem;
+import com.ksmessaging.api.sharing.SharingInvitationItem;
 
 class SharingInvitationAdapter extends
 		InvitationAdapter<SharingInvitationItem, SharingInvitationViewHolder> {

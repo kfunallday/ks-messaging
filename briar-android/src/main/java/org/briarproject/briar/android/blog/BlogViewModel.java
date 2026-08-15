@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.app.Application;
 
@@ -15,16 +15,16 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.event.GroupRemovedEvent;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.sharing.SharingController;
-import org.briarproject.briar.android.sharing.SharingController.SharingInfo;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogInvitationResponse;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogSharingManager;
-import org.briarproject.briar.api.blog.event.BlogInvitationResponseReceivedEvent;
-import org.briarproject.briar.api.blog.event.BlogPostAddedEvent;
-import org.briarproject.briar.api.sharing.event.ContactLeftShareableEvent;
+import com.ksmessaging.android.sharing.SharingController;
+import com.ksmessaging.android.sharing.SharingController.SharingInfo;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogInvitationResponse;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogSharingManager;
+import com.ksmessaging.api.blog.event.BlogInvitationResponseReceivedEvent;
+import com.ksmessaging.api.blog.event.BlogPostAddedEvent;
+import com.ksmessaging.api.sharing.event.ContactLeftShareableEvent;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

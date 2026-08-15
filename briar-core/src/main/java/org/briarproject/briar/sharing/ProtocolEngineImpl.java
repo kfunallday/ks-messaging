@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -17,11 +17,11 @@ import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.client.ProtocolStateException;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.sharing.Shareable;
-import org.briarproject.briar.api.sharing.event.ContactLeftShareableEvent;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.client.ProtocolStateException;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.sharing.Shareable;
+import com.ksmessaging.api.sharing.event.ContactLeftShareableEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Map;
@@ -33,18 +33,18 @@ import static java.lang.Math.max;
 import static org.briarproject.bramble.api.sync.Group.Visibility.INVISIBLE;
 import static org.briarproject.bramble.api.sync.Group.Visibility.SHARED;
 import static org.briarproject.bramble.api.sync.Group.Visibility.VISIBLE;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.sharing.MessageType.ABORT;
-import static org.briarproject.briar.sharing.MessageType.ACCEPT;
-import static org.briarproject.briar.sharing.MessageType.DECLINE;
-import static org.briarproject.briar.sharing.MessageType.INVITE;
-import static org.briarproject.briar.sharing.MessageType.LEAVE;
-import static org.briarproject.briar.sharing.State.LOCAL_INVITED;
-import static org.briarproject.briar.sharing.State.LOCAL_LEFT;
-import static org.briarproject.briar.sharing.State.REMOTE_HANGING;
-import static org.briarproject.briar.sharing.State.REMOTE_INVITED;
-import static org.briarproject.briar.sharing.State.SHARING;
-import static org.briarproject.briar.sharing.State.START;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.sharing.MessageType.ABORT;
+import static com.ksmessaging.sharing.MessageType.ACCEPT;
+import static com.ksmessaging.sharing.MessageType.DECLINE;
+import static com.ksmessaging.sharing.MessageType.INVITE;
+import static com.ksmessaging.sharing.MessageType.LEAVE;
+import static com.ksmessaging.sharing.State.LOCAL_INVITED;
+import static com.ksmessaging.sharing.State.LOCAL_LEFT;
+import static com.ksmessaging.sharing.State.REMOTE_HANGING;
+import static com.ksmessaging.sharing.State.REMOTE_INVITED;
+import static com.ksmessaging.sharing.State.SHARING;
+import static com.ksmessaging.sharing.State.START;
 
 @Immutable
 @NotNullByDefault

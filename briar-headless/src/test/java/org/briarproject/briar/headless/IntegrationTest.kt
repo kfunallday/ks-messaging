@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless
+package com.ksmessaging.headless
 
 import io.javalin.Javalin
 import io.javalin.core.util.Header.AUTHORIZATION
@@ -10,8 +10,8 @@ import okhttp3.Response
 import org.briarproject.bramble.BrambleCoreEagerSingletons
 import org.briarproject.bramble.BrambleJavaEagerSingletons
 import org.briarproject.bramble.api.crypto.CryptoComponent
-import org.briarproject.briar.BriarCoreEagerSingletons
-import org.briarproject.briar.api.test.TestDataCreator
+import com.ksmessaging.BriarCoreEagerSingletons
+import com.ksmessaging.api.test.TestDataCreator
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.TestInstance

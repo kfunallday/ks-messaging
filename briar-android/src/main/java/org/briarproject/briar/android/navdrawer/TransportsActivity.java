@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.navdrawer;
+package com.ksmessaging.android.navdrawer;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,9 +18,9 @@ import org.briarproject.bramble.api.plugin.LanTcpConstants;
 import org.briarproject.bramble.api.plugin.Plugin.State;
 import org.briarproject.bramble.api.plugin.TorConstants;
 import org.briarproject.bramble.api.plugin.TransportId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -53,12 +53,12 @@ import static org.briarproject.bramble.api.plugin.Plugin.State.STARTING_STOPPING
 import static org.briarproject.bramble.api.plugin.TorConstants.REASON_BATTERY;
 import static org.briarproject.bramble.api.plugin.TorConstants.REASON_COUNTRY_BLOCKED;
 import static org.briarproject.bramble.api.plugin.TorConstants.REASON_MOBILE_DATA;
-import static org.briarproject.briar.android.util.PermissionUtils.areBluetoothPermissionsGranted;
-import static org.briarproject.briar.android.util.PermissionUtils.requestBluetoothPermissions;
-import static org.briarproject.briar.android.util.PermissionUtils.showDenialDialog;
-import static org.briarproject.briar.android.util.PermissionUtils.showRationale;
-import static org.briarproject.briar.android.util.PermissionUtils.wasGrantedBluetoothPermissions;
-import static org.briarproject.briar.android.util.UiUtils.showOnboardingDialog;
+import static com.ksmessaging.android.util.PermissionUtils.areBluetoothPermissionsGranted;
+import static com.ksmessaging.android.util.PermissionUtils.requestBluetoothPermissions;
+import static com.ksmessaging.android.util.PermissionUtils.showDenialDialog;
+import static com.ksmessaging.android.util.PermissionUtils.showRationale;
+import static com.ksmessaging.android.util.PermissionUtils.wasGrantedBluetoothPermissions;
+import static com.ksmessaging.android.util.UiUtils.showOnboardingDialog;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

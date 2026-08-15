@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.forum;
+package com.ksmessaging.android.forum;
 
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
@@ -9,13 +9,13 @@ import android.view.MenuItem;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.sharing.ForumSharingStatusActivity;
-import org.briarproject.briar.android.sharing.ShareForumActivity;
-import org.briarproject.briar.android.threaded.ThreadItemAdapter;
-import org.briarproject.briar.android.threaded.ThreadListActivity;
-import org.briarproject.briar.android.threaded.ThreadListViewModel;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.sharing.ForumSharingStatusActivity;
+import com.ksmessaging.android.sharing.ShareForumActivity;
+import com.ksmessaging.android.threaded.ThreadItemAdapter;
+import com.ksmessaging.android.threaded.ThreadListActivity;
+import com.ksmessaging.android.threaded.ThreadListViewModel;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -26,9 +26,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
 
 import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP;
-import static org.briarproject.briar.android.activity.RequestCodes.REQUEST_SHARE_FORUM;
-import static org.briarproject.briar.android.util.UiUtils.observeOnce;
-import static org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_POST_TEXT_LENGTH;
+import static com.ksmessaging.android.activity.RequestCodes.REQUEST_SHARE_FORUM;
+import static com.ksmessaging.android.util.UiUtils.observeOnce;
+import static com.ksmessaging.api.forum.ForumConstants.MAX_FORUM_POST_TEXT_LENGTH;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

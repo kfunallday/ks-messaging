@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.data.BdfDictionary;
@@ -6,10 +6,10 @@ import org.briarproject.bramble.api.data.BdfEntry;
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.plugin.TransportId;
 import org.briarproject.bramble.api.transport.KeySetId;
-import org.briarproject.briar.introduction.IntroduceeSession.Common;
-import org.briarproject.briar.introduction.IntroduceeSession.Local;
-import org.briarproject.briar.introduction.IntroduceeSession.Remote;
-import org.briarproject.briar.introduction.IntroducerSession.Introducee;
+import com.ksmessaging.introduction.IntroduceeSession.Common;
+import com.ksmessaging.introduction.IntroduceeSession.Local;
+import com.ksmessaging.introduction.IntroduceeSession.Remote;
+import com.ksmessaging.introduction.IntroducerSession.Introducee;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Map;
@@ -20,31 +20,31 @@ import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
 import static org.briarproject.bramble.api.data.BdfDictionary.NULL_VALUE;
-import static org.briarproject.briar.api.introduction.Role.INTRODUCEE;
-import static org.briarproject.briar.api.introduction.Role.INTRODUCER;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_ACCEPT_TIMESTAMP;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_ALICE;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_AUTHOR;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_EPHEMERAL_PRIVATE_KEY;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_EPHEMERAL_PUBLIC_KEY;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_GROUP_ID;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_INTRODUCEE_A;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_INTRODUCEE_B;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_INTRODUCER;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_LAST_LOCAL_MESSAGE_ID;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_LAST_REMOTE_MESSAGE_ID;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_LOCAL;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_LOCAL_TIMESTAMP;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_MAC_KEY;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_MASTER_KEY;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_REMOTE;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_REMOTE_AUTHOR;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_REQUEST_TIMESTAMP;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_ROLE;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_SESSION_ID;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_STATE;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_TRANSPORT_KEYS;
-import static org.briarproject.briar.introduction.IntroductionConstants.SESSION_KEY_TRANSPORT_PROPERTIES;
+import static com.ksmessaging.api.introduction.Role.INTRODUCEE;
+import static com.ksmessaging.api.introduction.Role.INTRODUCER;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_ACCEPT_TIMESTAMP;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_ALICE;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_AUTHOR;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_EPHEMERAL_PRIVATE_KEY;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_EPHEMERAL_PUBLIC_KEY;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_GROUP_ID;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_INTRODUCEE_A;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_INTRODUCEE_B;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_INTRODUCER;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_LAST_LOCAL_MESSAGE_ID;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_LAST_REMOTE_MESSAGE_ID;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_LOCAL;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_LOCAL_TIMESTAMP;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_MAC_KEY;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_MASTER_KEY;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_REMOTE;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_REMOTE_AUTHOR;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_REQUEST_TIMESTAMP;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_ROLE;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_SESSION_ID;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_STATE;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_TRANSPORT_KEYS;
+import static com.ksmessaging.introduction.IntroductionConstants.SESSION_KEY_TRANSPORT_PROPERTIES;
 
 @Immutable
 @NotNullByDefault

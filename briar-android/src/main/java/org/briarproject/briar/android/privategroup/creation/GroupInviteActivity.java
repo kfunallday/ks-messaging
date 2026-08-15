@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.creation;
+package com.ksmessaging.android.privategroup.creation;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,10 +6,10 @@ import android.os.Bundle;
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.contactselection.ContactSelectorActivity;
-import org.briarproject.briar.android.controller.handler.UiResultExceptionHandler;
-import org.briarproject.briar.android.sharing.BaseMessageFragment.MessageFragmentListener;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.contactselection.ContactSelectorActivity;
+import com.ksmessaging.android.controller.handler.UiResultExceptionHandler;
+import com.ksmessaging.android.sharing.BaseMessageFragment.MessageFragmentListener;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -18,7 +18,7 @@ import java.util.Collection;
 import javax.annotation.Nullable;
 import javax.inject.Inject;
 
-import static org.briarproject.briar.api.privategroup.PrivateGroupConstants.MAX_GROUP_INVITATION_TEXT_LENGTH;
+import static com.ksmessaging.api.privategroup.PrivateGroupConstants.MAX_GROUP_INVITATION_TEXT_LENGTH;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

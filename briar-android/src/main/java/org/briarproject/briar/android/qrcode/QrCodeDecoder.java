@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.qrcode;
+package com.ksmessaging.android.qrcode;
 
 import android.hardware.Camera;
 import android.hardware.Camera.PreviewCallback;

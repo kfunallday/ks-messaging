@@ -1,8 +1,8 @@
-package org.briarproject.briar.android.forum;
+package com.ksmessaging.android.forum;
 
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumPostHeader;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.forum.ForumPostHeader;
 
 import javax.annotation.concurrent.Immutable;
 

@@ -1,9 +1,9 @@
-package org.briarproject.briar.api.sharing;
+package com.ksmessaging.api.sharing;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationResponse;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationResponse;
 
 public abstract class InvitationResponse extends ConversationResponse {
 

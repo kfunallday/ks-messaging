@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.app.Application;
 import android.content.Context;
@@ -33,34 +33,34 @@ import org.briarproject.bramble.plugin.tcp.AndroidLanTcpPluginFactory;
 import org.briarproject.bramble.plugin.tor.AndroidTorPluginFactory;
 import org.briarproject.bramble.util.AndroidUtils;
 import org.briarproject.bramble.util.StringUtils;
-import org.briarproject.briar.android.account.DozeHelperModule;
-import org.briarproject.briar.android.account.LockManagerImpl;
-import org.briarproject.briar.android.account.SetupModule;
-import org.briarproject.briar.android.blog.BlogModule;
-import org.briarproject.briar.android.contact.ContactListModule;
-import org.briarproject.briar.android.contact.add.nearby.AddNearbyContactModule;
-import org.briarproject.briar.android.contact.connect.ConnectViaBluetoothModule;
-import org.briarproject.briar.android.forum.ForumModule;
-import org.briarproject.briar.android.hotspot.HotspotModule;
-import org.briarproject.briar.android.introduction.IntroductionModule;
-import org.briarproject.briar.android.logging.LoggingModule;
-import org.briarproject.briar.android.login.LoginModule;
-import org.briarproject.briar.android.mailbox.MailboxModule;
-import org.briarproject.briar.android.navdrawer.NavDrawerModule;
-import org.briarproject.briar.android.privategroup.conversation.GroupConversationModule;
-import org.briarproject.briar.android.privategroup.list.GroupListModule;
-import org.briarproject.briar.android.removabledrive.TransferDataModule;
-import org.briarproject.briar.android.reporting.DevReportModule;
-import org.briarproject.briar.android.settings.SettingsModule;
-import org.briarproject.briar.android.sharing.SharingModule;
-import org.briarproject.briar.android.test.TestAvatarCreatorImpl;
-import org.briarproject.briar.android.viewmodel.ViewModelModule;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.android.DozeWatchdog;
-import org.briarproject.briar.api.android.LockManager;
-import org.briarproject.briar.api.android.NetworkUsageMetrics;
-import org.briarproject.briar.api.android.ScreenFilterMonitor;
-import org.briarproject.briar.api.test.TestAvatarCreator;
+import com.ksmessaging.android.account.DozeHelperModule;
+import com.ksmessaging.android.account.LockManagerImpl;
+import com.ksmessaging.android.account.SetupModule;
+import com.ksmessaging.android.blog.BlogModule;
+import com.ksmessaging.android.contact.ContactListModule;
+import com.ksmessaging.android.contact.add.nearby.AddNearbyContactModule;
+import com.ksmessaging.android.contact.connect.ConnectViaBluetoothModule;
+import com.ksmessaging.android.forum.ForumModule;
+import com.ksmessaging.android.hotspot.HotspotModule;
+import com.ksmessaging.android.introduction.IntroductionModule;
+import com.ksmessaging.android.logging.LoggingModule;
+import com.ksmessaging.android.login.LoginModule;
+import com.ksmessaging.android.mailbox.MailboxModule;
+import com.ksmessaging.android.navdrawer.NavDrawerModule;
+import com.ksmessaging.android.privategroup.conversation.GroupConversationModule;
+import com.ksmessaging.android.privategroup.list.GroupListModule;
+import com.ksmessaging.android.removabledrive.TransferDataModule;
+import com.ksmessaging.android.reporting.DevReportModule;
+import com.ksmessaging.android.settings.SettingsModule;
+import com.ksmessaging.android.sharing.SharingModule;
+import com.ksmessaging.android.test.TestAvatarCreatorImpl;
+import com.ksmessaging.android.viewmodel.ViewModelModule;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.android.DozeWatchdog;
+import com.ksmessaging.api.android.LockManager;
+import com.ksmessaging.api.android.NetworkUsageMetrics;
+import com.ksmessaging.api.android.ScreenFilterMonitor;
+import com.ksmessaging.api.test.TestAvatarCreator;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.File;
@@ -85,7 +85,7 @@ import static org.briarproject.bramble.api.plugin.TorConstants.DEFAULT_CONTROL_P
 import static org.briarproject.bramble.api.plugin.TorConstants.DEFAULT_SOCKS_PORT;
 import static org.briarproject.bramble.api.reporting.ReportingConstants.DEV_ONION_ADDRESS;
 import static org.briarproject.bramble.api.reporting.ReportingConstants.DEV_PUBLIC_KEY_HEX;
-import static org.briarproject.briar.android.TestingConstants.IS_DEBUG_BUILD;
+import static com.ksmessaging.android.TestingConstants.IS_DEBUG_BUILD;
 
 @Module(includes = {
 		SetupModule.class,

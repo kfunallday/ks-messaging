@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.widget;
+package com.ksmessaging.android.widget;
 
 
 import android.content.Context;
@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

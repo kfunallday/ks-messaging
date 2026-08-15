@@ -1,20 +1,20 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.ProtocolStateException;
+import com.ksmessaging.api.client.ProtocolStateException;
 import org.jmock.Expectations;
 import org.junit.Test;
 
 import static org.briarproject.bramble.api.sync.Group.Visibility.INVISIBLE;
 import static org.briarproject.bramble.api.sync.Group.Visibility.SHARED;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.DISSOLVED;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.ERROR;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.INVITED;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.JOINED;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.LEFT;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.START;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.privategroup.invitation.CreatorState.DISSOLVED;
+import static com.ksmessaging.privategroup.invitation.CreatorState.ERROR;
+import static com.ksmessaging.privategroup.invitation.CreatorState.INVITED;
+import static com.ksmessaging.privategroup.invitation.CreatorState.JOINED;
+import static com.ksmessaging.privategroup.invitation.CreatorState.LEFT;
+import static com.ksmessaging.privategroup.invitation.CreatorState.START;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 

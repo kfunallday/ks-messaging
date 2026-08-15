@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.navdrawer;
+package com.ksmessaging.android.navdrawer;
 
 import android.view.Gravity;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.BriarUiTestComponent;
-import org.briarproject.briar.android.UiTest;
-import org.briarproject.briar.android.settings.SettingsActivity;
+import com.ksmessaging.R;
+import com.ksmessaging.android.BriarUiTestComponent;
+import com.ksmessaging.android.UiTest;
+import com.ksmessaging.android.settings.SettingsActivity;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;

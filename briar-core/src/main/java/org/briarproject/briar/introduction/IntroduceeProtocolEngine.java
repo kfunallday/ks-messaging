@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -26,16 +26,16 @@ import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.transport.KeyManager;
 import org.briarproject.bramble.api.transport.KeySetId;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.ProtocolStateException;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.introduction.IntroductionRequest;
-import org.briarproject.briar.api.introduction.event.IntroductionAbortedEvent;
-import org.briarproject.briar.api.introduction.event.IntroductionRequestReceivedEvent;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.ProtocolStateException;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.introduction.IntroductionRequest;
+import com.ksmessaging.api.introduction.event.IntroductionAbortedEvent;
+import com.ksmessaging.api.introduction.event.IntroductionRequestReceivedEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -51,13 +51,13 @@ import static java.lang.Math.max;
 import static java.util.logging.Level.WARNING;
 import static org.briarproject.bramble.api.system.Clock.MIN_REASONABLE_TIME_MS;
 import static org.briarproject.bramble.util.LogUtils.logException;
-import static org.briarproject.briar.introduction.IntroduceeState.AWAIT_AUTH;
-import static org.briarproject.briar.introduction.IntroduceeState.AWAIT_RESPONSES;
-import static org.briarproject.briar.introduction.IntroduceeState.LOCAL_ACCEPTED;
-import static org.briarproject.briar.introduction.IntroduceeState.LOCAL_DECLINED;
-import static org.briarproject.briar.introduction.IntroduceeState.REMOTE_ACCEPTED;
-import static org.briarproject.briar.introduction.IntroduceeState.REMOTE_DECLINED;
-import static org.briarproject.briar.introduction.IntroduceeState.START;
+import static com.ksmessaging.introduction.IntroduceeState.AWAIT_AUTH;
+import static com.ksmessaging.introduction.IntroduceeState.AWAIT_RESPONSES;
+import static com.ksmessaging.introduction.IntroduceeState.LOCAL_ACCEPTED;
+import static com.ksmessaging.introduction.IntroduceeState.LOCAL_DECLINED;
+import static com.ksmessaging.introduction.IntroduceeState.REMOTE_ACCEPTED;
+import static com.ksmessaging.introduction.IntroduceeState.REMOTE_DECLINED;
+import static com.ksmessaging.introduction.IntroduceeState.START;
 import static org.briarproject.nullsafety.NullSafety.requireNonNull;
 
 @Immutable

@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.client.ContactGroupFactory;
@@ -18,11 +18,11 @@ import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
 import org.briarproject.bramble.test.BrambleMockTestCase;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogInvitationResponse;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.SessionId;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogInvitationResponse;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.SessionId;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -38,8 +38,8 @@ import static org.briarproject.bramble.test.TestUtils.getGroup;
 import static org.briarproject.bramble.test.TestUtils.getLocalAuthor;
 import static org.briarproject.bramble.test.TestUtils.getMessage;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.briar.api.blog.BlogSharingManager.CLIENT_ID;
-import static org.briarproject.briar.api.blog.BlogSharingManager.MAJOR_VERSION;
+import static com.ksmessaging.api.blog.BlogSharingManager.CLIENT_ID;
+import static com.ksmessaging.api.blog.BlogSharingManager.MAJOR_VERSION;
 
 public class BlogSharingManagerImplTest extends BrambleMockTestCase {
 

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.creation;
+package com.ksmessaging.android.privategroup.creation;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -14,9 +14,9 @@ import android.widget.ProgressBar;
 import com.google.android.material.textfield.TextInputLayout;
 
 import org.briarproject.bramble.util.StringUtils;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -25,9 +25,9 @@ import androidx.annotation.Nullable;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 import static android.view.inputmethod.EditorInfo.IME_ACTION_DONE;
-import static org.briarproject.briar.android.util.UiUtils.enterPressed;
-import static org.briarproject.briar.android.util.UiUtils.hideSoftKeyboard;
-import static org.briarproject.briar.api.privategroup.PrivateGroupConstants.MAX_GROUP_NAME_LENGTH;
+import static com.ksmessaging.android.util.UiUtils.enterPressed;
+import static com.ksmessaging.android.util.UiUtils.hideSoftKeyboard;
+import static com.ksmessaging.api.privategroup.PrivateGroupConstants.MAX_GROUP_NAME_LENGTH;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

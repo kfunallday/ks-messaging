@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contactselection;
+package com.ksmessaging.android.contactselection;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.contact.ContactId;
@@ -7,11 +7,11 @@ import org.briarproject.bramble.api.db.DatabaseExecutor;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.android.controller.DbControllerImpl;
-import org.briarproject.briar.android.controller.handler.ResultExceptionHandler;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.sharing.SharingManager.SharingStatus;
+import com.ksmessaging.android.controller.DbControllerImpl;
+import com.ksmessaging.android.controller.handler.ResultExceptionHandler;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.sharing.SharingManager.SharingStatus;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;

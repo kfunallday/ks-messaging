@@ -1,17 +1,17 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.introduction.Role;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.introduction.Role;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 
-import static org.briarproject.briar.api.introduction.Role.INTRODUCER;
+import static com.ksmessaging.api.introduction.Role.INTRODUCER;
 
 @Immutable
 @NotNullByDefault

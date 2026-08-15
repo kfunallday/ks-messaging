@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.fragment;
+package com.ksmessaging.android.fragment;
 
 import org.briarproject.bramble.api.event.EventBus;
 import org.briarproject.bramble.api.event.EventListener;

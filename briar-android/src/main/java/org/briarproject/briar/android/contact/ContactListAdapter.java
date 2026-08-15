@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.contact;
+package com.ksmessaging.android.contact;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.briarproject.nullsafety.NullSafety;
 

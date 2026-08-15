@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
-import org.briarproject.briar.android.util.ItemReturningAdapter;
+import com.ksmessaging.android.util.ItemReturningAdapter;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.CallSuper;

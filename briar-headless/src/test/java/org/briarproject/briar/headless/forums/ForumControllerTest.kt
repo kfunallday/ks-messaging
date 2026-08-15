@@ -1,14 +1,14 @@
-package org.briarproject.briar.headless.forums
+package com.ksmessaging.headless.forums
 
 import io.javalin.http.BadRequestResponse
 import io.mockk.every
 import io.mockk.mockk
 import org.briarproject.bramble.test.TestUtils.getRandomBytes
 import org.briarproject.bramble.util.StringUtils.getRandomString
-import org.briarproject.briar.api.forum.Forum
-import org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH
-import org.briarproject.briar.api.forum.ForumManager
-import org.briarproject.briar.headless.ControllerTest
+import com.ksmessaging.api.forum.Forum
+import com.ksmessaging.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH
+import com.ksmessaging.api.forum.ForumManager
+import com.ksmessaging.headless.ControllerTest
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Test
 

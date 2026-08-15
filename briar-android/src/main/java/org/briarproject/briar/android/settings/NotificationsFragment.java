@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -40,19 +40,19 @@ import static android.provider.Settings.System.DEFAULT_NOTIFICATION_URI;
 import static android.widget.Toast.LENGTH_SHORT;
 import static java.util.Objects.requireNonNull;
 import static org.briarproject.bramble.util.StringUtils.isNullOrEmpty;
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.activity.RequestCodes.REQUEST_RINGTONE;
-import static org.briarproject.briar.android.settings.SettingsActivity.enableAndPersist;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.BLOG_CHANNEL_ID;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.CONTACT_CHANNEL_ID;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.FORUM_CHANNEL_ID;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.GROUP_CHANNEL_ID;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_BLOG;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_FORUM;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_GROUP;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_PRIVATE;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_SOUND;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.PREF_NOTIFY_VIBRATION;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.activity.RequestCodes.REQUEST_RINGTONE;
+import static com.ksmessaging.android.settings.SettingsActivity.enableAndPersist;
+import static com.ksmessaging.api.android.AndroidNotificationManager.BLOG_CHANNEL_ID;
+import static com.ksmessaging.api.android.AndroidNotificationManager.CONTACT_CHANNEL_ID;
+import static com.ksmessaging.api.android.AndroidNotificationManager.FORUM_CHANNEL_ID;
+import static com.ksmessaging.api.android.AndroidNotificationManager.GROUP_CHANNEL_ID;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_BLOG;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_FORUM;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_GROUP;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_PRIVATE;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_SOUND;
+import static com.ksmessaging.api.android.AndroidNotificationManager.PREF_NOTIFY_VIBRATION;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

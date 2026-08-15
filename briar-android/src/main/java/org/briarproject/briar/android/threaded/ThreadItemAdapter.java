@@ -1,12 +1,12 @@
-package org.briarproject.briar.android.threaded;
+package com.ksmessaging.android.threaded;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.util.ItemReturningAdapter;
+import com.ksmessaging.R;
+import com.ksmessaging.android.util.ItemReturningAdapter;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

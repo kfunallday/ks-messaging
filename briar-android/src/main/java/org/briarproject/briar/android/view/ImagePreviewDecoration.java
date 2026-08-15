@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.view.View;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.recyclerview.widget.RecyclerView;

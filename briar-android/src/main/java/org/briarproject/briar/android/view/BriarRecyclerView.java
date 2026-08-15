@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 
 import javax.annotation.Nullable;
 
@@ -21,7 +21,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 
-import static org.briarproject.briar.android.util.UiUtils.MIN_DATE_RESOLUTION;
+import static com.ksmessaging.android.util.UiUtils.MIN_DATE_RESOLUTION;
 
 public class BriarRecyclerView extends FrameLayout {
 

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.attachment;
+package com.ksmessaging.android.attachment;
 
 import android.app.Application;
 
@@ -7,7 +7,7 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-import static org.briarproject.briar.android.attachment.AttachmentDimensions.getAttachmentDimensions;
+import static com.ksmessaging.android.attachment.AttachmentDimensions.getAttachmentDimensions;
 
 @Module
 public class AttachmentModule {

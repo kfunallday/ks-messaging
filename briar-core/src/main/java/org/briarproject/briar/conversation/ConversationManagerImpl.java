@@ -1,4 +1,4 @@
-package org.briarproject.briar.conversation;
+package com.ksmessaging.conversation;
 
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.contact.ContactId;
@@ -10,12 +10,12 @@ import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.conversation.ConversationMessageHeader;
-import org.briarproject.briar.api.conversation.DeletionResult;
-import org.briarproject.briar.api.conversation.event.ConversationMessageTrackedEvent;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.conversation.ConversationMessageHeader;
+import com.ksmessaging.api.conversation.DeletionResult;
+import com.ksmessaging.api.conversation.event.ConversationMessageTrackedEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;

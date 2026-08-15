@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.attachment.media;
+package com.ksmessaging.android.attachment.media;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -18,7 +18,7 @@ import static java.util.logging.Level.INFO;
 import static java.util.logging.Level.WARNING;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.util.IoUtils.tryToClose;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_IMAGE_SIZE;
+import static com.ksmessaging.api.attachment.MediaConstants.MAX_IMAGE_SIZE;
 
 class ImageCompressorImpl implements ImageCompressor {
 

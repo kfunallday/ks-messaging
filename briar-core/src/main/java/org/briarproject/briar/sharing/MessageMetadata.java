@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.nullsafety.NotNullByDefault;

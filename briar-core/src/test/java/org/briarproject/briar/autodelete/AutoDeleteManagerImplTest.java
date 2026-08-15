@@ -1,4 +1,4 @@
-package org.briarproject.briar.autodelete;
+package com.ksmessaging.autodelete;
 
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.client.ContactGroupFactory;
@@ -13,7 +13,7 @@ import org.briarproject.bramble.api.event.Event;
 import org.briarproject.bramble.api.sync.Group;
 import org.briarproject.bramble.api.sync.GroupFactory;
 import org.briarproject.bramble.test.BrambleMockTestCase;
-import org.briarproject.briar.api.autodelete.event.AutoDeleteTimerMirroredEvent;
+import com.ksmessaging.api.autodelete.event.AutoDeleteTimerMirroredEvent;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -21,15 +21,15 @@ import static java.util.Collections.singletonList;
 import static org.briarproject.bramble.api.client.ContactGroupConstants.GROUP_KEY_CONTACT_ID;
 import static org.briarproject.bramble.test.TestUtils.getContact;
 import static org.briarproject.bramble.test.TestUtils.getGroup;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.autodelete.AutoDeleteManager.CLIENT_ID;
-import static org.briarproject.briar.api.autodelete.AutoDeleteManager.MAJOR_VERSION;
-import static org.briarproject.briar.autodelete.AutoDeleteConstants.GROUP_KEY_PREVIOUS_TIMER;
-import static org.briarproject.briar.autodelete.AutoDeleteConstants.GROUP_KEY_TIMER;
-import static org.briarproject.briar.autodelete.AutoDeleteConstants.GROUP_KEY_TIMESTAMP;
-import static org.briarproject.briar.autodelete.AutoDeleteConstants.NO_PREVIOUS_TIMER;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.autodelete.AutoDeleteManager.CLIENT_ID;
+import static com.ksmessaging.api.autodelete.AutoDeleteManager.MAJOR_VERSION;
+import static com.ksmessaging.autodelete.AutoDeleteConstants.GROUP_KEY_PREVIOUS_TIMER;
+import static com.ksmessaging.autodelete.AutoDeleteConstants.GROUP_KEY_TIMER;
+import static com.ksmessaging.autodelete.AutoDeleteConstants.GROUP_KEY_TIMESTAMP;
+import static com.ksmessaging.autodelete.AutoDeleteConstants.NO_PREVIOUS_TIMER;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 

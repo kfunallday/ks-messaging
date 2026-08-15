@@ -1,12 +1,12 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogInvitationRequest;
-import org.briarproject.briar.api.blog.BlogInvitationResponse;
-import org.briarproject.briar.api.client.SessionId;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogInvitationRequest;
+import com.ksmessaging.api.blog.BlogInvitationResponse;
+import com.ksmessaging.api.client.SessionId;
 
 import javax.inject.Inject;
 

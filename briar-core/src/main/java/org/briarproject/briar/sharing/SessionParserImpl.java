@@ -1,25 +1,25 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.data.BdfDictionary;
 import org.briarproject.bramble.api.data.BdfEntry;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.SessionId;
+import com.ksmessaging.api.client.SessionId;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_INVITE_TIMESTAMP;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_IS_SESSION;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_LAST_LOCAL_MESSAGE_ID;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_LAST_REMOTE_MESSAGE_ID;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_LOCAL_TIMESTAMP;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_SESSION_ID;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_SHAREABLE_ID;
-import static org.briarproject.briar.sharing.SharingConstants.SESSION_KEY_STATE;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_INVITE_TIMESTAMP;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_IS_SESSION;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_LAST_LOCAL_MESSAGE_ID;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_LAST_REMOTE_MESSAGE_ID;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_LOCAL_TIMESTAMP;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_SESSION_ID;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_SHAREABLE_ID;
+import static com.ksmessaging.sharing.SharingConstants.SESSION_KEY_STATE;
 
 @Immutable
 @NotNullByDefault

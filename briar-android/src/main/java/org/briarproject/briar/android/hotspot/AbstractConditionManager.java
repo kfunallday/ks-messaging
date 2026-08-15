@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.hotspot;
+package com.ksmessaging.android.hotspot;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;

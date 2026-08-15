@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.navdrawer;
+package com.ksmessaging.android.navdrawer;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -25,19 +25,19 @@ import org.briarproject.bramble.api.plugin.LanTcpConstants;
 import org.briarproject.bramble.api.plugin.Plugin.State;
 import org.briarproject.bramble.api.plugin.TorConstants;
 import org.briarproject.bramble.api.plugin.TransportId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.BriarApplication;
-import org.briarproject.briar.android.StartupFailureActivity;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.android.blog.FeedFragment;
-import org.briarproject.briar.android.contact.ContactListFragment;
-import org.briarproject.briar.android.forum.ForumListFragment;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.fragment.BaseFragment.BaseFragmentListener;
-import org.briarproject.briar.android.logout.SignOutFragment;
-import org.briarproject.briar.android.privategroup.list.GroupListFragment;
-import org.briarproject.briar.android.settings.SettingsActivity;
+import com.ksmessaging.R;
+import com.ksmessaging.android.BriarApplication;
+import com.ksmessaging.android.StartupFailureActivity;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.android.blog.FeedFragment;
+import com.ksmessaging.android.contact.ContactListFragment;
+import com.ksmessaging.android.forum.ForumListFragment;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.fragment.BaseFragment.BaseFragmentListener;
+import com.ksmessaging.android.logout.SignOutFragment;
+import com.ksmessaging.android.privategroup.list.GroupListFragment;
+import com.ksmessaging.android.settings.SettingsActivity;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -73,14 +73,14 @@ import static org.briarproject.bramble.api.lifecycle.LifecycleManager.LifecycleS
 import static org.briarproject.bramble.api.plugin.Plugin.State.ACTIVE;
 import static org.briarproject.bramble.api.plugin.Plugin.State.ENABLING;
 import static org.briarproject.bramble.api.plugin.Plugin.State.STARTING_STOPPING;
-import static org.briarproject.briar.android.BriarService.EXTRA_STARTUP_FAILED;
-import static org.briarproject.briar.android.BriarService.EXTRA_START_RESULT;
-import static org.briarproject.briar.android.TestingConstants.IS_DEBUG_BUILD;
-import static org.briarproject.briar.android.activity.RequestCodes.REQUEST_PASSWORD;
-import static org.briarproject.briar.android.navdrawer.IntentRouter.handleExternalIntent;
-import static org.briarproject.briar.android.util.UiUtils.getDaysUntilExpiry;
-import static org.briarproject.briar.android.util.UiUtils.observeOnce;
-import static org.briarproject.briar.android.util.UiUtils.resolveColorAttribute;
+import static com.ksmessaging.android.BriarService.EXTRA_STARTUP_FAILED;
+import static com.ksmessaging.android.BriarService.EXTRA_START_RESULT;
+import static com.ksmessaging.android.TestingConstants.IS_DEBUG_BUILD;
+import static com.ksmessaging.android.activity.RequestCodes.REQUEST_PASSWORD;
+import static com.ksmessaging.android.navdrawer.IntentRouter.handleExternalIntent;
+import static com.ksmessaging.android.util.UiUtils.getDaysUntilExpiry;
+import static com.ksmessaging.android.util.UiUtils.observeOnce;
+import static com.ksmessaging.android.util.UiUtils.resolveColorAttribute;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault
@@ -91,17 +91,17 @@ public class NavDrawerActivity extends BriarActivity implements
 			getLogger(NavDrawerActivity.class.getName());
 
 	public static Uri CONTACT_URI =
-			Uri.parse("briar-content://org.briarproject.briar/contact");
+			Uri.parse("briar-content://com.ksmessaging/contact");
 	public static Uri GROUP_URI =
-			Uri.parse("briar-content://org.briarproject.briar/group");
+			Uri.parse("briar-content://com.ksmessaging/group");
 	public static Uri FORUM_URI =
-			Uri.parse("briar-content://org.briarproject.briar/forum");
+			Uri.parse("briar-content://com.ksmessaging/forum");
 	public static Uri BLOG_URI =
-			Uri.parse("briar-content://org.briarproject.briar/blog");
+			Uri.parse("briar-content://com.ksmessaging/blog");
 	public static Uri CONTACT_ADDED_URI =
-			Uri.parse("briar-content://org.briarproject.briar/contact/added");
+			Uri.parse("briar-content://com.ksmessaging/contact/added");
 	public static Uri SIGN_OUT_URI =
-			Uri.parse("briar-content://org.briarproject.briar/sign-out");
+			Uri.parse("briar-content://com.ksmessaging/sign-out");
 
 	private final List<Transport> transports = new ArrayList<>(3);
 	private final MutableLiveData<ImageView> torIcon = new MutableLiveData<>();

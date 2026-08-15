@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.blog;
+package com.ksmessaging.api.blog;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.data.BdfList;
@@ -12,7 +12,7 @@ import java.security.GeneralSecurityException;
 
 import javax.annotation.Nullable;
 
-import static org.briarproject.briar.api.blog.BlogManager.CLIENT_ID;
+import static com.ksmessaging.api.blog.BlogManager.CLIENT_ID;
 
 @NotNullByDefault
 public interface BlogPostFactory {

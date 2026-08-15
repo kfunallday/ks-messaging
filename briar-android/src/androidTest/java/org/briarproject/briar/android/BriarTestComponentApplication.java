@@ -1,8 +1,8 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import org.briarproject.bramble.BrambleAndroidEagerSingletons;
 import org.briarproject.bramble.BrambleCoreEagerSingletons;
-import org.briarproject.briar.BriarCoreEagerSingletons;
+import com.ksmessaging.BriarCoreEagerSingletons;
 
 public class BriarTestComponentApplication extends BriarApplicationImpl {
 

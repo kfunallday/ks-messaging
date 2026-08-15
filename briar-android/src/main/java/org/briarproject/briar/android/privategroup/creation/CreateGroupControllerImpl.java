@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.creation;
+package com.ksmessaging.android.privategroup.creation;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.contact.ContactId;
@@ -14,19 +14,19 @@ import org.briarproject.bramble.api.identity.LocalAuthor;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.android.contactselection.ContactSelectorControllerImpl;
-import org.briarproject.briar.android.controller.handler.ResultExceptionHandler;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.privategroup.GroupMessage;
-import org.briarproject.briar.api.privategroup.GroupMessageFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationFactory;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager;
-import org.briarproject.briar.api.sharing.SharingManager.SharingStatus;
+import com.ksmessaging.android.contactselection.ContactSelectorControllerImpl;
+import com.ksmessaging.android.controller.handler.ResultExceptionHandler;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.privategroup.GroupMessage;
+import com.ksmessaging.api.privategroup.GroupMessageFactory;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupFactory;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationFactory;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationManager;
+import com.ksmessaging.api.sharing.SharingManager.SharingStatus;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;

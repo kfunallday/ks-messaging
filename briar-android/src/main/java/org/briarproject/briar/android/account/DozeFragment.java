@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
@@ -11,8 +11,8 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.account.PowerView.OnCheckedChangedListener;
+import com.ksmessaging.R;
+import com.ksmessaging.android.account.PowerView.OnCheckedChangedListener;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -22,9 +22,9 @@ import static android.view.View.INVISIBLE;
 import static android.view.View.VISIBLE;
 import static android.widget.Toast.LENGTH_LONG;
 import static org.briarproject.android.dontkillmelib.DozeUtils.getDozeWhitelistingIntent;
-import static org.briarproject.briar.android.activity.RequestCodes.REQUEST_DOZE_WHITELISTING;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
-import static org.briarproject.briar.android.util.UiUtils.showOnboardingDialog;
+import static com.ksmessaging.android.activity.RequestCodes.REQUEST_DOZE_WHITELISTING;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.util.UiUtils.showOnboardingDialog;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

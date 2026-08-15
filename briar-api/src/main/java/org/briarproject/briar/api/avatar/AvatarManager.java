@@ -1,10 +1,10 @@
-package org.briarproject.briar.api.avatar;
+package com.ksmessaging.api.avatar;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.db.Transaction;
 import org.briarproject.bramble.api.sync.ClientId;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.AttachmentHeader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.IOException;
@@ -18,7 +18,7 @@ public interface AvatarManager {
 	/**
 	 * The unique ID of the avatar client.
 	 */
-	ClientId CLIENT_ID = new ClientId("org.briarproject.briar.avatar");
+	ClientId CLIENT_ID = new ClientId("com.ksmessaging.avatar");
 
 	/**
 	 * The current major version of the avatar client.

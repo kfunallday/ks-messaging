@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -14,22 +14,22 @@ import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.sharing.MessageType.ABORT;
-import static org.briarproject.briar.sharing.MessageType.ACCEPT;
-import static org.briarproject.briar.sharing.MessageType.DECLINE;
-import static org.briarproject.briar.sharing.MessageType.INVITE;
-import static org.briarproject.briar.sharing.MessageType.LEAVE;
-import static org.briarproject.briar.sharing.SharingConstants.MSG_KEY_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.sharing.SharingConstants.MSG_KEY_AVAILABLE_TO_ANSWER;
-import static org.briarproject.briar.sharing.SharingConstants.MSG_KEY_INVITATION_ACCEPTED;
-import static org.briarproject.briar.sharing.SharingConstants.MSG_KEY_IS_AUTO_DECLINE;
-import static org.briarproject.briar.sharing.SharingConstants.MSG_KEY_LOCAL;
-import static org.briarproject.briar.sharing.SharingConstants.MSG_KEY_MESSAGE_TYPE;
-import static org.briarproject.briar.sharing.SharingConstants.MSG_KEY_READ;
-import static org.briarproject.briar.sharing.SharingConstants.MSG_KEY_SHAREABLE_ID;
-import static org.briarproject.briar.sharing.SharingConstants.MSG_KEY_TIMESTAMP;
-import static org.briarproject.briar.sharing.SharingConstants.MSG_KEY_VISIBLE_IN_UI;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.sharing.MessageType.ABORT;
+import static com.ksmessaging.sharing.MessageType.ACCEPT;
+import static com.ksmessaging.sharing.MessageType.DECLINE;
+import static com.ksmessaging.sharing.MessageType.INVITE;
+import static com.ksmessaging.sharing.MessageType.LEAVE;
+import static com.ksmessaging.sharing.SharingConstants.MSG_KEY_AUTO_DELETE_TIMER;
+import static com.ksmessaging.sharing.SharingConstants.MSG_KEY_AVAILABLE_TO_ANSWER;
+import static com.ksmessaging.sharing.SharingConstants.MSG_KEY_INVITATION_ACCEPTED;
+import static com.ksmessaging.sharing.SharingConstants.MSG_KEY_IS_AUTO_DECLINE;
+import static com.ksmessaging.sharing.SharingConstants.MSG_KEY_LOCAL;
+import static com.ksmessaging.sharing.SharingConstants.MSG_KEY_MESSAGE_TYPE;
+import static com.ksmessaging.sharing.SharingConstants.MSG_KEY_READ;
+import static com.ksmessaging.sharing.SharingConstants.MSG_KEY_SHAREABLE_ID;
+import static com.ksmessaging.sharing.SharingConstants.MSG_KEY_TIMESTAMP;
+import static com.ksmessaging.sharing.SharingConstants.MSG_KEY_VISIBLE_IN_UI;
 
 @Immutable
 @NotNullByDefault

@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.UniqueId;
@@ -9,8 +9,8 @@ import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.test.ValidatorTestCase;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupFactory;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupFactory;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -23,18 +23,18 @@ import static org.briarproject.bramble.test.TestUtils.getAuthor;
 import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.privategroup.PrivateGroupConstants.GROUP_SALT_LENGTH;
-import static org.briarproject.briar.api.privategroup.PrivateGroupConstants.MAX_GROUP_INVITATION_TEXT_LENGTH;
-import static org.briarproject.briar.api.privategroup.PrivateGroupConstants.MAX_GROUP_NAME_LENGTH;
-import static org.briarproject.briar.api.privategroup.invitation.GroupInvitationFactory.SIGNING_LABEL_INVITE;
-import static org.briarproject.briar.privategroup.invitation.GroupInvitationConstants.MSG_KEY_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.privategroup.invitation.MessageType.ABORT;
-import static org.briarproject.briar.privategroup.invitation.MessageType.INVITE;
-import static org.briarproject.briar.privategroup.invitation.MessageType.JOIN;
-import static org.briarproject.briar.privategroup.invitation.MessageType.LEAVE;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.privategroup.PrivateGroupConstants.GROUP_SALT_LENGTH;
+import static com.ksmessaging.api.privategroup.PrivateGroupConstants.MAX_GROUP_INVITATION_TEXT_LENGTH;
+import static com.ksmessaging.api.privategroup.PrivateGroupConstants.MAX_GROUP_NAME_LENGTH;
+import static com.ksmessaging.api.privategroup.invitation.GroupInvitationFactory.SIGNING_LABEL_INVITE;
+import static com.ksmessaging.privategroup.invitation.GroupInvitationConstants.MSG_KEY_AUTO_DELETE_TIMER;
+import static com.ksmessaging.privategroup.invitation.MessageType.ABORT;
+import static com.ksmessaging.privategroup.invitation.MessageType.INVITE;
+import static com.ksmessaging.privategroup.invitation.MessageType.JOIN;
+import static com.ksmessaging.privategroup.invitation.MessageType.LEAVE;
 import static org.junit.Assert.assertEquals;
 
 public class GroupInvitationValidatorTest extends ValidatorTestCase {

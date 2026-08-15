@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,11 +13,11 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.identity.AuthorId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.contact.ContactItem;
-import org.briarproject.briar.android.conversation.glide.GlideApp;
-import org.briarproject.briar.android.util.UiUtils;
-import org.briarproject.briar.api.identity.AuthorInfo;
+import com.ksmessaging.R;
+import com.ksmessaging.android.contact.ContactItem;
+import com.ksmessaging.android.conversation.glide.GlideApp;
+import com.ksmessaging.android.util.UiUtils;
+import com.ksmessaging.api.identity.AuthorInfo;
 
 import javax.annotation.Nullable;
 
@@ -31,10 +31,10 @@ import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 import static android.graphics.Typeface.BOLD;
 import static android.util.TypedValue.COMPLEX_UNIT_PX;
 import static androidx.appcompat.content.res.AppCompatResources.getDrawable;
-import static org.briarproject.briar.android.util.UiUtils.getContactDisplayName;
-import static org.briarproject.briar.android.util.UiUtils.resolveAttribute;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.NONE;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.OURSELVES;
+import static com.ksmessaging.android.util.UiUtils.getContactDisplayName;
+import static com.ksmessaging.android.util.UiUtils.resolveAttribute;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.NONE;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.OURSELVES;
 
 @UiThread
 public class AuthorView extends ConstraintLayout {

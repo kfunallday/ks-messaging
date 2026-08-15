@@ -1,9 +1,9 @@
-package org.briarproject.briar.api.forum;
+package com.ksmessaging.api.forum;
 
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.PostHeader;
-import org.briarproject.briar.api.identity.AuthorInfo;
+import com.ksmessaging.api.client.PostHeader;
+import com.ksmessaging.api.identity.AuthorInfo;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

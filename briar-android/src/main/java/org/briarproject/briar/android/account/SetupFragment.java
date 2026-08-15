@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -10,9 +10,9 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -24,8 +24,8 @@ import androidx.lifecycle.ViewModelProvider;
 
 import static android.view.inputmethod.EditorInfo.IME_ACTION_DONE;
 import static android.view.inputmethod.EditorInfo.IME_ACTION_NEXT;
-import static org.briarproject.briar.android.util.UiUtils.enterPressed;
-import static org.briarproject.briar.android.util.UiUtils.showOnboardingDialog;
+import static com.ksmessaging.android.util.UiUtils.enterPressed;
+import static com.ksmessaging.android.util.UiUtils.showOnboardingDialog;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

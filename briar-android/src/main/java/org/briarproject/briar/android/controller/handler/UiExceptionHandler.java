@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.controller.handler;
+package com.ksmessaging.android.controller.handler;
 
-import org.briarproject.briar.android.DestroyableContext;
+import com.ksmessaging.android.DestroyableContext;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

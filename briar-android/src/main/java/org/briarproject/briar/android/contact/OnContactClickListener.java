@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact;
+package com.ksmessaging.android.contact;
 
 import android.view.View;
 

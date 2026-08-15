@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,13 +7,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.view.LargeTextInputView;
-import org.briarproject.briar.android.view.TextSendController;
-import org.briarproject.briar.android.view.TextSendController.SendListener;
-import org.briarproject.briar.android.view.TextSendController.SendState;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
+import com.ksmessaging.R;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.view.LargeTextInputView;
+import com.ksmessaging.android.view.TextSendController;
+import com.ksmessaging.android.view.TextSendController.SendListener;
+import com.ksmessaging.android.view.TextSendController.SendState;
+import com.ksmessaging.api.attachment.AttachmentHeader;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
@@ -26,7 +26,7 @@ import androidx.annotation.UiThread;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import static org.briarproject.briar.android.view.TextSendController.SendState.SENT;
+import static com.ksmessaging.android.view.TextSendController.SendState.SENT;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

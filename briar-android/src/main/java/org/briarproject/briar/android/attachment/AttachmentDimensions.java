@@ -1,8 +1,8 @@
-package org.briarproject.briar.android.attachment;
+package com.ksmessaging.android.attachment;
 
 import android.content.res.Resources;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

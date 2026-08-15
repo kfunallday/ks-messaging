@@ -1,13 +1,13 @@
-package org.briarproject.briar.android.reporting;
+package com.ksmessaging.android.reporting;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -16,7 +16,7 @@ import javax.inject.Inject;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProvider;
 
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

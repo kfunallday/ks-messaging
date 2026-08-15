@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.reporting;
+package com.ksmessaging.android.reporting;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,8 +6,8 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.reporting.ReportData.ReportItem;
+import com.ksmessaging.R;
+import com.ksmessaging.android.reporting.ReportData.ReportItem;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.List;

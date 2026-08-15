@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.hotspot;
+package com.ksmessaging.android.hotspot;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -28,8 +28,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import static androidx.core.app.ActivityCompat.finishAfterTransition;
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.util.UiUtils.showFragment;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.util.UiUtils.showFragment;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

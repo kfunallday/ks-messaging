@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.widget;
+package com.ksmessaging.android.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;

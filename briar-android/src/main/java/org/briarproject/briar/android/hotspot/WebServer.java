@@ -1,8 +1,8 @@
-package org.briarproject.briar.android.hotspot;
+package com.ksmessaging.android.hotspot;
 
 import android.content.Context;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -27,8 +27,8 @@ import static java.util.Objects.requireNonNull;
 import static java.util.logging.Level.WARNING;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.util.LogUtils.logException;
-import static org.briarproject.briar.BuildConfig.VERSION_NAME;
-import static org.briarproject.briar.android.hotspot.HotspotViewModel.getApkFileName;
+import static com.ksmessaging.BuildConfig.VERSION_NAME;
+import static com.ksmessaging.android.hotspot.HotspotViewModel.getApkFileName;
 
 @NotNullByDefault
 class WebServer extends NanoHTTPD {

@@ -1,10 +1,10 @@
-package org.briarproject.briar.api.privategroup.event;
+package com.ksmessaging.api.privategroup.event;
 
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.event.Event;
 import org.briarproject.bramble.api.identity.AuthorId;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.api.privategroup.Visibility;
+import com.ksmessaging.api.privategroup.Visibility;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

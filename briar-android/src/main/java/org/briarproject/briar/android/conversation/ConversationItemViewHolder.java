@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.content.Context;
 import android.text.util.Linkify;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.CallSuper;
@@ -18,10 +18,10 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 import static org.briarproject.bramble.util.StringUtils.trim;
-import static org.briarproject.briar.android.util.UiUtils.formatDate;
-import static org.briarproject.briar.android.util.UiUtils.formatDuration;
-import static org.briarproject.briar.android.util.UiUtils.makeLinksClickable;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.android.util.UiUtils.formatDate;
+import static com.ksmessaging.android.util.UiUtils.formatDuration;
+import static com.ksmessaging.android.util.UiUtils.makeLinksClickable;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
 
 @UiThread
 @NotNullByDefault

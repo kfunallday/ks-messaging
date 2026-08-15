@@ -1,6 +1,6 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
-import org.briarproject.briar.api.client.SessionId;
+import com.ksmessaging.api.client.SessionId;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

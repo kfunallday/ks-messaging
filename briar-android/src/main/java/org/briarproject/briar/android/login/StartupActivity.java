@@ -1,16 +1,16 @@
-package org.briarproject.briar.android.login;
+package com.ksmessaging.android.login;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.BriarService;
-import org.briarproject.briar.android.account.SetupActivity;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BaseActivity;
-import org.briarproject.briar.android.fragment.BaseFragment.BaseFragmentListener;
-import org.briarproject.briar.android.login.StartupViewModel.State;
+import com.ksmessaging.R;
+import com.ksmessaging.android.BriarService;
+import com.ksmessaging.android.account.SetupActivity;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BaseActivity;
+import com.ksmessaging.android.fragment.BaseFragment.BaseFragmentListener;
+import com.ksmessaging.android.login.StartupViewModel.State;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -23,10 +23,10 @@ import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK;
 import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP;
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 import static android.content.Intent.FLAG_ACTIVITY_TASK_ON_HOME;
-import static org.briarproject.briar.android.login.StartupViewModel.State.SIGNED_IN;
-import static org.briarproject.briar.android.login.StartupViewModel.State.SIGNED_OUT;
-import static org.briarproject.briar.android.login.StartupViewModel.State.STARTED;
-import static org.briarproject.briar.android.login.StartupViewModel.State.STARTING;
+import static com.ksmessaging.android.login.StartupViewModel.State.SIGNED_IN;
+import static com.ksmessaging.android.login.StartupViewModel.State.SIGNED_OUT;
+import static com.ksmessaging.android.login.StartupViewModel.State.STARTED;
+import static com.ksmessaging.android.login.StartupViewModel.State.STARTING;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

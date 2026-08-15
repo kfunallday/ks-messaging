@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.widget;
+package com.ksmessaging.android.widget;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.NonNull;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.login;
+package com.ksmessaging.android.login;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -14,9 +14,9 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 import org.briarproject.bramble.api.crypto.DecryptionResult;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -38,12 +38,12 @@ import static android.view.inputmethod.EditorInfo.IME_ACTION_DONE;
 import static androidx.core.content.ContextCompat.checkSelfPermission;
 import static org.briarproject.bramble.api.crypto.DecryptionResult.KEY_STRENGTHENER_ERROR;
 import static org.briarproject.bramble.api.crypto.DecryptionResult.SUCCESS;
-import static org.briarproject.briar.android.login.LoginUtils.createKeyStrengthenerErrorDialog;
-import static org.briarproject.briar.android.util.UiUtils.enterPressed;
-import static org.briarproject.briar.android.util.UiUtils.hideSoftKeyboard;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
-import static org.briarproject.briar.android.util.UiUtils.setError;
-import static org.briarproject.briar.android.util.UiUtils.showSoftKeyboard;
+import static com.ksmessaging.android.login.LoginUtils.createKeyStrengthenerErrorDialog;
+import static com.ksmessaging.android.util.UiUtils.enterPressed;
+import static com.ksmessaging.android.util.UiUtils.hideSoftKeyboard;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.util.UiUtils.setError;
+import static com.ksmessaging.android.util.UiUtils.showSoftKeyboard;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

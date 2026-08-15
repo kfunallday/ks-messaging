@@ -1,4 +1,4 @@
-package org.briarproject.briar.util;
+package com.ksmessaging.util;
 
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.jsoup.Jsoup;

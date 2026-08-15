@@ -1,7 +1,7 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
-import org.briarproject.briar.api.blog.BlogCommentHeader;
-import org.briarproject.briar.api.blog.BlogPostHeader;
+import com.ksmessaging.api.blog.BlogCommentHeader;
+import com.ksmessaging.api.blog.BlogPostHeader;
 
 import java.util.ArrayList;
 import java.util.Collections;

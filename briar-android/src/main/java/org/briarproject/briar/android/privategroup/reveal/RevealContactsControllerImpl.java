@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.reveal;
+package com.ksmessaging.android.privategroup.reveal;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.contact.ContactId;
@@ -9,15 +9,15 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.settings.Settings;
 import org.briarproject.bramble.api.settings.SettingsManager;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.android.controller.DbControllerImpl;
-import org.briarproject.briar.android.controller.handler.ExceptionHandler;
-import org.briarproject.briar.android.controller.handler.ResultExceptionHandler;
-import org.briarproject.briar.api.client.ProtocolStateException;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.privategroup.GroupMember;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager;
+import com.ksmessaging.android.controller.DbControllerImpl;
+import com.ksmessaging.android.controller.handler.ExceptionHandler;
+import com.ksmessaging.android.controller.handler.ResultExceptionHandler;
+import com.ksmessaging.api.client.ProtocolStateException;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.privategroup.GroupMember;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;
@@ -31,8 +31,8 @@ import javax.inject.Inject;
 import static java.util.logging.Level.INFO;
 import static java.util.logging.Level.WARNING;
 import static org.briarproject.bramble.util.LogUtils.logException;
-import static org.briarproject.briar.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
-import static org.briarproject.briar.api.privategroup.Visibility.INVISIBLE;
+import static com.ksmessaging.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
+import static com.ksmessaging.api.privategroup.Visibility.INVISIBLE;
 
 @Immutable
 @NotNullByDefault

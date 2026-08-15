@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.UniqueId;
@@ -7,8 +7,8 @@ import org.briarproject.bramble.api.data.BdfDictionary;
 import org.briarproject.bramble.api.data.BdfList;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.test.ValidatorTestCase;
-import org.briarproject.briar.api.blog.BlogFactory;
-import org.briarproject.briar.api.forum.ForumFactory;
+import com.ksmessaging.api.blog.BlogFactory;
+import com.ksmessaging.api.forum.ForumFactory;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -20,14 +20,14 @@ import static java.util.Collections.emptyList;
 import static java.util.Collections.singletonList;
 import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.sharing.MessageType.ABORT;
-import static org.briarproject.briar.sharing.MessageType.ACCEPT;
-import static org.briarproject.briar.sharing.MessageType.DECLINE;
-import static org.briarproject.briar.sharing.MessageType.INVITE;
-import static org.briarproject.briar.sharing.MessageType.LEAVE;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.sharing.MessageType.ABORT;
+import static com.ksmessaging.sharing.MessageType.ACCEPT;
+import static com.ksmessaging.sharing.MessageType.DECLINE;
+import static com.ksmessaging.sharing.MessageType.INVITE;
+import static com.ksmessaging.sharing.MessageType.LEAVE;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 

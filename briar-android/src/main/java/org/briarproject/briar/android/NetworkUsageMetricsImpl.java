@@ -1,9 +1,9 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.net.TrafficStats;
 import android.os.Process;
 
-import org.briarproject.briar.api.android.NetworkUsageMetrics;
+import com.ksmessaging.api.android.NetworkUsageMetrics;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.logging.Logger;

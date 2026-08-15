@@ -1,4 +1,4 @@
-package org.briarproject.briar.attachment;
+package com.ksmessaging.attachment;
 
 import org.briarproject.bramble.test.BrambleTestCase;
 import org.junit.Test;

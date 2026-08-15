@@ -1,4 +1,4 @@
-package org.briarproject.briar.test;
+package com.ksmessaging.test;
 
 import org.briarproject.bramble.api.crypto.CryptoComponent;
 import org.briarproject.bramble.api.crypto.KeyPair;
@@ -8,8 +8,8 @@ import org.briarproject.bramble.api.identity.AuthorFactory;
 import org.briarproject.bramble.api.identity.LocalAuthor;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.util.Base32;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
 
 import java.util.Locale;
 

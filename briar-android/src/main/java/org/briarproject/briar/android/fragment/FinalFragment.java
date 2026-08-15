@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.fragment;
+package com.ksmessaging.android.fragment;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -26,7 +26,7 @@ import androidx.fragment.app.Fragment;
 
 import static android.view.View.GONE;
 import static androidx.core.widget.ImageViewCompat.setImageTintList;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
 
 /**
  * A fragment to be used at the end of a user flow

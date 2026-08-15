@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.threaded;
+package com.ksmessaging.android.threaded;
 
 import android.view.View;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.threaded.ThreadItemAdapter.ThreadItemListener;
+import com.ksmessaging.R;
+import com.ksmessaging.android.threaded.ThreadItemAdapter.ThreadItemListener;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Locale;

@@ -1,18 +1,18 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import android.os.Bundle;
 
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.contactselection.ContactSelectorController;
-import org.briarproject.briar.android.contactselection.ContactSelectorFragment;
-import org.briarproject.briar.android.contactselection.SelectableContactItem;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.contactselection.ContactSelectorController;
+import com.ksmessaging.android.contactselection.ContactSelectorFragment;
+import com.ksmessaging.android.contactselection.SelectableContactItem;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
 import javax.inject.Inject;
 
-import static org.briarproject.briar.android.activity.BriarActivity.GROUP_ID;
+import static com.ksmessaging.android.activity.BriarActivity.GROUP_ID;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

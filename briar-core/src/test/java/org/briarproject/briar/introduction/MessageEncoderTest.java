@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -16,8 +16,8 @@ import static org.briarproject.bramble.test.TestUtils.getAuthor;
 import static org.briarproject.bramble.test.TestUtils.getMessage;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.MAX_INTRODUCTION_TEXT_LENGTH;
-import static org.briarproject.briar.introduction.MessageType.REQUEST;
+import static com.ksmessaging.api.introduction.IntroductionConstants.MAX_INTRODUCTION_TEXT_LENGTH;
+import static com.ksmessaging.introduction.MessageType.REQUEST;
 
 public class MessageEncoderTest extends BrambleMockTestCase {
 

@@ -1,15 +1,15 @@
-package org.briarproject.briar.forum;
+package com.ksmessaging.forum;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumManager;
-import org.briarproject.briar.api.forum.ForumPost;
-import org.briarproject.briar.api.forum.ForumPostHeader;
-import org.briarproject.briar.api.forum.ForumSharingManager;
-import org.briarproject.briar.test.BriarIntegrationTest;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
-import org.briarproject.briar.test.DaggerBriarIntegrationTestComponent;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.forum.ForumManager;
+import com.ksmessaging.api.forum.ForumPost;
+import com.ksmessaging.api.forum.ForumPostHeader;
+import com.ksmessaging.api.forum.ForumSharingManager;
+import com.ksmessaging.test.BriarIntegrationTest;
+import com.ksmessaging.test.BriarIntegrationTestComponent;
+import com.ksmessaging.test.DaggerBriarIntegrationTestComponent;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,7 +17,7 @@ import java.util.Collection;
 
 import javax.annotation.Nullable;
 
-import static org.briarproject.briar.test.BriarTestUtils.assertGroupCount;
+import static com.ksmessaging.test.BriarTestUtils.assertGroupCount;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;

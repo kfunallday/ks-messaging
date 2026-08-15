@@ -1,13 +1,13 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 import android.view.Gravity;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.BriarUiTestComponent;
-import org.briarproject.briar.android.UiTest;
-import org.briarproject.briar.android.login.StartupActivity;
-import org.briarproject.briar.android.navdrawer.NavDrawerActivity;
-import org.briarproject.briar.android.splash.SplashScreenActivity;
+import com.ksmessaging.R;
+import com.ksmessaging.android.BriarUiTestComponent;
+import com.ksmessaging.android.UiTest;
+import com.ksmessaging.android.login.StartupActivity;
+import com.ksmessaging.android.navdrawer.NavDrawerActivity;
+import com.ksmessaging.android.splash.SplashScreenActivity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -21,7 +21,7 @@ import static androidx.test.espresso.contrib.DrawerMatchers.isClosed;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.isEnabled;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
-import static org.briarproject.briar.android.ViewActions.waitFor;
+import static com.ksmessaging.android.ViewActions.waitFor;
 import static org.hamcrest.CoreMatchers.allOf;
 
 /**

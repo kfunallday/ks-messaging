@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.app.Application;
 
@@ -14,11 +14,11 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.event.GroupRemovedEvent;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.viewmodel.LiveResult;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.event.BlogPostAddedEvent;
+import com.ksmessaging.android.viewmodel.LiveResult;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.event.BlogPostAddedEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ import androidx.lifecycle.MutableLiveData;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.util.LogUtils.logDuration;
 import static org.briarproject.bramble.util.LogUtils.now;
-import static org.briarproject.briar.api.blog.BlogManager.CLIENT_ID;
+import static com.ksmessaging.api.blog.BlogManager.CLIENT_ID;
 
 @NotNullByDefault
 class FeedViewModel extends BaseViewModel {

@@ -1,4 +1,4 @@
-package org.briarproject.briar.avatar;
+package com.ksmessaging.avatar;
 
 import org.briarproject.bramble.api.data.BdfDictionary;
 import org.briarproject.bramble.api.data.BdfEntry;
@@ -23,11 +23,11 @@ import static org.briarproject.bramble.test.TestUtils.getClientId;
 import static org.briarproject.bramble.test.TestUtils.getGroup;
 import static org.briarproject.bramble.test.TestUtils.getMessage;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
-import static org.briarproject.briar.avatar.AvatarConstants.MSG_KEY_VERSION;
-import static org.briarproject.briar.avatar.AvatarConstants.MSG_TYPE_UPDATE;
+import static com.ksmessaging.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
+import static com.ksmessaging.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
+import static com.ksmessaging.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
+import static com.ksmessaging.avatar.AvatarConstants.MSG_KEY_VERSION;
+import static com.ksmessaging.avatar.AvatarConstants.MSG_TYPE_UPDATE;
 import static org.junit.Assert.assertEquals;
 
 public class AvatarValidatorTest extends BrambleMockTestCase {

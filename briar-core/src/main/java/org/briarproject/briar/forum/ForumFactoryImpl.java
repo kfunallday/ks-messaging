@@ -1,4 +1,4 @@
-package org.briarproject.briar.forum;
+package com.ksmessaging.forum;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -6,8 +6,8 @@ import org.briarproject.bramble.api.data.BdfList;
 import org.briarproject.bramble.api.sync.Group;
 import org.briarproject.bramble.api.sync.GroupFactory;
 import org.briarproject.bramble.util.StringUtils;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumFactory;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.forum.ForumFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.SecureRandom;
@@ -15,10 +15,10 @@ import java.security.SecureRandom;
 import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
-import static org.briarproject.briar.api.forum.ForumConstants.FORUM_SALT_LENGTH;
-import static org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH;
-import static org.briarproject.briar.api.forum.ForumManager.CLIENT_ID;
-import static org.briarproject.briar.api.forum.ForumManager.MAJOR_VERSION;
+import static com.ksmessaging.api.forum.ForumConstants.FORUM_SALT_LENGTH;
+import static com.ksmessaging.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH;
+import static com.ksmessaging.api.forum.ForumManager.CLIENT_ID;
+import static com.ksmessaging.api.forum.ForumManager.MAJOR_VERSION;
 
 @Immutable
 @NotNullByDefault

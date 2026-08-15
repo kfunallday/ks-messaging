@@ -1,10 +1,10 @@
-package org.briarproject.briar.feed;
+package com.ksmessaging.feed;
 
 import org.briarproject.bramble.api.FeatureFlags;
 import org.briarproject.bramble.api.event.EventBus;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.feed.FeedManager;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.feed.FeedManager;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

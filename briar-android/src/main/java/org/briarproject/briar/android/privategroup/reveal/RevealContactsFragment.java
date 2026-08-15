@@ -1,14 +1,14 @@
-package org.briarproject.briar.android.privategroup.reveal;
+package com.ksmessaging.android.privategroup.reveal;
 
 import android.content.Context;
 import android.os.Bundle;
 
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.contact.OnContactClickListener;
-import org.briarproject.briar.android.contactselection.BaseContactSelectorFragment;
-import org.briarproject.briar.android.contactselection.ContactSelectorController;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.contact.OnContactClickListener;
+import com.ksmessaging.android.contactselection.BaseContactSelectorFragment;
+import com.ksmessaging.android.contactselection.ContactSelectorController;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -16,7 +16,7 @@ import java.util.Collection;
 
 import javax.inject.Inject;
 
-import static org.briarproject.briar.android.activity.BriarActivity.GROUP_ID;
+import static com.ksmessaging.android.activity.BriarActivity.GROUP_ID;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

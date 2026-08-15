@@ -1,4 +1,4 @@
-package org.briarproject.briar.forum;
+package com.ksmessaging.forum;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.BdfIncomingMessageHook;
@@ -16,17 +16,17 @@ import org.briarproject.bramble.api.sync.Group;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumFactory;
-import org.briarproject.briar.api.forum.ForumManager;
-import org.briarproject.briar.api.forum.ForumPost;
-import org.briarproject.briar.api.forum.ForumPostFactory;
-import org.briarproject.briar.api.forum.ForumPostHeader;
-import org.briarproject.briar.api.forum.event.ForumPostReceivedEvent;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.forum.ForumFactory;
+import com.ksmessaging.api.forum.ForumManager;
+import com.ksmessaging.api.forum.ForumPost;
+import com.ksmessaging.api.forum.ForumPostFactory;
+import com.ksmessaging.api.forum.ForumPostHeader;
+import com.ksmessaging.api.forum.event.ForumPostReceivedEvent;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -46,11 +46,11 @@ import javax.annotation.concurrent.ThreadSafe;
 import javax.inject.Inject;
 
 import static org.briarproject.bramble.api.sync.validation.IncomingMessageHook.DeliveryAction.ACCEPT_SHARE;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_AUTHOR;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_LOCAL;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_PARENT;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_TIMESTAMP;
-import static org.briarproject.briar.client.MessageTrackerConstants.MSG_KEY_READ;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_AUTHOR;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_LOCAL;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_PARENT;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_TIMESTAMP;
+import static com.ksmessaging.client.MessageTrackerConstants.MSG_KEY_READ;
 
 @ThreadSafe
 @NotNullByDefault

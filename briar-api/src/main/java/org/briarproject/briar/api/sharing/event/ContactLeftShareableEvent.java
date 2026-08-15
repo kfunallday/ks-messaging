@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.sharing.event;
+package com.ksmessaging.api.sharing.event;
 
 
 import org.briarproject.bramble.api.contact.ContactId;

@@ -1,17 +1,17 @@
-package org.briarproject.briar;
+package com.ksmessaging;
 
-import org.briarproject.briar.autodelete.AutoDeleteModule;
-import org.briarproject.briar.avatar.AvatarModule;
-import org.briarproject.briar.blog.BlogModule;
-import org.briarproject.briar.conversation.ConversationModule;
-import org.briarproject.briar.feed.FeedModule;
-import org.briarproject.briar.forum.ForumModule;
-import org.briarproject.briar.identity.IdentityModule;
-import org.briarproject.briar.introduction.IntroductionModule;
-import org.briarproject.briar.messaging.MessagingModule;
-import org.briarproject.briar.privategroup.PrivateGroupModule;
-import org.briarproject.briar.privategroup.invitation.GroupInvitationModule;
-import org.briarproject.briar.sharing.SharingModule;
+import com.ksmessaging.autodelete.AutoDeleteModule;
+import com.ksmessaging.avatar.AvatarModule;
+import com.ksmessaging.blog.BlogModule;
+import com.ksmessaging.conversation.ConversationModule;
+import com.ksmessaging.feed.FeedModule;
+import com.ksmessaging.forum.ForumModule;
+import com.ksmessaging.identity.IdentityModule;
+import com.ksmessaging.introduction.IntroductionModule;
+import com.ksmessaging.messaging.MessagingModule;
+import com.ksmessaging.privategroup.PrivateGroupModule;
+import com.ksmessaging.privategroup.invitation.GroupInvitationModule;
+import com.ksmessaging.sharing.SharingModule;
 
 public interface BriarCoreEagerSingletons {
 

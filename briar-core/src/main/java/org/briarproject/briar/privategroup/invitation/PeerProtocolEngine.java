@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -11,12 +11,12 @@ import org.briarproject.bramble.api.identity.IdentityManager;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.client.ProtocolStateException;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.privategroup.GroupMessageFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroupFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.client.ProtocolStateException;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.privategroup.GroupMessageFactory;
+import com.ksmessaging.api.privategroup.PrivateGroupFactory;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;
@@ -25,13 +25,13 @@ import javax.annotation.concurrent.Immutable;
 import static org.briarproject.bramble.api.sync.Group.Visibility.INVISIBLE;
 import static org.briarproject.bramble.api.sync.Group.Visibility.SHARED;
 import static org.briarproject.bramble.api.sync.Group.Visibility.VISIBLE;
-import static org.briarproject.briar.privategroup.invitation.PeerState.AWAIT_MEMBER;
-import static org.briarproject.briar.privategroup.invitation.PeerState.BOTH_JOINED;
-import static org.briarproject.briar.privategroup.invitation.PeerState.ERROR;
-import static org.briarproject.briar.privategroup.invitation.PeerState.LOCAL_JOINED;
-import static org.briarproject.briar.privategroup.invitation.PeerState.LOCAL_LEFT;
-import static org.briarproject.briar.privategroup.invitation.PeerState.NEITHER_JOINED;
-import static org.briarproject.briar.privategroup.invitation.PeerState.START;
+import static com.ksmessaging.privategroup.invitation.PeerState.AWAIT_MEMBER;
+import static com.ksmessaging.privategroup.invitation.PeerState.BOTH_JOINED;
+import static com.ksmessaging.privategroup.invitation.PeerState.ERROR;
+import static com.ksmessaging.privategroup.invitation.PeerState.LOCAL_JOINED;
+import static com.ksmessaging.privategroup.invitation.PeerState.LOCAL_LEFT;
+import static com.ksmessaging.privategroup.invitation.PeerState.NEITHER_JOINED;
+import static com.ksmessaging.privategroup.invitation.PeerState.START;
 
 @Immutable
 @NotNullByDefault

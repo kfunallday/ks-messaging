@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import net.jodah.concurrentunit.Waiter;
 
@@ -9,19 +9,19 @@ import org.briarproject.bramble.api.event.Event;
 import org.briarproject.bramble.api.event.EventListener;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogFactory;
-import org.briarproject.briar.api.blog.BlogInvitationRequest;
-import org.briarproject.briar.api.blog.BlogInvitationResponse;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogSharingManager;
-import org.briarproject.briar.api.blog.event.BlogInvitationRequestReceivedEvent;
-import org.briarproject.briar.api.blog.event.BlogInvitationResponseReceivedEvent;
-import org.briarproject.briar.api.conversation.ConversationMessageHeader;
-import org.briarproject.briar.api.conversation.ConversationResponse;
-import org.briarproject.briar.test.BriarIntegrationTest;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
-import org.briarproject.briar.test.DaggerBriarIntegrationTestComponent;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogFactory;
+import com.ksmessaging.api.blog.BlogInvitationRequest;
+import com.ksmessaging.api.blog.BlogInvitationResponse;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogSharingManager;
+import com.ksmessaging.api.blog.event.BlogInvitationRequestReceivedEvent;
+import com.ksmessaging.api.blog.event.BlogInvitationResponseReceivedEvent;
+import com.ksmessaging.api.conversation.ConversationMessageHeader;
+import com.ksmessaging.api.conversation.ConversationResponse;
+import com.ksmessaging.test.BriarIntegrationTest;
+import com.ksmessaging.test.BriarIntegrationTestComponent;
+import com.ksmessaging.test.DaggerBriarIntegrationTestComponent;
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.junit.Before;
 import org.junit.Rule;
@@ -30,12 +30,12 @@ import org.junit.rules.ExpectedException;
 
 import java.util.Collection;
 
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.blog.BlogSharingManager.CLIENT_ID;
-import static org.briarproject.briar.api.blog.BlogSharingManager.MAJOR_VERSION;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.SHAREABLE;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.SHARING;
-import static org.briarproject.briar.test.BriarTestUtils.assertGroupCount;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.blog.BlogSharingManager.CLIENT_ID;
+import static com.ksmessaging.api.blog.BlogSharingManager.MAJOR_VERSION;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.SHAREABLE;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.SHARING;
+import static com.ksmessaging.test.BriarTestUtils.assertGroupCount;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;

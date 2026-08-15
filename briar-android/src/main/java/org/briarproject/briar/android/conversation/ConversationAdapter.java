@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.content.Context;
 import android.util.SparseArray;
@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 
 import org.briarproject.bramble.api.Pair;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.util.BriarAdapter;
-import org.briarproject.briar.android.util.ItemReturningAdapter;
+import com.ksmessaging.R;
+import com.ksmessaging.android.util.BriarAdapter;
+import com.ksmessaging.android.util.ItemReturningAdapter;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool;
 
 import static androidx.recyclerview.widget.RecyclerView.NO_POSITION;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
 
 @NotNullByDefault
 class ConversationAdapter

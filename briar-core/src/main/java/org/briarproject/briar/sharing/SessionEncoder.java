@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.data.BdfDictionary;
 import org.briarproject.nullsafety.NotNullByDefault;

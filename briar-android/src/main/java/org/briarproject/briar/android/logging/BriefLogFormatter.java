@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.logging;
+package com.ksmessaging.android.logging;
 
 import org.briarproject.nullsafety.NotNullByDefault;
 

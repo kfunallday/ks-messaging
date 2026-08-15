@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.mailbox;
+package com.ksmessaging.android.mailbox;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.fragment.FinalFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.fragment.FinalFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -18,7 +18,7 @@ import androidx.annotation.StringRes;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.ViewModelProvider;
 
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact.add.remote;
+package com.ksmessaging.android.contact.add.remote;
 
 interface PendingContactListener {
 

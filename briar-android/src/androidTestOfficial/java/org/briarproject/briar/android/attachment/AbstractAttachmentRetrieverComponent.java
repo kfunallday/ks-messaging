@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.attachment;
+package com.ksmessaging.android.attachment;
 
-import org.briarproject.briar.android.attachment.media.MediaModule;
+import com.ksmessaging.android.attachment.media.MediaModule;
 
 import javax.inject.Singleton;
 

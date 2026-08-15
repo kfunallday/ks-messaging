@@ -1,4 +1,4 @@
-package org.briarproject.briar.client;
+package com.ksmessaging.client;
 
 import org.briarproject.bramble.api.client.BdfIncomingMessageHook;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -9,9 +9,9 @@ import org.briarproject.bramble.api.db.DatabaseComponent;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.db.Transaction;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
-import org.briarproject.briar.api.conversation.ConversationManager.ConversationClient;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.conversation.ConversationManager.ConversationClient;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

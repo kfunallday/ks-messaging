@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.content.Context;
 import android.graphics.drawable.Animatable;
@@ -15,11 +15,11 @@ import com.bumptech.glide.request.target.Target;
 import com.github.chrisbanes.photoview.PhotoView;
 
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BaseActivity;
-import org.briarproject.briar.android.attachment.AttachmentItem;
-import org.briarproject.briar.android.conversation.glide.GlideApp;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BaseActivity;
+import com.ksmessaging.android.attachment.AttachmentItem;
+import com.ksmessaging.android.conversation.glide.GlideApp;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -33,10 +33,10 @@ import androidx.lifecycle.ViewModelProvider;
 
 import static android.widget.ImageView.ScaleType.FIT_START;
 import static com.bumptech.glide.load.engine.DiskCacheStrategy.NONE;
-import static org.briarproject.briar.android.attachment.AttachmentItem.State.AVAILABLE;
-import static org.briarproject.briar.android.attachment.AttachmentItem.State.ERROR;
-import static org.briarproject.briar.android.conversation.ImageActivity.ATTACHMENT_POSITION;
-import static org.briarproject.briar.android.conversation.ImageActivity.ITEM_ID;
+import static com.ksmessaging.android.attachment.AttachmentItem.State.AVAILABLE;
+import static com.ksmessaging.android.attachment.AttachmentItem.State.ERROR;
+import static com.ksmessaging.android.conversation.ImageActivity.ATTACHMENT_POSITION;
+import static com.ksmessaging.android.conversation.ImageActivity.ITEM_ID;
 import static org.briarproject.nullsafety.NullSafety.requireNonNull;
 
 @MethodsNotNullByDefault

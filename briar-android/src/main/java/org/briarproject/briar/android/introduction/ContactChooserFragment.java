@@ -1,17 +1,17 @@
-package org.briarproject.briar.android.introduction;
+package com.ksmessaging.android.introduction;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.contact.ContactListAdapter;
-import org.briarproject.briar.android.contact.ContactListItem;
-import org.briarproject.briar.android.contact.OnContactClickListener;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.view.BriarRecyclerView;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.contact.ContactListAdapter;
+import com.ksmessaging.android.contact.ContactListItem;
+import com.ksmessaging.android.contact.OnContactClickListener;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.view.BriarRecyclerView;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

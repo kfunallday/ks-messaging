@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.viewmodel;
+package com.ksmessaging.android.viewmodel;
 
 import android.app.Application;
 
@@ -10,7 +10,7 @@ import org.briarproject.bramble.api.db.Transaction;
 import org.briarproject.bramble.api.db.TransactionManager;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.util.UiUtils;
+import com.ksmessaging.android.util.UiUtils;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;

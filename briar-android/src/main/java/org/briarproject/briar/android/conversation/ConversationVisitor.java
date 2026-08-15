@@ -1,20 +1,20 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.content.Context;
 
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.attachment.AttachmentItem;
-import org.briarproject.briar.api.blog.BlogInvitationRequest;
-import org.briarproject.briar.api.blog.BlogInvitationResponse;
-import org.briarproject.briar.api.conversation.ConversationMessageVisitor;
-import org.briarproject.briar.api.forum.ForumInvitationRequest;
-import org.briarproject.briar.api.forum.ForumInvitationResponse;
-import org.briarproject.briar.api.introduction.IntroductionRequest;
-import org.briarproject.briar.api.introduction.IntroductionResponse;
-import org.briarproject.briar.api.messaging.PrivateMessageHeader;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationRequest;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationResponse;
+import com.ksmessaging.R;
+import com.ksmessaging.android.attachment.AttachmentItem;
+import com.ksmessaging.api.blog.BlogInvitationRequest;
+import com.ksmessaging.api.blog.BlogInvitationResponse;
+import com.ksmessaging.api.conversation.ConversationMessageVisitor;
+import com.ksmessaging.api.forum.ForumInvitationRequest;
+import com.ksmessaging.api.forum.ForumInvitationResponse;
+import com.ksmessaging.api.introduction.IntroductionRequest;
+import com.ksmessaging.api.introduction.IntroductionResponse;
+import com.ksmessaging.api.messaging.PrivateMessageHeader;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationRequest;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationResponse;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.List;
@@ -25,11 +25,11 @@ import androidx.annotation.UiThread;
 import androidx.lifecycle.LiveData;
 
 import static java.util.Collections.emptyList;
-import static org.briarproject.briar.android.conversation.ConversationRequestItem.RequestType.BLOG;
-import static org.briarproject.briar.android.conversation.ConversationRequestItem.RequestType.FORUM;
-import static org.briarproject.briar.android.conversation.ConversationRequestItem.RequestType.GROUP;
-import static org.briarproject.briar.android.conversation.ConversationRequestItem.RequestType.INTRODUCTION;
-import static org.briarproject.briar.android.util.UiUtils.getContactDisplayName;
+import static com.ksmessaging.android.conversation.ConversationRequestItem.RequestType.BLOG;
+import static com.ksmessaging.android.conversation.ConversationRequestItem.RequestType.FORUM;
+import static com.ksmessaging.android.conversation.ConversationRequestItem.RequestType.GROUP;
+import static com.ksmessaging.android.conversation.ConversationRequestItem.RequestType.INTRODUCTION;
+import static com.ksmessaging.android.util.UiUtils.getContactDisplayName;
 
 @UiThread
 @NotNullByDefault

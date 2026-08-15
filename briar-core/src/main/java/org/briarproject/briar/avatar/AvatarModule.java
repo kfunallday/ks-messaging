@@ -1,4 +1,4 @@
-package org.briarproject.briar.avatar;
+package com.ksmessaging.avatar;
 
 import org.briarproject.bramble.api.contact.ContactManager;
 import org.briarproject.bramble.api.data.BdfReaderFactory;
@@ -7,8 +7,8 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.validation.ValidationManager;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.avatar.AvatarManager;
-import org.briarproject.briar.api.avatar.AvatarMessageEncoder;
+import com.ksmessaging.api.avatar.AvatarManager;
+import com.ksmessaging.api.avatar.AvatarMessageEncoder;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -16,9 +16,9 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-import static org.briarproject.briar.api.avatar.AvatarManager.CLIENT_ID;
-import static org.briarproject.briar.api.avatar.AvatarManager.MAJOR_VERSION;
-import static org.briarproject.briar.api.avatar.AvatarManager.MINOR_VERSION;
+import static com.ksmessaging.api.avatar.AvatarManager.CLIENT_ID;
+import static com.ksmessaging.api.avatar.AvatarManager.MAJOR_VERSION;
+import static com.ksmessaging.api.avatar.AvatarManager.MINOR_VERSION;
 
 @Module
 public class AvatarModule {

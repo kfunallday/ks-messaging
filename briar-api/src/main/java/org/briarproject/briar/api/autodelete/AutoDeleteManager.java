@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.autodelete;
+package com.ksmessaging.api.autodelete;
 
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.db.DbException;
@@ -14,7 +14,7 @@ public interface AutoDeleteManager {
 	/**
 	 * The unique ID of the auto-delete client.
 	 */
-	ClientId CLIENT_ID = new ClientId("org.briarproject.briar.autodelete");
+	ClientId CLIENT_ID = new ClientId("com.ksmessaging.autodelete");
 
 	/**
 	 * The current major version of the auto-delete client.

@@ -1,12 +1,12 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.android.contactselection.ContactSelectorActivity;
-import org.briarproject.briar.android.sharing.BaseMessageFragment.MessageFragmentListener;
+import com.ksmessaging.android.contactselection.ContactSelectorActivity;
+import com.ksmessaging.android.sharing.BaseMessageFragment.MessageFragmentListener;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

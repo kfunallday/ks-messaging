@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.blog.BlogPostHeader;
-import org.briarproject.briar.api.identity.AuthorInfo;
+import com.ksmessaging.api.blog.BlogPostHeader;
+import com.ksmessaging.api.identity.AuthorInfo;
 
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.NotThreadSafe;

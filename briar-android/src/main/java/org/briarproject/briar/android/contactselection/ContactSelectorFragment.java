@@ -1,12 +1,12 @@
-package org.briarproject.briar.android.contactselection;
+package com.ksmessaging.android.contactselection;
 
 import android.content.Context;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.contact.OnContactClickListener;
+import com.ksmessaging.R;
+import com.ksmessaging.android.contact.OnContactClickListener;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

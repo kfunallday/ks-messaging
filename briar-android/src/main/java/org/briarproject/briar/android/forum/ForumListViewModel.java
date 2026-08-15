@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.forum;
+package com.ksmessaging.android.forum;
 
 import android.app.Application;
 import android.widget.Toast;
@@ -16,17 +16,17 @@ import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.event.GroupAddedEvent;
 import org.briarproject.bramble.api.sync.event.GroupRemovedEvent;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
-import org.briarproject.briar.android.viewmodel.LiveResult;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumManager;
-import org.briarproject.briar.api.forum.ForumPostHeader;
-import org.briarproject.briar.api.forum.ForumSharingManager;
-import org.briarproject.briar.api.forum.event.ForumInvitationRequestReceivedEvent;
-import org.briarproject.briar.api.forum.event.ForumPostReceivedEvent;
+import com.ksmessaging.R;
+import com.ksmessaging.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.LiveResult;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.forum.ForumManager;
+import com.ksmessaging.api.forum.ForumPostHeader;
+import com.ksmessaging.api.forum.ForumSharingManager;
+import com.ksmessaging.api.forum.event.ForumInvitationRequestReceivedEvent;
+import com.ksmessaging.api.forum.event.ForumPostReceivedEvent;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -46,7 +46,7 @@ import static android.widget.Toast.LENGTH_SHORT;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.util.LogUtils.logDuration;
 import static org.briarproject.bramble.util.LogUtils.now;
-import static org.briarproject.briar.api.forum.ForumManager.CLIENT_ID;
+import static com.ksmessaging.api.forum.ForumManager.CLIENT_ID;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

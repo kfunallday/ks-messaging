@@ -1,7 +1,7 @@
-package org.briarproject.briar.api.messaging;
+package com.ksmessaging.api.messaging;
 
 import org.briarproject.bramble.api.sync.Message;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.AttachmentHeader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.List;
@@ -9,10 +9,10 @@ import java.util.List;
 import javax.annotation.concurrent.Immutable;
 
 import static java.util.Collections.emptyList;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.messaging.PrivateMessageFormat.TEXT_IMAGES;
-import static org.briarproject.briar.api.messaging.PrivateMessageFormat.TEXT_IMAGES_AUTO_DELETE;
-import static org.briarproject.briar.api.messaging.PrivateMessageFormat.TEXT_ONLY;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.messaging.PrivateMessageFormat.TEXT_IMAGES;
+import static com.ksmessaging.api.messaging.PrivateMessageFormat.TEXT_IMAGES_AUTO_DELETE;
+import static com.ksmessaging.api.messaging.PrivateMessageFormat.TEXT_ONLY;
 
 @Immutable
 @NotNullByDefault

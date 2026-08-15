@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,14 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.blog.BaseViewModel.ListUpdate;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.util.BriarSnackbarBuilder;
-import org.briarproject.briar.android.view.BriarRecyclerView;
-import org.briarproject.briar.android.widget.LinkDialogFragment;
-import org.briarproject.briar.api.blog.Blog;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.blog.BaseViewModel.ListUpdate;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.util.BriarSnackbarBuilder;
+import com.ksmessaging.android.view.BriarRecyclerView;
+import com.ksmessaging.android.widget.LinkDialogFragment;
+import com.ksmessaging.api.blog.Blog;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -29,8 +29,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP;
 import static com.google.android.material.snackbar.Snackbar.LENGTH_LONG;
-import static org.briarproject.briar.android.activity.BriarActivity.GROUP_ID;
-import static org.briarproject.briar.android.blog.BlogPostFragment.POST_ID;
+import static com.ksmessaging.android.activity.BriarActivity.GROUP_ID;
+import static com.ksmessaging.android.blog.BlogPostFragment.POST_ID;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

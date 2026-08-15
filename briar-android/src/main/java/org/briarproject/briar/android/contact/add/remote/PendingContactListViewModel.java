@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact.add.remote;
+package com.ksmessaging.android.contact.add.remote;
 
 import android.app.Application;
 
@@ -19,7 +19,7 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.rendezvous.RendezvousPoller;
 import org.briarproject.bramble.api.rendezvous.event.RendezvousPollEvent;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.DbViewModel;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;

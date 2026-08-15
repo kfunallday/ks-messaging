@@ -1,9 +1,9 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
-import org.briarproject.briar.BuildConfig;
+import com.ksmessaging.BuildConfig;
 
 import static java.util.concurrent.TimeUnit.DAYS;
-import static org.briarproject.briar.BuildConfig.BuildTimestamp;
+import static com.ksmessaging.BuildConfig.BuildTimestamp;
 
 public interface TestingConstants {
 

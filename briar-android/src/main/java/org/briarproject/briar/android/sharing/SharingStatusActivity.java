@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,13 +14,13 @@ import org.briarproject.bramble.api.event.EventBus;
 import org.briarproject.bramble.api.event.EventListener;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.event.GroupRemovedEvent;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.android.contact.ContactItem;
-import org.briarproject.briar.android.view.BriarRecyclerView;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.sharing.event.ContactLeftShareableEvent;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.android.contact.ContactItem;
+import com.ksmessaging.android.view.BriarRecyclerView;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.sharing.event.ContactLeftShareableEvent;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,15 +9,15 @@ import android.widget.ScrollView;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.view.TextInputView;
-import org.briarproject.briar.android.view.TextSendController;
-import org.briarproject.briar.android.view.TextSendController.SendListener;
-import org.briarproject.briar.android.view.TextSendController.SendState;
-import org.briarproject.briar.android.widget.LinkDialogFragment;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.view.TextInputView;
+import com.ksmessaging.android.view.TextSendController;
+import com.ksmessaging.android.view.TextSendController.SendListener;
+import com.ksmessaging.android.view.TextSendController.SendState;
+import com.ksmessaging.android.widget.LinkDialogFragment;
+import com.ksmessaging.api.attachment.AttachmentHeader;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -35,10 +35,10 @@ import static android.view.View.GONE;
 import static android.view.View.INVISIBLE;
 import static android.view.View.VISIBLE;
 import static java.util.Objects.requireNonNull;
-import static org.briarproject.briar.android.activity.BriarActivity.GROUP_ID;
-import static org.briarproject.briar.android.blog.BlogPostFragment.POST_ID;
-import static org.briarproject.briar.android.view.TextSendController.SendState.SENT;
-import static org.briarproject.briar.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH;
+import static com.ksmessaging.android.activity.BriarActivity.GROUP_ID;
+import static com.ksmessaging.android.blog.BlogPostFragment.POST_ID;
+import static com.ksmessaging.android.view.TextSendController.SendState.SENT;
+import static com.ksmessaging.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

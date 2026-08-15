@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.attachment.media;
+package com.ksmessaging.android.attachment.media;
 
 import dagger.Module;
 import dagger.Provides;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.animation.LayoutTransition;
 import android.content.Context;
@@ -9,8 +9,8 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.view.EmojiTextInputView.OnKeyboardShownListener;
+import com.ksmessaging.R;
+import com.ksmessaging.android.view.EmojiTextInputView.OnKeyboardShownListener;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

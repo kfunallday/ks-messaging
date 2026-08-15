@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.util;
+package com.ksmessaging.android.util;
 
 import android.view.View;
 import android.view.View.OnClickListener;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.ColorRes;

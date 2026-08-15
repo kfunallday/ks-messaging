@@ -1,4 +1,4 @@
-package org.briarproject.briar.identity;
+package com.ksmessaging.identity;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.db.DatabaseComponent;
@@ -12,9 +12,9 @@ import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.test.BrambleMockTestCase;
 import org.briarproject.bramble.test.DbExpectations;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.avatar.AvatarManager;
-import org.briarproject.briar.api.identity.AuthorInfo;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.avatar.AvatarManager;
+import com.ksmessaging.api.identity.AuthorInfo;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -27,11 +27,11 @@ import static org.briarproject.bramble.test.TestUtils.getContact;
 import static org.briarproject.bramble.test.TestUtils.getLocalAuthor;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.OURSELVES;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.UNKNOWN;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.UNVERIFIED;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.VERIFIED;
+import static com.ksmessaging.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.OURSELVES;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.UNKNOWN;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.UNVERIFIED;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.VERIFIED;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 

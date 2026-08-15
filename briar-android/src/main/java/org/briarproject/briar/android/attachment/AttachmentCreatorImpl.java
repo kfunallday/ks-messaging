@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.attachment;
+package com.ksmessaging.android.attachment;
 
 
 import android.app.Application;
@@ -8,12 +8,12 @@ import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.lifecycle.IoExecutor;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.attachment.media.ImageCompressor;
-import org.briarproject.briar.api.attachment.Attachment;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.attachment.FileTooBigException;
-import org.briarproject.briar.api.messaging.MessagingManager;
+import com.ksmessaging.R;
+import com.ksmessaging.android.attachment.media.ImageCompressor;
+import com.ksmessaging.api.attachment.Attachment;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.FileTooBigException;
+import com.ksmessaging.api.messaging.MessagingManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.IOException;
@@ -34,9 +34,9 @@ import androidx.lifecycle.MutableLiveData;
 import static java.util.logging.Level.WARNING;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.util.LogUtils.logException;
-import static org.briarproject.briar.android.attachment.AttachmentItem.State.ERROR;
-import static org.briarproject.briar.android.util.UiUtils.observeForeverOnce;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_IMAGE_SIZE;
+import static com.ksmessaging.android.attachment.AttachmentItem.State.ERROR;
+import static com.ksmessaging.android.util.UiUtils.observeForeverOnce;
+import static com.ksmessaging.api.attachment.MediaConstants.MAX_IMAGE_SIZE;
 
 @NotNullByDefault
 class AttachmentCreatorImpl implements AttachmentCreator {

@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless
+package com.ksmessaging.headless
 
 import com.github.ajalt.clikt.core.UsageError
 import com.github.ajalt.clikt.output.TermUi.echo

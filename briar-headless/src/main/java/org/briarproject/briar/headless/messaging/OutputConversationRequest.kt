@@ -1,14 +1,14 @@
-package org.briarproject.briar.headless.messaging
+package com.ksmessaging.headless.messaging
 
 import org.briarproject.bramble.api.contact.ContactId
-import org.briarproject.briar.api.blog.BlogInvitationRequest
-import org.briarproject.briar.api.conversation.ConversationMessageHeader
-import org.briarproject.briar.api.conversation.ConversationRequest
-import org.briarproject.briar.api.forum.ForumInvitationRequest
-import org.briarproject.briar.api.introduction.IntroductionRequest
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationRequest
-import org.briarproject.briar.api.sharing.InvitationRequest
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.api.blog.BlogInvitationRequest
+import com.ksmessaging.api.conversation.ConversationMessageHeader
+import com.ksmessaging.api.conversation.ConversationRequest
+import com.ksmessaging.api.forum.ForumInvitationRequest
+import com.ksmessaging.api.introduction.IntroductionRequest
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationRequest
+import com.ksmessaging.api.sharing.InvitationRequest
+import com.ksmessaging.headless.json.JsonDict
 
 internal fun ConversationRequest<*>.output(contactId: ContactId): JsonDict {
     val dict = (this as ConversationMessageHeader).output(contactId, text)

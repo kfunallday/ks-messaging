@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.Nullable;

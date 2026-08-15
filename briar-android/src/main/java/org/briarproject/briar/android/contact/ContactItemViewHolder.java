@@ -1,13 +1,13 @@
-package org.briarproject.briar.android.contact;
+package com.ksmessaging.android.contact;
 
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.view.TrustIndicatorView;
-import org.briarproject.briar.api.identity.AuthorInfo;
+import com.ksmessaging.R;
+import com.ksmessaging.android.view.TrustIndicatorView;
+import com.ksmessaging.api.identity.AuthorInfo;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;
@@ -15,8 +15,8 @@ import javax.annotation.Nullable;
 import androidx.annotation.UiThread;
 import androidx.recyclerview.widget.RecyclerView;
 
-import static org.briarproject.briar.android.util.UiUtils.getContactDisplayName;
-import static org.briarproject.briar.android.view.AuthorView.setAvatar;
+import static com.ksmessaging.android.util.UiUtils.getContactDisplayName;
+import static com.ksmessaging.android.view.AuthorView.setAvatar;
 
 @UiThread
 @NotNullByDefault

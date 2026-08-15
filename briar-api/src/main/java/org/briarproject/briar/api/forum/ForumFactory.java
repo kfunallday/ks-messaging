@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.forum;
+package com.ksmessaging.api.forum;
 
 import org.briarproject.nullsafety.NotNullByDefault;
 

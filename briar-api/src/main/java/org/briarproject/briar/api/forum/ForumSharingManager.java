@@ -1,14 +1,14 @@
-package org.briarproject.briar.api.forum;
+package com.ksmessaging.api.forum;
 
 import org.briarproject.bramble.api.sync.ClientId;
-import org.briarproject.briar.api.sharing.SharingManager;
+import com.ksmessaging.api.sharing.SharingManager;
 
 public interface ForumSharingManager extends SharingManager<Forum> {
 
 	/**
 	 * The unique ID of the forum sharing client.
 	 */
-	ClientId CLIENT_ID = new ClientId("org.briarproject.briar.forum.sharing");
+	ClientId CLIENT_ID = new ClientId("com.ksmessaging.forum.sharing");
 
 	/**
 	 * The current major version of the forum sharing client.

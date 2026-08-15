@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.attachment;
+package com.ksmessaging.android.attachment;
 
 import android.content.ContentResolver;
 import android.net.Uri;
@@ -6,9 +6,9 @@ import android.net.Uri;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.lifecycle.IoExecutor;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.android.attachment.media.ImageCompressor;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.messaging.MessagingManager;
+import com.ksmessaging.android.attachment.media.ImageCompressor;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.messaging.MessagingManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.IOException;
@@ -26,7 +26,7 @@ import static org.briarproject.bramble.util.IoUtils.tryToClose;
 import static org.briarproject.bramble.util.LogUtils.logDuration;
 import static org.briarproject.bramble.util.LogUtils.logException;
 import static org.briarproject.bramble.util.LogUtils.now;
-import static org.briarproject.briar.android.attachment.media.ImageCompressor.MIME_TYPE;
+import static com.ksmessaging.android.attachment.media.ImageCompressor.MIME_TYPE;
 
 @NotNullByDefault
 class AttachmentCreationTask {

@@ -1,6 +1,6 @@
-package org.briarproject.briar.api.identity;
+package com.ksmessaging.api.identity;
 
-import org.briarproject.briar.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.AttachmentHeader;
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.briarproject.nullsafety.NullSafety;
 

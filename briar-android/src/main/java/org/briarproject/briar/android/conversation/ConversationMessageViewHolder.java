@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.content.res.ColorStateList;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.attachment.AttachmentItem;
+import com.ksmessaging.R;
+import com.ksmessaging.android.attachment.AttachmentItem;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.UiThread;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.messaging;
+package com.ksmessaging.messaging;
 
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.contact.ContactManager;
@@ -17,12 +17,12 @@ import org.briarproject.bramble.test.BrambleTestCase;
 import org.briarproject.bramble.test.TestDatabaseConfigModule;
 import org.briarproject.bramble.test.TestTransportConnectionReader;
 import org.briarproject.bramble.test.TestTransportConnectionWriter;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.messaging.MessagingManager;
-import org.briarproject.briar.api.messaging.PrivateMessage;
-import org.briarproject.briar.api.messaging.PrivateMessageFactory;
-import org.briarproject.briar.api.messaging.event.AttachmentReceivedEvent;
-import org.briarproject.briar.api.messaging.event.PrivateMessageReceivedEvent;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.messaging.MessagingManager;
+import com.ksmessaging.api.messaging.PrivateMessage;
+import com.ksmessaging.api.messaging.PrivateMessageFactory;
+import com.ksmessaging.api.messaging.event.AttachmentReceivedEvent;
+import com.ksmessaging.api.messaging.event.PrivateMessageReceivedEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.junit.After;
 import org.junit.Before;
@@ -41,7 +41,7 @@ import static org.briarproject.bramble.test.TestPluginConfigModule.SIMPLEX_TRANS
 import static org.briarproject.bramble.test.TestUtils.deleteTestDirectory;
 import static org.briarproject.bramble.test.TestUtils.getSecretKey;
 import static org.briarproject.bramble.test.TestUtils.getTestDirectory;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
 import static org.junit.Assert.assertTrue;
 
 public class SimplexMessagingIntegrationTest extends BrambleTestCase {

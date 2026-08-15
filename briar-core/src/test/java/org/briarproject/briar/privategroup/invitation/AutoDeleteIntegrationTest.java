@@ -1,31 +1,31 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.db.DatabaseComponent;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.autodelete.event.ConversationMessagesDeletedEvent;
-import org.briarproject.briar.api.conversation.ConversationManager.ConversationClient;
-import org.briarproject.briar.api.privategroup.GroupMessage;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.event.GroupInvitationResponseReceivedEvent;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationRequest;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationResponse;
-import org.briarproject.briar.autodelete.AbstractAutoDeleteTest;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
+import com.ksmessaging.api.autodelete.event.ConversationMessagesDeletedEvent;
+import com.ksmessaging.api.conversation.ConversationManager.ConversationClient;
+import com.ksmessaging.api.privategroup.GroupMessage;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.event.GroupInvitationResponseReceivedEvent;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationManager;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationRequest;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationResponse;
+import com.ksmessaging.autodelete.AbstractAutoDeleteTest;
+import com.ksmessaging.test.BriarIntegrationTestComponent;
 import org.junit.Before;
 import org.junit.Test;
 
 import javax.annotation.Nullable;
 
 import static org.briarproject.bramble.api.cleanup.CleanupManager.BATCH_DELAY_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.SHAREABLE;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.SHARING;
-import static org.briarproject.briar.test.TestEventListener.assertEvent;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.SHAREABLE;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.SHARING;
+import static com.ksmessaging.test.TestEventListener.assertEvent;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;

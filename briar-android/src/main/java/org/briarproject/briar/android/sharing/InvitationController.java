@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.briar.android.controller.ActivityLifecycleController;
-import org.briarproject.briar.android.controller.handler.ExceptionHandler;
-import org.briarproject.briar.android.controller.handler.ResultExceptionHandler;
-import org.briarproject.briar.api.sharing.InvitationItem;
+import com.ksmessaging.android.controller.ActivityLifecycleController;
+import com.ksmessaging.android.controller.handler.ExceptionHandler;
+import com.ksmessaging.android.controller.handler.ResultExceptionHandler;
+import com.ksmessaging.api.sharing.InvitationItem;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;

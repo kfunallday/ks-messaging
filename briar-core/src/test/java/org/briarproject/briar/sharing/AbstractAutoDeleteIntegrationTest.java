@@ -1,26 +1,26 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.autodelete.event.ConversationMessagesDeletedEvent;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.client.BaseGroup;
-import org.briarproject.briar.api.conversation.event.ConversationMessageReceivedEvent;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.sharing.InvitationResponse;
-import org.briarproject.briar.api.sharing.Shareable;
-import org.briarproject.briar.api.sharing.SharingInvitationItem;
-import org.briarproject.briar.api.sharing.SharingManager;
-import org.briarproject.briar.autodelete.AbstractAutoDeleteTest;
+import com.ksmessaging.api.autodelete.event.ConversationMessagesDeletedEvent;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.client.BaseGroup;
+import com.ksmessaging.api.conversation.event.ConversationMessageReceivedEvent;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.sharing.InvitationResponse;
+import com.ksmessaging.api.sharing.Shareable;
+import com.ksmessaging.api.sharing.SharingInvitationItem;
+import com.ksmessaging.api.sharing.SharingManager;
+import com.ksmessaging.autodelete.AbstractAutoDeleteTest;
 import org.junit.Test;
 
 import java.util.Collection;
 
 import static org.briarproject.bramble.api.cleanup.CleanupManager.BATCH_DELAY_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.SHAREABLE;
-import static org.briarproject.briar.test.TestEventListener.assertEvent;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.SHAREABLE;
+import static com.ksmessaging.test.TestEventListener.assertEvent;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;

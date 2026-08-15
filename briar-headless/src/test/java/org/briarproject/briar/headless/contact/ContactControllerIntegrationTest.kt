@@ -1,10 +1,10 @@
-package org.briarproject.briar.headless.contact
+package com.ksmessaging.headless.contact
 
 import okhttp3.Response
 import org.briarproject.bramble.api.contact.HandshakeLinkConstants.BASE32_LINK_BYTES
-import org.briarproject.briar.headless.IntegrationTest
-import org.briarproject.briar.headless.url
-import org.briarproject.briar.test.BriarTestUtils.getRealHandshakeLink
+import com.ksmessaging.headless.IntegrationTest
+import com.ksmessaging.headless.url
+import com.ksmessaging.test.BriarTestUtils.getRealHandshakeLink
 import org.json.JSONArray
 import org.json.JSONObject
 import org.junit.jupiter.api.Assertions.assertEquals

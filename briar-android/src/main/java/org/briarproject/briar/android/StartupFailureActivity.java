@@ -1,13 +1,13 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BaseActivity;
-import org.briarproject.briar.android.fragment.BaseFragment.BaseFragmentListener;
-import org.briarproject.briar.android.fragment.ErrorFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BaseActivity;
+import com.ksmessaging.android.fragment.BaseFragment.BaseFragmentListener;
+import com.ksmessaging.android.fragment.ErrorFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -15,7 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import static org.briarproject.bramble.api.lifecycle.LifecycleManager.StartResult;
-import static org.briarproject.briar.android.BriarService.EXTRA_START_RESULT;
+import static com.ksmessaging.android.BriarService.EXTRA_START_RESULT;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

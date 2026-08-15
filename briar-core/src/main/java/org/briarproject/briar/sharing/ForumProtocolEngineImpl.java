@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -11,15 +11,15 @@ import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.conversation.ConversationRequest;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumInvitationResponse;
-import org.briarproject.briar.api.forum.ForumManager;
-import org.briarproject.briar.api.forum.ForumSharingManager;
-import org.briarproject.briar.api.forum.event.ForumInvitationRequestReceivedEvent;
-import org.briarproject.briar.api.forum.event.ForumInvitationResponseReceivedEvent;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.conversation.ConversationRequest;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.forum.ForumInvitationResponse;
+import com.ksmessaging.api.forum.ForumManager;
+import com.ksmessaging.api.forum.ForumSharingManager;
+import com.ksmessaging.api.forum.event.ForumInvitationRequestReceivedEvent;
+import com.ksmessaging.api.forum.event.ForumInvitationResponseReceivedEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

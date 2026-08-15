@@ -1,13 +1,13 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.Localizer;
-import org.briarproject.briar.android.util.UiUtils;
+import com.ksmessaging.R;
+import com.ksmessaging.android.Localizer;
+import com.ksmessaging.android.util.UiUtils;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;
@@ -23,9 +23,9 @@ import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK;
 import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP;
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 import static java.util.Objects.requireNonNull;
-import static org.briarproject.briar.android.BriarApplication.ENTRY_ACTIVITY;
-import static org.briarproject.briar.android.navdrawer.NavDrawerActivity.SIGN_OUT_URI;
-import static org.briarproject.briar.android.settings.SettingsActivity.EXTRA_THEME_CHANGE;
+import static com.ksmessaging.android.BriarApplication.ENTRY_ACTIVITY;
+import static com.ksmessaging.android.navdrawer.NavDrawerActivity.SIGN_OUT_URI;
+import static com.ksmessaging.android.settings.SettingsActivity.EXTRA_THEME_CHANGE;
 
 @NotNullByDefault
 public class DisplayFragment extends PreferenceFragmentCompat {

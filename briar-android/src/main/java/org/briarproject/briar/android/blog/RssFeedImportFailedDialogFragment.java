@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -6,8 +6,8 @@ import android.os.Bundle;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.BaseActivity;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.BaseActivity;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

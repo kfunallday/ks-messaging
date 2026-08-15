@@ -1,7 +1,7 @@
-package org.briarproject.briar.feed;
+package com.ksmessaging.feed;
 
-import org.briarproject.briar.api.feed.Feed;
-import org.briarproject.briar.api.feed.RssProperties;
+import com.ksmessaging.api.feed.Feed;
+import com.ksmessaging.api.feed.RssProperties;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.List;

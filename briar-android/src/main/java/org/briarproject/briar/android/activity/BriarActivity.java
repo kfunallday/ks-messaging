@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.activity;
+package com.ksmessaging.android.activity;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -11,15 +11,15 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.briarproject.android.dontkillmelib.wakelock.AndroidWakeLockManager;
 import org.briarproject.bramble.api.system.Wakeful;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.BriarApplication;
-import org.briarproject.briar.android.account.UnlockActivity;
-import org.briarproject.briar.android.controller.BriarController;
-import org.briarproject.briar.android.controller.DbController;
-import org.briarproject.briar.android.controller.handler.UiResultHandler;
-import org.briarproject.briar.android.login.StartupActivity;
-import org.briarproject.briar.android.logout.ExitActivity;
-import org.briarproject.briar.api.android.LockManager;
+import com.ksmessaging.R;
+import com.ksmessaging.android.BriarApplication;
+import com.ksmessaging.android.account.UnlockActivity;
+import com.ksmessaging.android.controller.BriarController;
+import com.ksmessaging.android.controller.DbController;
+import com.ksmessaging.android.controller.handler.UiResultHandler;
+import com.ksmessaging.android.login.StartupActivity;
+import com.ksmessaging.android.logout.ExitActivity;
+import com.ksmessaging.api.android.LockManager;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -44,11 +44,11 @@ import static java.util.logging.Level.WARNING;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.android.dontkillmelib.DozeUtils.getDozeWhitelistingIntent;
 import static org.briarproject.bramble.util.LogUtils.logException;
-import static org.briarproject.briar.android.activity.RequestCodes.REQUEST_DOZE_WHITELISTING;
-import static org.briarproject.briar.android.activity.RequestCodes.REQUEST_PASSWORD;
-import static org.briarproject.briar.android.activity.RequestCodes.REQUEST_UNLOCK;
-import static org.briarproject.briar.android.util.UiUtils.excludeSystemUi;
-import static org.briarproject.briar.android.util.UiUtils.isSamsung7;
+import static com.ksmessaging.android.activity.RequestCodes.REQUEST_DOZE_WHITELISTING;
+import static com.ksmessaging.android.activity.RequestCodes.REQUEST_PASSWORD;
+import static com.ksmessaging.android.activity.RequestCodes.REQUEST_UNLOCK;
+import static com.ksmessaging.android.util.UiUtils.excludeSystemUi;
+import static com.ksmessaging.android.util.UiUtils.isSamsung7;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

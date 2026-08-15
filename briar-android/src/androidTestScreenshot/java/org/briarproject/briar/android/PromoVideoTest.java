@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.view.View;
 
@@ -7,11 +7,11 @@ import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.contact.ContactManager;
 import org.briarproject.bramble.api.contact.PendingContact;
 import org.briarproject.bramble.api.contact.PendingContactState;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.account.SetupActivity;
-import org.briarproject.briar.android.contact.add.remote.PendingContactListActivity;
-import org.briarproject.briar.android.navdrawer.NavDrawerActivity;
-import org.briarproject.briar.android.splash.SplashScreenActivity;
+import com.ksmessaging.R;
+import com.ksmessaging.android.account.SetupActivity;
+import com.ksmessaging.android.contact.add.remote.PendingContactListActivity;
+import com.ksmessaging.android.navdrawer.NavDrawerActivity;
+import com.ksmessaging.android.splash.SplashScreenActivity;
 import org.hamcrest.Matcher;
 import org.junit.Rule;
 import org.junit.Test;
@@ -41,9 +41,9 @@ import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentat
 import static java.lang.Thread.sleep;
 import static org.briarproject.android.dontkillmelib.DozeUtils.needsDozeWhitelisting;
 import static org.briarproject.bramble.api.plugin.LanTcpConstants.ID;
-import static org.briarproject.briar.android.OverlayTapViewAction.visualClick;
-import static org.briarproject.briar.android.ViewActions.waitFor;
-import static org.briarproject.briar.android.ViewActions.waitUntilMatches;
+import static com.ksmessaging.android.OverlayTapViewAction.visualClick;
+import static com.ksmessaging.android.ViewActions.waitFor;
+import static com.ksmessaging.android.ViewActions.waitUntilMatches;
 import static org.hamcrest.CoreMatchers.allOf;
 import static org.junit.Assert.assertTrue;
 

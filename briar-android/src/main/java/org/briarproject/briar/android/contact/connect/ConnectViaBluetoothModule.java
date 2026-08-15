@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.contact.connect;
+package com.ksmessaging.android.contact.connect;
 
-import org.briarproject.briar.android.viewmodel.ViewModelKey;
+import com.ksmessaging.android.viewmodel.ViewModelKey;
 
 import androidx.lifecycle.ViewModel;
 import dagger.Binds;

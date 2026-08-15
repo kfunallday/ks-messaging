@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import android.app.Application;
 import android.content.ContentResolver;
@@ -23,13 +23,13 @@ import org.briarproject.bramble.api.settings.Settings;
 import org.briarproject.bramble.api.settings.SettingsManager;
 import org.briarproject.bramble.api.settings.event.SettingsUpdatedEvent;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.attachment.UnsupportedMimeTypeException;
-import org.briarproject.briar.android.attachment.media.ImageCompressor;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
-import org.briarproject.briar.api.avatar.AvatarManager;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
+import com.ksmessaging.R;
+import com.ksmessaging.android.attachment.UnsupportedMimeTypeException;
+import com.ksmessaging.android.attachment.media.ImageCompressor;
+import com.ksmessaging.android.viewmodel.DbViewModel;
+import com.ksmessaging.api.avatar.AvatarManager;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 import org.briarproject.onionwrapper.CircumventionProvider;
@@ -54,9 +54,9 @@ import static org.briarproject.bramble.util.AndroidUtils.getSupportedImageConten
 import static org.briarproject.bramble.util.LogUtils.logDuration;
 import static org.briarproject.bramble.util.LogUtils.logException;
 import static org.briarproject.bramble.util.LogUtils.now;
-import static org.briarproject.briar.android.settings.SecurityFragment.PREF_SCREEN_LOCK;
-import static org.briarproject.briar.android.settings.SecurityFragment.PREF_SCREEN_LOCK_TIMEOUT;
-import static org.briarproject.briar.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
+import static com.ksmessaging.android.settings.SecurityFragment.PREF_SCREEN_LOCK;
+import static com.ksmessaging.android.settings.SecurityFragment.PREF_SCREEN_LOCK_TIMEOUT;
+import static com.ksmessaging.android.settings.SettingsFragment.SETTINGS_NAMESPACE;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

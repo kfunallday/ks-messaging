@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.util;
+package com.ksmessaging.android.util;
 
 import android.content.Context;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.forum;
+package com.ksmessaging.forum;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.UniqueId;
@@ -26,12 +26,12 @@ import static java.util.Collections.singletonList;
 import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_SIGNATURE_LENGTH;
 import static org.briarproject.bramble.util.ValidationUtils.checkLength;
 import static org.briarproject.bramble.util.ValidationUtils.checkSize;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_AUTHOR;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_PARENT;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_READ;
-import static org.briarproject.briar.api.forum.ForumConstants.KEY_TIMESTAMP;
-import static org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_POST_TEXT_LENGTH;
-import static org.briarproject.briar.api.forum.ForumPostFactory.SIGNING_LABEL_POST;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_AUTHOR;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_PARENT;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_READ;
+import static com.ksmessaging.api.forum.ForumConstants.KEY_TIMESTAMP;
+import static com.ksmessaging.api.forum.ForumConstants.MAX_FORUM_POST_TEXT_LENGTH;
+import static com.ksmessaging.api.forum.ForumPostFactory.SIGNING_LABEL_POST;
 
 @Immutable
 @NotNullByDefault

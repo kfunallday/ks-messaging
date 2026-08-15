@@ -1,13 +1,13 @@
-package org.briarproject.briar.api.sharing;
+package com.ksmessaging.api.sharing;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.db.Transaction;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.api.client.ProtocolStateException;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationManager.ConversationClient;
+import com.ksmessaging.api.client.ProtocolStateException;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationManager.ConversationClient;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;

@@ -1,15 +1,15 @@
-package org.briarproject.briar.android.hotspot;
+package com.ksmessaging.android.hotspot;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.android.fragment.BaseFragment.BaseFragmentListener;
-import org.briarproject.briar.android.hotspot.HotspotState.HotspotError;
-import org.briarproject.briar.android.hotspot.HotspotState.HotspotStarted;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.android.fragment.BaseFragment.BaseFragmentListener;
+import com.ksmessaging.android.hotspot.HotspotState.HotspotError;
+import com.ksmessaging.android.hotspot.HotspotState.HotspotStarted;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -21,8 +21,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
 
-import static org.briarproject.briar.android.util.UiUtils.showFragment;
-import static org.briarproject.briar.api.android.AndroidNotificationManager.ACTION_STOP_HOTSPOT;
+import static com.ksmessaging.android.util.UiUtils.showFragment;
+import static com.ksmessaging.api.android.AndroidNotificationManager.ACTION_STOP_HOTSPOT;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

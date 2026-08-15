@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.conversation;
+package com.ksmessaging.android.privategroup.conversation;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,14 +8,14 @@ import android.view.MenuItem;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.privategroup.creation.GroupInviteActivity;
-import org.briarproject.briar.android.privategroup.memberlist.GroupMemberListActivity;
-import org.briarproject.briar.android.privategroup.reveal.RevealContactsActivity;
-import org.briarproject.briar.android.threaded.ThreadListActivity;
-import org.briarproject.briar.android.threaded.ThreadListViewModel;
-import org.briarproject.briar.android.widget.LinkDialogFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.privategroup.creation.GroupInviteActivity;
+import com.ksmessaging.android.privategroup.memberlist.GroupMemberListActivity;
+import com.ksmessaging.android.privategroup.reveal.RevealContactsActivity;
+import com.ksmessaging.android.threaded.ThreadListActivity;
+import com.ksmessaging.android.threaded.ThreadListViewModel;
+import com.ksmessaging.android.widget.LinkDialogFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -27,9 +27,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
-import static org.briarproject.briar.android.activity.RequestCodes.REQUEST_GROUP_INVITE;
-import static org.briarproject.briar.android.util.UiUtils.observeOnce;
-import static org.briarproject.briar.api.privategroup.PrivateGroupConstants.MAX_GROUP_POST_TEXT_LENGTH;
+import static com.ksmessaging.android.activity.RequestCodes.REQUEST_GROUP_INVITE;
+import static com.ksmessaging.android.util.UiUtils.observeOnce;
+import static com.ksmessaging.api.privategroup.PrivateGroupConstants.MAX_GROUP_POST_TEXT_LENGTH;
 import static org.briarproject.nullsafety.NullSafety.requireNonNull;
 
 @MethodsNotNullByDefault

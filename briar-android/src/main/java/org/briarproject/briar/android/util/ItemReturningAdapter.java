@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.util;
+package com.ksmessaging.android.util;
 
 public interface ItemReturningAdapter<I> {
 

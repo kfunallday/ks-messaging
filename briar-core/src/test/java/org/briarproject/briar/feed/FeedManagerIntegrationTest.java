@@ -1,15 +1,15 @@
-package org.briarproject.briar.feed;
+package com.ksmessaging.feed;
 
 import org.briarproject.bramble.api.identity.Identity;
 import org.briarproject.bramble.api.identity.IdentityManager;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.test.BrambleTestCase;
 import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogPostHeader;
-import org.briarproject.briar.api.feed.Feed;
-import org.briarproject.briar.api.feed.FeedManager;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogPostHeader;
+import com.ksmessaging.api.feed.Feed;
+import com.ksmessaging.api.feed.FeedManager;
 import org.briarproject.nullsafety.NullSafety;
 import org.junit.After;
 import org.junit.Before;

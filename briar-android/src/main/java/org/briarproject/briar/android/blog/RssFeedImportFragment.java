@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,12 +14,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.fragment.ProgressFragment;
-import org.briarproject.briar.android.util.ActivityLaunchers.GetContentAdvanced;
-import org.briarproject.briar.android.util.ActivityLaunchers.OpenDocumentAdvanced;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.fragment.ProgressFragment;
+import com.ksmessaging.android.util.ActivityLaunchers.GetContentAdvanced;
+import com.ksmessaging.android.util.ActivityLaunchers.OpenDocumentAdvanced;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -33,9 +33,9 @@ import androidx.lifecycle.ViewModelProvider;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 import static android.view.inputmethod.EditorInfo.IME_ACTION_DONE;
-import static org.briarproject.briar.android.util.UiUtils.hideSoftKeyboard;
-import static org.briarproject.briar.android.util.UiUtils.launchActivityToOpenFile;
-import static org.briarproject.briar.android.util.UiUtils.showFragment;
+import static com.ksmessaging.android.util.UiUtils.hideSoftKeyboard;
+import static com.ksmessaging.android.util.UiUtils.launchActivityToOpenFile;
+import static com.ksmessaging.android.util.UiUtils.showFragment;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

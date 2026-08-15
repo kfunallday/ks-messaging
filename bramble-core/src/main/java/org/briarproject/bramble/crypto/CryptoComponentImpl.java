@@ -109,29 +109,43 @@ class CryptoComponentImpl implements CryptoComponent {
 	// Based on https://android-developers.googleblog.com/2013/08/some-securerandom-thoughts.html
 	// "Applications which run exclusively on Android KitKat (4.4) or above do
 	// not need to take any special action to work around this bug."
-	private void installSecureRandomProvider(Provider provider) {
-		Provider[] providers = Security.getProviders("SecureRandom.SHA1PRNG");
-		if (providers == null || providers.length == 0
-				|| !provider.getClass().equals(providers[0].getClass())) {
-			Security.insertProviderAt(provider, 1);
-		}
-		// Check the new provider is the default when no algorithm is specified
-		SecureRandom random = new SecureRandom();
-		if (!provider.getClass().equals(random.getProvider().getClass())) {
-			throw new SecurityException("Wrong SecureRandom provider: "
-					+ random.getProvider().getClass());
-		}
-		// Check the new provider is the default when SHA1PRNG is specified
-		try {
-			random = SecureRandom.getInstance("SHA1PRNG");
-		} catch (NoSuchAlgorithmException e) {
-			throw new SecurityException(e);
-		}
-		if (!provider.getClass().equals(random.getProvider().getClass())) {
-			throw new SecurityException("Wrong SHA1PRNG provider: "
-					+ random.getProvider().getClass());
-		}
-	}
+    private void installSecureRandomProvider(Provider provider) {
+        Provider[] providers = Security.getProviders("SecureRandom.SHA1PRNG");
+        if (providers == null || providers.length == 0
+                || !provider.getClass().equals(providers[0].getClass())) {
+            Security.insertProviderAt(provider, 1);
+        }
+
+        // Check the new provider is valid when no algorithm is specified
+        SecureRandom random = new SecureRandom();
+        Class<?> defaultClass = random.getProvider().getClass();
+        if (!isAcceptedProvider(provider.getClass(), defaultClass)) {
+            throw new SecurityException("Wrong SecureRandom provider: " + defaultClass);
+        }
+
+        // Check the new provider is valid when SHA1PRNG is specified
+        try {
+            random = SecureRandom.getInstance("SHA1PRNG");
+        } catch (NoSuchAlgorithmException e) {
+            throw new SecurityException(e);
+        }
+        
+        Class<?> sha1Class = random.getProvider().getClass();
+        if (!isAcceptedProvider(provider.getClass(), sha1Class)) {
+            throw new SecurityException("Wrong SHA1PRNG provider: " + sha1Class);
+        }
+    }
+
+    // Helper method to safely validate providers against modern Android OS relocations
+    private boolean isAcceptedProvider(Class<?> expected, Class<?> actual) {
+        if (expected.equals(actual)) {
+            return true;
+        }
+        String actualName = actual.getName();
+        return actualName.equals("com.android.org.conscrypt.OpenSSLProvider") ||
+               actualName.contains("conscrypt") ||
+               actualName.endsWith("OpenSSLProvider");
+    }
 
 	@Override
 	public UniqueId generateUniqueId() {

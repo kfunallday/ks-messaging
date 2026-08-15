@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.list;
+package com.ksmessaging.android.privategroup.list;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,14 +12,14 @@ import android.view.ViewGroup;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.privategroup.creation.CreateGroupActivity;
-import org.briarproject.briar.android.privategroup.invitation.GroupInvitationActivity;
-import org.briarproject.briar.android.privategroup.list.GroupViewHolder.OnGroupRemoveClickListener;
-import org.briarproject.briar.android.util.BriarSnackbarBuilder;
-import org.briarproject.briar.android.view.BriarRecyclerView;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.privategroup.creation.CreateGroupActivity;
+import com.ksmessaging.android.privategroup.invitation.GroupInvitationActivity;
+import com.ksmessaging.android.privategroup.list.GroupViewHolder.OnGroupRemoveClickListener;
+import com.ksmessaging.android.util.BriarSnackbarBuilder;
+import com.ksmessaging.android.view.BriarRecyclerView;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

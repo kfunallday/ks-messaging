@@ -1,11 +1,11 @@
-package org.briarproject.briar.headless.contact
+package com.ksmessaging.headless.contact
 
 import org.briarproject.bramble.api.contact.Contact
 import org.briarproject.bramble.api.contact.event.ContactAddedEvent
 import org.briarproject.bramble.api.plugin.event.ContactConnectedEvent
 import org.briarproject.bramble.api.plugin.event.ContactDisconnectedEvent
 import org.briarproject.bramble.identity.output
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.headless.json.JsonDict
 
 internal fun Contact.output(latestMsgTime: Long, connected: Boolean, unreadCount: Int) = JsonDict(
     "contactId" to id.int,

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact;
+package com.ksmessaging.android.contact;
 
 import android.app.Application;
 
@@ -13,9 +13,9 @@ import org.briarproject.bramble.api.event.Event;
 import org.briarproject.bramble.api.event.EventBus;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.identity.AuthorManager;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.identity.AuthorManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.concurrent.Executor;

@@ -1,7 +1,7 @@
-package org.briarproject.briar.android.privategroup.conversation;
+package com.ksmessaging.android.privategroup.conversation;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.api.privategroup.JoinMessageHeader;
+import com.ksmessaging.R;
+import com.ksmessaging.api.privategroup.JoinMessageHeader;
 
 import javax.annotation.concurrent.NotThreadSafe;
 

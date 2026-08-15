@@ -1,4 +1,4 @@
-package org.briarproject.briar.client;
+package com.ksmessaging.client;
 
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.data.BdfDictionary;
@@ -10,14 +10,14 @@ import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.test.BrambleMockTestCase;
 import org.briarproject.bramble.test.TestUtils;
-import org.briarproject.briar.api.client.MessageTracker;
+import com.ksmessaging.api.client.MessageTracker;
 import org.jmock.Expectations;
 import org.junit.Test;
 
-import static org.briarproject.briar.client.MessageTrackerConstants.GROUP_KEY_LATEST_MSG;
-import static org.briarproject.briar.client.MessageTrackerConstants.GROUP_KEY_MSG_COUNT;
-import static org.briarproject.briar.client.MessageTrackerConstants.GROUP_KEY_STORED_MESSAGE_ID;
-import static org.briarproject.briar.client.MessageTrackerConstants.GROUP_KEY_UNREAD_COUNT;
+import static com.ksmessaging.client.MessageTrackerConstants.GROUP_KEY_LATEST_MSG;
+import static com.ksmessaging.client.MessageTrackerConstants.GROUP_KEY_MSG_COUNT;
+import static com.ksmessaging.client.MessageTrackerConstants.GROUP_KEY_STORED_MESSAGE_ID;
+import static com.ksmessaging.client.MessageTrackerConstants.GROUP_KEY_UNREAD_COUNT;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 

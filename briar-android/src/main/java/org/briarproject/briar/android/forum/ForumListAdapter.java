@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.forum;
+package com.ksmessaging.android.forum;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.recyclerview.widget.DiffUtil.ItemCallback;

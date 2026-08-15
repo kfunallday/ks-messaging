@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.feed;
+package com.ksmessaging.api.feed;
 
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.db.Transaction;
@@ -15,7 +15,7 @@ public interface FeedManager {
 	/**
 	 * The unique ID of the RSS feed client.
 	 */
-	ClientId CLIENT_ID = new ClientId("org.briarproject.briar.feed");
+	ClientId CLIENT_ID = new ClientId("com.ksmessaging.feed");
 
 	/**
 	 * The current major version of the RSS feed client.

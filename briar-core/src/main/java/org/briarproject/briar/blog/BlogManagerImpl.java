@@ -1,4 +1,4 @@
-package org.briarproject.briar.blog;
+package com.ksmessaging.blog;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.BdfIncomingMessageHook;
@@ -21,17 +21,17 @@ import org.briarproject.bramble.api.sync.Group;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogCommentHeader;
-import org.briarproject.briar.api.blog.BlogFactory;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogPost;
-import org.briarproject.briar.api.blog.BlogPostFactory;
-import org.briarproject.briar.api.blog.BlogPostHeader;
-import org.briarproject.briar.api.blog.MessageType;
-import org.briarproject.briar.api.blog.event.BlogPostAddedEvent;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogCommentHeader;
+import com.ksmessaging.api.blog.BlogFactory;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogPost;
+import com.ksmessaging.api.blog.BlogPostFactory;
+import com.ksmessaging.api.blog.BlogPostHeader;
+import com.ksmessaging.api.blog.MessageType;
+import com.ksmessaging.api.blog.event.BlogPostAddedEvent;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -52,21 +52,21 @@ import javax.inject.Inject;
 
 import static org.briarproject.bramble.api.sync.validation.IncomingMessageHook.DeliveryAction.ACCEPT_DO_NOT_SHARE;
 import static org.briarproject.bramble.api.sync.validation.IncomingMessageHook.DeliveryAction.ACCEPT_SHARE;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_AUTHOR;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_COMMENT;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_ORIGINAL_MSG_ID;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_ORIGINAL_PARENT_MSG_ID;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_PARENT_MSG_ID;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_READ;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_RSS_FEED;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_TIMESTAMP;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_TIME_RECEIVED;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_TYPE;
-import static org.briarproject.briar.api.blog.MessageType.COMMENT;
-import static org.briarproject.briar.api.blog.MessageType.POST;
-import static org.briarproject.briar.api.blog.MessageType.WRAPPED_COMMENT;
-import static org.briarproject.briar.api.blog.MessageType.WRAPPED_POST;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.NONE;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_AUTHOR;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_COMMENT;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_ORIGINAL_MSG_ID;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_ORIGINAL_PARENT_MSG_ID;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_PARENT_MSG_ID;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_READ;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_RSS_FEED;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_TIMESTAMP;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_TIME_RECEIVED;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_TYPE;
+import static com.ksmessaging.api.blog.MessageType.COMMENT;
+import static com.ksmessaging.api.blog.MessageType.POST;
+import static com.ksmessaging.api.blog.MessageType.WRAPPED_COMMENT;
+import static com.ksmessaging.api.blog.MessageType.WRAPPED_POST;
+import static com.ksmessaging.api.identity.AuthorInfo.Status.NONE;
 
 @NotNullByDefault
 class BlogManagerImpl extends BdfIncomingMessageHook implements BlogManager,

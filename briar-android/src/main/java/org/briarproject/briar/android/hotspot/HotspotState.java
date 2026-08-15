@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.hotspot;
+package com.ksmessaging.android.hotspot;
 
 import android.graphics.Bitmap;
 

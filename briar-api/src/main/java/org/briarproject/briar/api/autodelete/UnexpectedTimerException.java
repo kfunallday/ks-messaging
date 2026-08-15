@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.autodelete;
+package com.ksmessaging.api.autodelete;
 
 import org.briarproject.bramble.api.db.DbException;
 

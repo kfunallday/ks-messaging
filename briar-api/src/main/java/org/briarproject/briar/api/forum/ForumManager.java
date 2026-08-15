@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.forum;
+package com.ksmessaging.api.forum;
 
 import org.briarproject.bramble.api.crypto.CryptoExecutor;
 import org.briarproject.bramble.api.db.DbException;
@@ -7,7 +7,7 @@ import org.briarproject.bramble.api.identity.LocalAuthor;
 import org.briarproject.bramble.api.sync.ClientId;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
+import com.ksmessaging.api.client.MessageTracker.GroupCount;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;
@@ -21,7 +21,7 @@ public interface ForumManager {
 	/**
 	 * The unique ID of the forum client.
 	 */
-	ClientId CLIENT_ID = new ClientId("org.briarproject.briar.forum");
+	ClientId CLIENT_ID = new ClientId("com.ksmessaging.forum");
 
 	/**
 	 * The current major version of the forum client.

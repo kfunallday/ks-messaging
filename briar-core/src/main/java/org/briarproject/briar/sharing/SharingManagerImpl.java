@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.cleanup.CleanupHook;
@@ -24,18 +24,18 @@ import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.sync.MessageStatus;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager.ClientVersioningHook;
-import org.briarproject.briar.api.autodelete.event.ConversationMessagesDeletedEvent;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.ProtocolStateException;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationMessageHeader;
-import org.briarproject.briar.api.conversation.ConversationRequest;
-import org.briarproject.briar.api.conversation.DeletionResult;
-import org.briarproject.briar.api.sharing.InvitationResponse;
-import org.briarproject.briar.api.sharing.Shareable;
-import org.briarproject.briar.api.sharing.SharingInvitationItem;
-import org.briarproject.briar.api.sharing.SharingManager;
-import org.briarproject.briar.client.ConversationClientImpl;
+import com.ksmessaging.api.autodelete.event.ConversationMessagesDeletedEvent;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.ProtocolStateException;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationMessageHeader;
+import com.ksmessaging.api.conversation.ConversationRequest;
+import com.ksmessaging.api.conversation.DeletionResult;
+import com.ksmessaging.api.sharing.InvitationResponse;
+import com.ksmessaging.api.sharing.Shareable;
+import com.ksmessaging.api.sharing.SharingInvitationItem;
+import com.ksmessaging.api.sharing.SharingManager;
+import com.ksmessaging.client.ConversationClientImpl;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;
@@ -51,19 +51,19 @@ import javax.annotation.Nullable;
 
 import static org.briarproject.bramble.api.sync.Group.Visibility.SHARED;
 import static org.briarproject.bramble.api.sync.validation.IncomingMessageHook.DeliveryAction.ACCEPT_DO_NOT_SHARE;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.SHAREABLE;
-import static org.briarproject.briar.sharing.MessageType.ABORT;
-import static org.briarproject.briar.sharing.MessageType.ACCEPT;
-import static org.briarproject.briar.sharing.MessageType.DECLINE;
-import static org.briarproject.briar.sharing.MessageType.INVITE;
-import static org.briarproject.briar.sharing.MessageType.LEAVE;
-import static org.briarproject.briar.sharing.State.LOCAL_INVITED;
-import static org.briarproject.briar.sharing.State.LOCAL_LEFT;
-import static org.briarproject.briar.sharing.State.REMOTE_HANGING;
-import static org.briarproject.briar.sharing.State.REMOTE_INVITED;
-import static org.briarproject.briar.sharing.State.SHARING;
-import static org.briarproject.briar.sharing.State.START;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.SHAREABLE;
+import static com.ksmessaging.sharing.MessageType.ABORT;
+import static com.ksmessaging.sharing.MessageType.ACCEPT;
+import static com.ksmessaging.sharing.MessageType.DECLINE;
+import static com.ksmessaging.sharing.MessageType.INVITE;
+import static com.ksmessaging.sharing.MessageType.LEAVE;
+import static com.ksmessaging.sharing.State.LOCAL_INVITED;
+import static com.ksmessaging.sharing.State.LOCAL_LEFT;
+import static com.ksmessaging.sharing.State.REMOTE_HANGING;
+import static com.ksmessaging.sharing.State.REMOTE_INVITED;
+import static com.ksmessaging.sharing.State.SHARING;
+import static com.ksmessaging.sharing.State.START;
 
 @NotNullByDefault
 abstract class SharingManagerImpl<S extends Shareable>

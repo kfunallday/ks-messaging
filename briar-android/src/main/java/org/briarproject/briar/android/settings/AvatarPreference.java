@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.Nullable;
@@ -13,7 +13,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-import static org.briarproject.briar.android.view.AuthorView.setAvatar;
+import static com.ksmessaging.android.view.AuthorView.setAvatar;
 
 @NotNullByDefault
 public class AvatarPreference extends Preference {

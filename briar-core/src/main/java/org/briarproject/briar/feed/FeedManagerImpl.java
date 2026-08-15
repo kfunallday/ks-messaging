@@ -1,4 +1,4 @@
-package org.briarproject.briar.feed;
+package com.ksmessaging.feed;
 
 import com.rometools.rome.feed.synd.SyndContent;
 import com.rometools.rome.feed.synd.SyndEntry;
@@ -31,14 +31,14 @@ import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.system.TaskScheduler;
 import org.briarproject.bramble.api.system.Wakeful;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogManager.RemoveBlogHook;
-import org.briarproject.briar.api.blog.BlogPost;
-import org.briarproject.briar.api.blog.BlogPostFactory;
-import org.briarproject.briar.api.feed.Feed;
-import org.briarproject.briar.api.feed.FeedManager;
-import org.briarproject.briar.api.feed.RssProperties;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogManager.RemoveBlogHook;
+import com.ksmessaging.api.blog.BlogPost;
+import com.ksmessaging.api.blog.BlogPostFactory;
+import com.ksmessaging.api.feed.Feed;
+import com.ksmessaging.api.feed.FeedManager;
+import com.ksmessaging.api.feed.RssProperties;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.IOException;
@@ -73,13 +73,13 @@ import static org.briarproject.bramble.util.IoUtils.tryToClose;
 import static org.briarproject.bramble.util.LogUtils.logException;
 import static org.briarproject.bramble.util.StringUtils.isNullOrEmpty;
 import static org.briarproject.bramble.util.StringUtils.truncateUtf8;
-import static org.briarproject.briar.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH;
-import static org.briarproject.briar.api.feed.FeedConstants.FETCH_DELAY_INITIAL;
-import static org.briarproject.briar.api.feed.FeedConstants.FETCH_INTERVAL;
-import static org.briarproject.briar.api.feed.FeedConstants.FETCH_UNIT;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEEDS;
-import static org.briarproject.briar.util.HtmlUtils.cleanAll;
-import static org.briarproject.briar.util.HtmlUtils.cleanArticle;
+import static com.ksmessaging.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH;
+import static com.ksmessaging.api.feed.FeedConstants.FETCH_DELAY_INITIAL;
+import static com.ksmessaging.api.feed.FeedConstants.FETCH_INTERVAL;
+import static com.ksmessaging.api.feed.FeedConstants.FETCH_UNIT;
+import static com.ksmessaging.api.feed.FeedConstants.KEY_FEEDS;
+import static com.ksmessaging.util.HtmlUtils.cleanAll;
+import static com.ksmessaging.util.HtmlUtils.cleanArticle;
 
 @ThreadSafe
 @NotNullByDefault

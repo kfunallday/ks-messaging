@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.graphics.drawable.Drawable;
 import android.view.View;
@@ -10,8 +10,8 @@ import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.conversation.glide.GlideApp;
+import com.ksmessaging.R;
+import com.ksmessaging.android.conversation.glide.GlideApp;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.DrawableRes;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import android.widget.EditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 import org.briarproject.bramble.api.contact.Contact;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BaseActivity;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BaseActivity;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -27,8 +27,8 @@ import static android.view.WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VI
 import static java.util.Objects.requireNonNull;
 import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_AUTHOR_NAME_LENGTH;
 import static org.briarproject.bramble.util.StringUtils.toUtf8;
-import static org.briarproject.briar.android.util.UiUtils.hideSoftKeyboard;
-import static org.briarproject.briar.android.util.UiUtils.showSoftKeyboard;
+import static com.ksmessaging.android.util.UiUtils.hideSoftKeyboard;
+import static com.ksmessaging.android.util.UiUtils.showSoftKeyboard;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

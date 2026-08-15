@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.forum;
+package com.ksmessaging.android.forum;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,11 +13,11 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.util.StringUtils;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumManager;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.forum.ForumManager;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -34,9 +34,9 @@ import static java.util.logging.Level.WARNING;
 import static org.briarproject.bramble.util.LogUtils.logDuration;
 import static org.briarproject.bramble.util.LogUtils.logException;
 import static org.briarproject.bramble.util.LogUtils.now;
-import static org.briarproject.briar.android.util.UiUtils.enterPressed;
-import static org.briarproject.briar.android.util.UiUtils.hideSoftKeyboard;
-import static org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH;
+import static com.ksmessaging.android.util.UiUtils.enterPressed;
+import static com.ksmessaging.android.util.UiUtils.hideSoftKeyboard;
+import static com.ksmessaging.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

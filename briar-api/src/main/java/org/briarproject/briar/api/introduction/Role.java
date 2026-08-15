@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.introduction;
+package com.ksmessaging.api.introduction;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.nullsafety.NotNullByDefault;

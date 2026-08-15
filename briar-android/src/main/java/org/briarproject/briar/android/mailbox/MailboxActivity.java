@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.mailbox;
+package com.ksmessaging.android.mailbox;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -14,19 +14,19 @@ import org.briarproject.bramble.api.mailbox.MailboxPairingState.MailboxAlreadyPa
 import org.briarproject.bramble.api.mailbox.MailboxPairingState.Paired;
 import org.briarproject.bramble.api.mailbox.MailboxPairingState.Pending;
 import org.briarproject.bramble.api.mailbox.MailboxPairingState.UnexpectedError;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.android.fragment.FinalFragment;
-import org.briarproject.briar.android.mailbox.MailboxState.CameraError;
-import org.briarproject.briar.android.mailbox.MailboxState.IsPaired;
-import org.briarproject.briar.android.mailbox.MailboxState.NotSetup;
-import org.briarproject.briar.android.mailbox.MailboxState.OfflineWhenPairing;
-import org.briarproject.briar.android.mailbox.MailboxState.Pairing;
-import org.briarproject.briar.android.mailbox.MailboxState.ScanningQrCode;
-import org.briarproject.briar.android.mailbox.MailboxState.ShowDownload;
-import org.briarproject.briar.android.mailbox.MailboxState.WasUnpaired;
-import org.briarproject.briar.android.view.BlankFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.android.fragment.FinalFragment;
+import com.ksmessaging.android.mailbox.MailboxState.CameraError;
+import com.ksmessaging.android.mailbox.MailboxState.IsPaired;
+import com.ksmessaging.android.mailbox.MailboxState.NotSetup;
+import com.ksmessaging.android.mailbox.MailboxState.OfflineWhenPairing;
+import com.ksmessaging.android.mailbox.MailboxState.Pairing;
+import com.ksmessaging.android.mailbox.MailboxState.ScanningQrCode;
+import com.ksmessaging.android.mailbox.MailboxState.ShowDownload;
+import com.ksmessaging.android.mailbox.MailboxState.WasUnpaired;
+import com.ksmessaging.android.view.BlankFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -43,7 +43,7 @@ import static android.widget.Toast.LENGTH_LONG;
 import static org.briarproject.bramble.api.mailbox.MailboxConstants.QR_FORMAT_VERSION;
 import static org.briarproject.bramble.api.qrcode.QrCodeClassifier.QrCodeType.BQP;
 import static org.briarproject.bramble.api.qrcode.QrCodeClassifier.QrCodeType.MAILBOX;
-import static org.briarproject.briar.android.util.UiUtils.showFragment;
+import static com.ksmessaging.android.util.UiUtils.showFragment;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

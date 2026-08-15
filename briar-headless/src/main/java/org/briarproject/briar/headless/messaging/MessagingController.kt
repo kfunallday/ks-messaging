@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless.messaging
+package com.ksmessaging.headless.messaging
 
 import io.javalin.http.Context
 

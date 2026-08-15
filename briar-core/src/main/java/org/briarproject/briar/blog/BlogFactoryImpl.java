@@ -1,4 +1,4 @@
-package org.briarproject.briar.blog;
+package com.ksmessaging.blog;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -6,16 +6,16 @@ import org.briarproject.bramble.api.data.BdfList;
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.sync.Group;
 import org.briarproject.bramble.api.sync.GroupFactory;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogFactory;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
 import static org.briarproject.bramble.util.ValidationUtils.checkSize;
-import static org.briarproject.briar.api.blog.BlogManager.CLIENT_ID;
-import static org.briarproject.briar.api.blog.BlogManager.MAJOR_VERSION;
+import static com.ksmessaging.api.blog.BlogManager.CLIENT_ID;
+import static com.ksmessaging.api.blog.BlogManager.MAJOR_VERSION;
 
 @Immutable
 @NotNullByDefault

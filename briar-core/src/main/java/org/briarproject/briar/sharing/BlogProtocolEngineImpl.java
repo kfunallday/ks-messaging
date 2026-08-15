@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -11,15 +11,15 @@ import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogInvitationResponse;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogSharingManager;
-import org.briarproject.briar.api.blog.event.BlogInvitationRequestReceivedEvent;
-import org.briarproject.briar.api.blog.event.BlogInvitationResponseReceivedEvent;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.conversation.ConversationRequest;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogInvitationResponse;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogSharingManager;
+import com.ksmessaging.api.blog.event.BlogInvitationRequestReceivedEvent;
+import com.ksmessaging.api.blog.event.BlogInvitationResponseReceivedEvent;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.conversation.ConversationRequest;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

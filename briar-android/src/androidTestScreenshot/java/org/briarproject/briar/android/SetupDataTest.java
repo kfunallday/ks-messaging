@@ -1,11 +1,11 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.content.Context;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.account.SetupActivity;
+import com.ksmessaging.R;
+import com.ksmessaging.android.account.SetupActivity;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,7 +28,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 import static org.briarproject.android.dontkillmelib.DozeUtils.needsDozeWhitelisting;
 import static org.briarproject.bramble.api.plugin.LanTcpConstants.ID;
-import static org.briarproject.briar.android.ViewActions.waitUntilMatches;
+import static com.ksmessaging.android.ViewActions.waitUntilMatches;
 import static org.hamcrest.Matchers.allOf;
 import static org.junit.Assert.assertTrue;
 

@@ -1,4 +1,4 @@
-package org.briarproject.briar.test;
+package com.ksmessaging.test;
 
 import org.briarproject.bramble.api.event.Event;
 import org.briarproject.bramble.api.event.EventListener;
@@ -6,7 +6,7 @@ import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-import static org.briarproject.briar.test.BriarIntegrationTest.waitForEvents;
+import static com.ksmessaging.test.BriarIntegrationTest.waitForEvents;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 

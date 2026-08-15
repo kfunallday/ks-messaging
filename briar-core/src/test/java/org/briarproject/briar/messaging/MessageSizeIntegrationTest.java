@@ -1,4 +1,4 @@
-package org.briarproject.briar.messaging;
+package com.ksmessaging.messaging;
 
 import org.briarproject.bramble.api.UniqueId;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -11,11 +11,11 @@ import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageFactory;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.test.BrambleTestCase;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.forum.ForumPost;
-import org.briarproject.briar.api.forum.ForumPostFactory;
-import org.briarproject.briar.api.messaging.PrivateMessage;
-import org.briarproject.briar.api.messaging.PrivateMessageFactory;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.forum.ForumPost;
+import com.ksmessaging.api.forum.ForumPostFactory;
+import com.ksmessaging.api.messaging.PrivateMessage;
+import com.ksmessaging.api.messaging.PrivateMessageFactory;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -32,13 +32,13 @@ import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
 import static org.briarproject.bramble.util.IoUtils.copyAndClose;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_IMAGE_SIZE;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_POST_TEXT_LENGTH;
-import static org.briarproject.briar.api.messaging.MessagingConstants.MAX_ATTACHMENTS_PER_MESSAGE;
-import static org.briarproject.briar.api.messaging.MessagingConstants.MAX_PRIVATE_MESSAGE_TEXT_LENGTH;
-import static org.briarproject.briar.messaging.MessageTypes.ATTACHMENT;
+import static com.ksmessaging.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
+import static com.ksmessaging.api.attachment.MediaConstants.MAX_IMAGE_SIZE;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.forum.ForumConstants.MAX_FORUM_POST_TEXT_LENGTH;
+import static com.ksmessaging.api.messaging.MessagingConstants.MAX_ATTACHMENTS_PER_MESSAGE;
+import static com.ksmessaging.api.messaging.MessagingConstants.MAX_PRIVATE_MESSAGE_TEXT_LENGTH;
+import static com.ksmessaging.messaging.MessageTypes.ATTACHMENT;
 import static org.junit.Assert.assertTrue;
 
 public class MessageSizeIntegrationTest extends BrambleTestCase {

@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless.event
+package com.ksmessaging.headless.event
 
 import io.javalin.plugin.json.JavalinJson.toJson
 import io.javalin.websocket.WsContext
@@ -8,17 +8,17 @@ import io.mockk.mockk
 import io.mockk.verify
 import org.briarproject.bramble.test.ImmediateExecutor
 import org.briarproject.bramble.test.TestUtils.getRandomId
-import org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER
-import org.briarproject.briar.api.client.SessionId
-import org.briarproject.briar.api.identity.AuthorInfo
-import org.briarproject.briar.api.identity.AuthorInfo.Status.VERIFIED
-import org.briarproject.briar.api.introduction.IntroductionRequest
-import org.briarproject.briar.api.introduction.event.IntroductionRequestReceivedEvent
-import org.briarproject.briar.api.messaging.PrivateMessageHeader
-import org.briarproject.briar.api.messaging.event.PrivateMessageReceivedEvent
-import org.briarproject.briar.headless.ControllerTest
-import org.briarproject.briar.headless.messaging.EVENT_CONVERSATION_MESSAGE
-import org.briarproject.briar.headless.messaging.output
+import com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER
+import com.ksmessaging.api.client.SessionId
+import com.ksmessaging.api.identity.AuthorInfo
+import com.ksmessaging.api.identity.AuthorInfo.Status.VERIFIED
+import com.ksmessaging.api.introduction.IntroductionRequest
+import com.ksmessaging.api.introduction.event.IntroductionRequestReceivedEvent
+import com.ksmessaging.api.messaging.PrivateMessageHeader
+import com.ksmessaging.api.messaging.event.PrivateMessageReceivedEvent
+import com.ksmessaging.headless.ControllerTest
+import com.ksmessaging.headless.messaging.EVENT_CONVERSATION_MESSAGE
+import com.ksmessaging.headless.messaging.output
 import org.eclipse.jetty.websocket.api.WebSocketException
 import org.eclipse.jetty.websocket.common.io.FutureWriteCallback
 import org.junit.jupiter.api.Assertions.assertEquals

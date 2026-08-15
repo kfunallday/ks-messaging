@@ -6,7 +6,7 @@
  * licenced under Apache2 license.
  */
 
-package org.briarproject.briar.android.test;
+package com.ksmessaging.android.test;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -14,8 +14,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 
-import org.briarproject.briar.android.attachment.media.ImageCompressor;
-import org.briarproject.briar.api.test.TestAvatarCreator;
+import com.ksmessaging.android.attachment.media.ImageCompressor;
+import com.ksmessaging.api.test.TestAvatarCreator;
 
 import java.io.IOException;
 import java.io.InputStream;

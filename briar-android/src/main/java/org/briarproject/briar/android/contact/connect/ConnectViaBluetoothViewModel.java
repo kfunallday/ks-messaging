@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact.connect;
+package com.ksmessaging.android.contact.connect;
 
 import android.app.Application;
 import android.bluetooth.BluetoothAdapter;
@@ -20,12 +20,12 @@ import org.briarproject.bramble.api.plugin.event.ConnectionOpenedEvent;
 import org.briarproject.bramble.api.properties.TransportPropertyManager;
 import org.briarproject.bramble.api.system.AndroidExecutor;
 import org.briarproject.bramble.plugin.bluetooth.BluetoothPlugin;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.contact.connect.ConnectViaBluetoothState.Connecting;
-import org.briarproject.briar.android.contact.connect.ConnectViaBluetoothState.Success;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
-import org.briarproject.briar.android.viewmodel.LiveEvent;
-import org.briarproject.briar.android.viewmodel.MutableLiveEvent;
+import com.ksmessaging.R;
+import com.ksmessaging.android.contact.connect.ConnectViaBluetoothState.Connecting;
+import com.ksmessaging.android.contact.connect.ConnectViaBluetoothState.Success;
+import com.ksmessaging.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.LiveEvent;
+import com.ksmessaging.android.viewmodel.MutableLiveEvent;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.concurrent.Executor;
@@ -46,7 +46,7 @@ import static org.briarproject.bramble.api.plugin.BluetoothConstants.PROP_UUID;
 import static org.briarproject.bramble.api.plugin.Plugin.State.ACTIVE;
 import static org.briarproject.bramble.util.LogUtils.logException;
 import static org.briarproject.bramble.util.StringUtils.isNullOrEmpty;
-import static org.briarproject.briar.android.util.PermissionUtils.areBluetoothPermissionsGranted;
+import static com.ksmessaging.android.util.PermissionUtils.areBluetoothPermissionsGranted;
 
 @UiThread
 @NotNullByDefault

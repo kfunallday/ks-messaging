@@ -39,7 +39,7 @@ android {
 		def now = (long) (System.currentTimeMillis() / 1000)
 		buildConfigField "Long", "BuildTimestamp",
 			"${getStdout(['git', 'log', '-n', '1', '--format=%ct'], now)}000L"
-		testInstrumentationRunner 'org.briarproject.briar.android.BriarTestRunner'
+		testInstrumentationRunner 'com.ksmessaging.app.BriarTestRunner'
 		testInstrumentationRunnerArguments disableAnalytics: 'true'
 	}
 
@@ -64,7 +64,7 @@ android {
 	productFlavors {
 		screenshot {
 			dimension "version"
-			applicationIdSuffix ".screenshot" // = org.briarproject.briar.android.screenshot.debug
+			applicationIdSuffix ".screenshot" // = com.ksmessaging.app.screenshot.debug
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt', 'proguard-test.txt'
 		}
 		official {

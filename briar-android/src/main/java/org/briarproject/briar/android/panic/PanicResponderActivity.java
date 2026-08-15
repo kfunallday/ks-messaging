@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.panic;
+package com.ksmessaging.android.panic;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -20,8 +20,8 @@ import info.guardianproject.panic.PanicResponder;
 import info.guardianproject.trustedintents.TrustedIntents;
 
 import static java.util.logging.Logger.getLogger;
-import static org.briarproject.briar.android.panic.PanicPreferencesFragment.KEY_LOCK;
-import static org.briarproject.briar.android.panic.PanicPreferencesFragment.KEY_PURGE;
+import static com.ksmessaging.android.panic.PanicPreferencesFragment.KEY_LOCK;
+import static com.ksmessaging.android.panic.PanicPreferencesFragment.KEY_PURGE;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

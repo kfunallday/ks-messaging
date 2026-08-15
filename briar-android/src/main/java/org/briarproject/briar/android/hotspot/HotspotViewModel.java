@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.hotspot;
+package com.ksmessaging.android.hotspot;
 
 import android.app.Application;
 import android.net.Uri;
@@ -8,18 +8,18 @@ import org.briarproject.bramble.api.db.TransactionManager;
 import org.briarproject.bramble.api.lifecycle.IoExecutor;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.hotspot.HotspotManager.HotspotListener;
-import org.briarproject.briar.android.hotspot.HotspotState.HotspotError;
-import org.briarproject.briar.android.hotspot.HotspotState.HotspotStarted;
-import org.briarproject.briar.android.hotspot.HotspotState.NetworkConfig;
-import org.briarproject.briar.android.hotspot.HotspotState.StartingHotspot;
-import org.briarproject.briar.android.hotspot.HotspotState.WebsiteConfig;
-import org.briarproject.briar.android.hotspot.WebServerManager.WebServerListener;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
-import org.briarproject.briar.android.viewmodel.LiveEvent;
-import org.briarproject.briar.android.viewmodel.MutableLiveEvent;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
+import com.ksmessaging.R;
+import com.ksmessaging.android.hotspot.HotspotManager.HotspotListener;
+import com.ksmessaging.android.hotspot.HotspotState.HotspotError;
+import com.ksmessaging.android.hotspot.HotspotState.HotspotStarted;
+import com.ksmessaging.android.hotspot.HotspotState.NetworkConfig;
+import com.ksmessaging.android.hotspot.HotspotState.StartingHotspot;
+import com.ksmessaging.android.hotspot.HotspotState.WebsiteConfig;
+import com.ksmessaging.android.hotspot.WebServerManager.WebServerListener;
+import com.ksmessaging.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.LiveEvent;
+import com.ksmessaging.android.viewmodel.MutableLiveEvent;
+import com.ksmessaging.api.android.AndroidNotificationManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.File;
@@ -41,8 +41,8 @@ import static java.util.Objects.requireNonNull;
 import static java.util.logging.Level.WARNING;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.util.IoUtils.copyAndClose;
-import static org.briarproject.briar.BuildConfig.DEBUG;
-import static org.briarproject.briar.BuildConfig.VERSION_NAME;
+import static com.ksmessaging.BuildConfig.DEBUG;
+import static com.ksmessaging.BuildConfig.VERSION_NAME;
 
 @NotNullByDefault
 class HotspotViewModel extends DbViewModel

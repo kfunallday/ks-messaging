@@ -1,6 +1,6 @@
-package org.briarproject.briar.conversation;
+package com.ksmessaging.conversation;
 
-import org.briarproject.briar.api.conversation.ConversationManager;
+import com.ksmessaging.api.conversation.ConversationManager;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

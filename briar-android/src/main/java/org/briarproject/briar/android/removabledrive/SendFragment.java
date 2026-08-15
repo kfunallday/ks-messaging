@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.removabledrive;
+package com.ksmessaging.android.removabledrive;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -13,8 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.briarproject.bramble.api.plugin.file.RemovableDriveTask;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.util.ActivityLaunchers.CreateDocumentAdvanced;
+import com.ksmessaging.R;
+import com.ksmessaging.android.util.ActivityLaunchers.CreateDocumentAdvanced;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -34,8 +34,8 @@ import static android.widget.Toast.LENGTH_LONG;
 import static java.util.logging.Level.WARNING;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.util.LogUtils.logException;
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

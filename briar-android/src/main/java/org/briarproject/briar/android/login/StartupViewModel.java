@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.login;
+package com.ksmessaging.android.login;
 
 import android.app.Application;
 
@@ -12,9 +12,9 @@ import org.briarproject.bramble.api.lifecycle.IoExecutor;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager.LifecycleState;
 import org.briarproject.bramble.api.lifecycle.event.LifecycleEvent;
-import org.briarproject.briar.android.viewmodel.LiveEvent;
-import org.briarproject.briar.android.viewmodel.MutableLiveEvent;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
+import com.ksmessaging.android.viewmodel.LiveEvent;
+import com.ksmessaging.android.viewmodel.MutableLiveEvent;
+import com.ksmessaging.api.android.AndroidNotificationManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.concurrent.Executor;
@@ -30,12 +30,12 @@ import static org.briarproject.bramble.api.crypto.DecryptionResult.SUCCESS;
 import static org.briarproject.bramble.api.lifecycle.LifecycleManager.LifecycleState.COMPACTING_DATABASE;
 import static org.briarproject.bramble.api.lifecycle.LifecycleManager.LifecycleState.MIGRATING_DATABASE;
 import static org.briarproject.bramble.api.lifecycle.LifecycleManager.LifecycleState.STARTING_SERVICES;
-import static org.briarproject.briar.android.login.StartupViewModel.State.COMPACTING;
-import static org.briarproject.briar.android.login.StartupViewModel.State.MIGRATING;
-import static org.briarproject.briar.android.login.StartupViewModel.State.SIGNED_IN;
-import static org.briarproject.briar.android.login.StartupViewModel.State.SIGNED_OUT;
-import static org.briarproject.briar.android.login.StartupViewModel.State.STARTED;
-import static org.briarproject.briar.android.login.StartupViewModel.State.STARTING;
+import static com.ksmessaging.android.login.StartupViewModel.State.COMPACTING;
+import static com.ksmessaging.android.login.StartupViewModel.State.MIGRATING;
+import static com.ksmessaging.android.login.StartupViewModel.State.SIGNED_IN;
+import static com.ksmessaging.android.login.StartupViewModel.State.SIGNED_OUT;
+import static com.ksmessaging.android.login.StartupViewModel.State.STARTED;
+import static com.ksmessaging.android.login.StartupViewModel.State.STARTING;
 
 @NotNullByDefault
 public class StartupViewModel extends AndroidViewModel

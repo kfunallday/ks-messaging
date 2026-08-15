@@ -1,4 +1,4 @@
-package org.briarproject.briar.avatar;
+package com.ksmessaging.avatar;
 
 interface AvatarConstants {
 

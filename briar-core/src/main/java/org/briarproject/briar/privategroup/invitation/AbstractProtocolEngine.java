@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -17,17 +17,17 @@ import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.privategroup.GroupMessage;
-import org.briarproject.briar.api.privategroup.GroupMessageFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.event.GroupInvitationResponseReceivedEvent;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationResponse;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.privategroup.GroupMessage;
+import com.ksmessaging.api.privategroup.GroupMessageFactory;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupFactory;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.event.GroupInvitationResponseReceivedEvent;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationManager;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationResponse;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;
@@ -36,11 +36,11 @@ import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 
 import static java.lang.Math.max;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.privategroup.invitation.MessageType.ABORT;
-import static org.briarproject.briar.privategroup.invitation.MessageType.INVITE;
-import static org.briarproject.briar.privategroup.invitation.MessageType.JOIN;
-import static org.briarproject.briar.privategroup.invitation.MessageType.LEAVE;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.privategroup.invitation.MessageType.ABORT;
+import static com.ksmessaging.privategroup.invitation.MessageType.INVITE;
+import static com.ksmessaging.privategroup.invitation.MessageType.JOIN;
+import static com.ksmessaging.privategroup.invitation.MessageType.LEAVE;
 
 @Immutable
 @NotNullByDefault

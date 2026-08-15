@@ -1,8 +1,8 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.conversation.ConversationMessageHeader;
+import com.ksmessaging.api.conversation.ConversationMessageHeader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

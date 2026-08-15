@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.android.contactselection.ContactSelectorController;
-import org.briarproject.briar.android.contactselection.SelectableContactItem;
-import org.briarproject.briar.android.controller.handler.ExceptionHandler;
+import com.ksmessaging.android.contactselection.ContactSelectorController;
+import com.ksmessaging.android.contactselection.SelectableContactItem;
+import com.ksmessaging.android.controller.handler.ExceptionHandler;
 
 import java.util.Collection;
 

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,7 +12,7 @@ import java.util.Locale;
 import javax.annotation.Nullable;
 
 import static android.os.Build.VERSION.SDK_INT;
-import static org.briarproject.briar.android.settings.DisplayFragment.PREF_LANGUAGE;
+import static com.ksmessaging.android.settings.DisplayFragment.PREF_LANGUAGE;
 
 @NotNullByDefault
 public class Localizer {

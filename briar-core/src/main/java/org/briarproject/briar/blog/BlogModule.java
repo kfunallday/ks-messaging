@@ -1,4 +1,4 @@
-package org.briarproject.briar.blog;
+package com.ksmessaging.blog;
 
 import org.briarproject.bramble.api.FeatureFlags;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -9,9 +9,9 @@ import org.briarproject.bramble.api.sync.GroupFactory;
 import org.briarproject.bramble.api.sync.MessageFactory;
 import org.briarproject.bramble.api.sync.validation.ValidationManager;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.blog.BlogFactory;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogPostFactory;
+import com.ksmessaging.api.blog.BlogFactory;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogPostFactory;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -19,8 +19,8 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-import static org.briarproject.briar.api.blog.BlogManager.CLIENT_ID;
-import static org.briarproject.briar.api.blog.BlogManager.MAJOR_VERSION;
+import static com.ksmessaging.api.blog.BlogManager.CLIENT_ID;
+import static com.ksmessaging.api.blog.BlogManager.MAJOR_VERSION;
 
 @Module
 public class BlogModule {

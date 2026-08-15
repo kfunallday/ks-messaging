@@ -1,4 +1,4 @@
-package org.briarproject.briar.avatar;
+package com.ksmessaging.avatar;
 
 import org.briarproject.bramble.api.Pair;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -7,8 +7,8 @@ import org.briarproject.bramble.api.data.BdfList;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.attachment.FileTooBigException;
-import org.briarproject.briar.api.avatar.AvatarMessageEncoder;
+import com.ksmessaging.api.attachment.FileTooBigException;
+import com.ksmessaging.api.avatar.AvatarMessageEncoder;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.ByteArrayOutputStream;
@@ -20,10 +20,10 @@ import javax.inject.Inject;
 
 import static org.briarproject.bramble.api.sync.SyncConstants.MAX_MESSAGE_BODY_LENGTH;
 import static org.briarproject.bramble.util.IoUtils.copyAndClose;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
-import static org.briarproject.briar.avatar.AvatarConstants.MSG_KEY_VERSION;
-import static org.briarproject.briar.avatar.AvatarConstants.MSG_TYPE_UPDATE;
+import static com.ksmessaging.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
+import static com.ksmessaging.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
+import static com.ksmessaging.avatar.AvatarConstants.MSG_KEY_VERSION;
+import static com.ksmessaging.avatar.AvatarConstants.MSG_TYPE_UPDATE;
 
 @Immutable
 @NotNullByDefault

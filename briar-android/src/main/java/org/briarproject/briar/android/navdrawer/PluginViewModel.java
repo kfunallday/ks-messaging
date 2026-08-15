@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.navdrawer;
+package com.ksmessaging.android.navdrawer;
 
 import android.app.Application;
 import android.bluetooth.BluetoothAdapter;
@@ -29,7 +29,7 @@ import org.briarproject.bramble.api.settings.Settings;
 import org.briarproject.bramble.api.settings.SettingsManager;
 import org.briarproject.bramble.api.settings.event.SettingsUpdatedEvent;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.DbViewModel;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.concurrent.Executor;

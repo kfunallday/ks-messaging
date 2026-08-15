@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.reporting;
+package com.ksmessaging.android.reporting;
 
 import android.app.Application;
 import android.os.Handler;
@@ -9,16 +9,16 @@ import org.briarproject.bramble.api.plugin.PluginManager;
 import org.briarproject.bramble.api.plugin.TorConstants;
 import org.briarproject.bramble.api.reporting.DevReporter;
 import org.briarproject.bramble.util.AndroidUtils;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.logging.BriefLogFormatter;
-import org.briarproject.briar.android.logging.CachingLogHandler;
-import org.briarproject.briar.android.logging.LogDecrypter;
-import org.briarproject.briar.android.reporting.ReportData.MultiReportInfo;
-import org.briarproject.briar.android.reporting.ReportData.ReportItem;
-import org.briarproject.briar.android.viewmodel.LiveEvent;
-import org.briarproject.briar.android.viewmodel.MutableLiveEvent;
-import org.briarproject.briar.api.android.MemoryStats;
-import org.briarproject.briar.api.android.NetworkUsageMetrics;
+import com.ksmessaging.R;
+import com.ksmessaging.android.logging.BriefLogFormatter;
+import com.ksmessaging.android.logging.CachingLogHandler;
+import com.ksmessaging.android.logging.LogDecrypter;
+import com.ksmessaging.android.reporting.ReportData.MultiReportInfo;
+import com.ksmessaging.android.reporting.ReportData.ReportItem;
+import com.ksmessaging.android.viewmodel.LiveEvent;
+import com.ksmessaging.android.viewmodel.MutableLiveEvent;
+import com.ksmessaging.api.android.MemoryStats;
+import com.ksmessaging.api.android.NetworkUsageMetrics;
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.json.JSONException;
 
@@ -43,7 +43,7 @@ import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.api.plugin.Plugin.State.ACTIVE;
 import static org.briarproject.bramble.util.LogUtils.logException;
 import static org.briarproject.bramble.util.StringUtils.isNullOrEmpty;
-import static org.briarproject.briar.android.logging.BriefLogFormatter.formatLog;
+import static com.ksmessaging.android.logging.BriefLogFormatter.formatLog;
 
 @NotNullByDefault
 class ReportViewModel extends AndroidViewModel {

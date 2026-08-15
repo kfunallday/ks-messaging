@@ -1,11 +1,11 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.conversation.ConversationRequest;
-import org.briarproject.briar.api.sharing.InvitationResponse;
-import org.briarproject.briar.api.sharing.Shareable;
+import com.ksmessaging.api.conversation.ConversationRequest;
+import com.ksmessaging.api.sharing.InvitationResponse;
+import com.ksmessaging.api.sharing.Shareable;
 
 public interface InvitationFactory<S extends Shareable, R extends InvitationResponse> {
 

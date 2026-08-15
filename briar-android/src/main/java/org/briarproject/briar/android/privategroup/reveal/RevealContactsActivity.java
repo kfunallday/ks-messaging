@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.reveal;
+package com.ksmessaging.android.privategroup.reveal;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,11 +14,11 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import org.briarproject.bramble.api.contact.ContactId;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.contactselection.ContactSelectorActivity;
-import org.briarproject.briar.android.controller.handler.UiExceptionHandler;
-import org.briarproject.briar.android.controller.handler.UiResultExceptionHandler;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.contactselection.ContactSelectorActivity;
+import com.ksmessaging.android.controller.handler.UiExceptionHandler;
+import com.ksmessaging.android.controller.handler.UiResultExceptionHandler;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

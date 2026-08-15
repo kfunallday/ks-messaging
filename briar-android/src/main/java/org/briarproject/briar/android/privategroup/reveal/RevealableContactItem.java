@@ -1,14 +1,14 @@
-package org.briarproject.briar.android.privategroup.reveal;
+package com.ksmessaging.android.privategroup.reveal;
 
 import org.briarproject.bramble.api.contact.Contact;
-import org.briarproject.briar.android.contactselection.BaseSelectableContactItem;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.privategroup.Visibility;
+import com.ksmessaging.android.contactselection.BaseSelectableContactItem;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.privategroup.Visibility;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.NotThreadSafe;
 
-import static org.briarproject.briar.api.privategroup.Visibility.INVISIBLE;
+import static com.ksmessaging.api.privategroup.Visibility.INVISIBLE;
 
 @NotThreadSafe
 @NotNullByDefault

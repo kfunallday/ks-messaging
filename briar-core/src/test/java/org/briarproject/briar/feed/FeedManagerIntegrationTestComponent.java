@@ -1,4 +1,4 @@
-package org.briarproject.briar.feed;
+package com.ksmessaging.feed;
 
 import org.briarproject.bramble.BrambleCoreIntegrationTestEagerSingletons;
 import org.briarproject.bramble.BrambleCoreModule;
@@ -9,12 +9,12 @@ import org.briarproject.bramble.test.BrambleCoreIntegrationTestModule;
 import org.briarproject.bramble.test.TestDnsModule;
 import org.briarproject.bramble.test.TestPluginConfigModule;
 import org.briarproject.bramble.test.TestSocksModule;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.feed.FeedManager;
-import org.briarproject.briar.avatar.AvatarModule;
-import org.briarproject.briar.blog.BlogModule;
-import org.briarproject.briar.client.BriarClientModule;
-import org.briarproject.briar.identity.IdentityModule;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.feed.FeedManager;
+import com.ksmessaging.avatar.AvatarModule;
+import com.ksmessaging.blog.BlogModule;
+import com.ksmessaging.client.BriarClientModule;
+import com.ksmessaging.identity.IdentityModule;
 
 import javax.inject.Singleton;
 

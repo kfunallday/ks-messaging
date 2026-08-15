@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 import org.briarproject.android.dontkillmelib.DozeHelper;
 import org.briarproject.android.dontkillmelib.DozeHelperImpl;

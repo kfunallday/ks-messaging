@@ -1,16 +1,16 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import android.content.Context;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.api.sharing.SharingInvitationItem;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.api.sharing.SharingInvitationItem;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
 import javax.inject.Inject;
 
-import static org.briarproject.briar.android.sharing.InvitationAdapter.InvitationClickListener;
+import static com.ksmessaging.android.sharing.InvitationAdapter.InvitationClickListener;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

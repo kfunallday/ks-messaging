@@ -1,8 +1,8 @@
-package org.briarproject.briar.android.contactselection;
+package com.ksmessaging.android.contactselection;
 
 import org.briarproject.bramble.api.contact.Contact;
-import org.briarproject.briar.android.contact.ContactItem;
-import org.briarproject.briar.api.identity.AuthorInfo;
+import com.ksmessaging.android.contact.ContactItem;
+import com.ksmessaging.api.identity.AuthorInfo;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.NotThreadSafe;

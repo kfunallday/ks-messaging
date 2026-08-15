@@ -1,4 +1,4 @@
-package org.briarproject.briar.forum;
+package com.ksmessaging.forum;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -7,8 +7,8 @@ import org.briarproject.bramble.api.identity.LocalAuthor;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.forum.ForumPost;
-import org.briarproject.briar.api.forum.ForumPostFactory;
+import com.ksmessaging.api.forum.ForumPost;
+import com.ksmessaging.api.forum.ForumPostFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -18,7 +18,7 @@ import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
 import static org.briarproject.bramble.util.StringUtils.utf8IsTooLong;
-import static org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_POST_TEXT_LENGTH;
+import static com.ksmessaging.api.forum.ForumConstants.MAX_FORUM_POST_TEXT_LENGTH;
 
 @Immutable
 @NotNullByDefault

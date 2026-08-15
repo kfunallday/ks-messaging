@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless.contact
+package com.ksmessaging.headless.contact
 
 import io.javalin.http.BadRequestResponse
 import io.javalin.http.NotFoundResponse
@@ -30,9 +30,9 @@ import org.briarproject.bramble.identity.output
 import org.briarproject.bramble.test.TestUtils.getPendingContact
 import org.briarproject.bramble.test.TestUtils.getRandomBytes
 import org.briarproject.bramble.util.StringUtils.getRandomString
-import org.briarproject.briar.headless.ControllerTest
-import org.briarproject.briar.headless.getFromJson
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.headless.ControllerTest
+import com.ksmessaging.headless.getFromJson
+import com.ksmessaging.headless.json.JsonDict
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Test
@@ -281,7 +281,7 @@ internal class ContactControllerTest : ControllerTest() {
 
     @Test
     fun testSetContactAlias() {
-        mockkStatic("org.briarproject.briar.headless.RouterKt")
+        mockkStatic("com.ksmessaging.headless.RouterKt")
         every { ctx.pathParam("contactId") } returns "1"
         every { ctx.getFromJson(objectMapper, "alias") } returns "foo"
         every { contactManager.setContactAlias(ContactId(1), "foo") } just Runs
@@ -290,7 +290,7 @@ internal class ContactControllerTest : ControllerTest() {
 
     @Test
     fun testSetContactAliasInvalidId() {
-        mockkStatic("org.briarproject.briar.headless.RouterKt")
+        mockkStatic("com.ksmessaging.headless.RouterKt")
         every { ctx.pathParam("contactId") } returns "foo"
         every { ctx.getFromJson(objectMapper, "alias") } returns "bar"
         assertThrows(NotFoundResponse::class.java) {
@@ -300,7 +300,7 @@ internal class ContactControllerTest : ControllerTest() {
 
     @Test
     fun testSetContactAliasNonexistentId() {
-        mockkStatic("org.briarproject.briar.headless.RouterKt")
+        mockkStatic("com.ksmessaging.headless.RouterKt")
         every { ctx.pathParam("contactId") } returns "1"
         every { ctx.getFromJson(objectMapper, "alias") } returns "foo"
         every { contactManager.setContactAlias(ContactId(1), "foo") } throws NotFoundResponse()
@@ -311,7 +311,7 @@ internal class ContactControllerTest : ControllerTest() {
 
     @Test
     fun testSetContactAliasInvalid() {
-        mockkStatic("org.briarproject.briar.headless.RouterKt")
+        mockkStatic("com.ksmessaging.headless.RouterKt")
         every { ctx.pathParam("contactId") } returns "1"
         every {
             ctx.getFromJson(objectMapper, "alias")
@@ -323,7 +323,7 @@ internal class ContactControllerTest : ControllerTest() {
 
     @Test
     fun testSetContactAliasEmpty() {
-        mockkStatic("org.briarproject.briar.headless.RouterKt")
+        mockkStatic("com.ksmessaging.headless.RouterKt")
         every { ctx.pathParam("contactId") } returns "1"
         every { ctx.getFromJson(objectMapper, "alias") } returns ""
         assertThrows(BadRequestResponse::class.java) {
@@ -333,7 +333,7 @@ internal class ContactControllerTest : ControllerTest() {
 
     @Test
     fun testSetContactAliasMissing() {
-        mockkStatic("org.briarproject.briar.headless.RouterKt")
+        mockkStatic("com.ksmessaging.headless.RouterKt")
         every { ctx.pathParam("contactId") } returns "1"
         every { ctx.body() } returns ""
         assertThrows(BadRequestResponse::class.java) {

@@ -1,8 +1,8 @@
-package org.briarproject.briar.android.conversation.glide;
+package com.ksmessaging.android.conversation.glide;
 
 import org.briarproject.bramble.api.db.DatabaseExecutor;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.attachment.AttachmentReader;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.AttachmentReader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.concurrent.Executor;

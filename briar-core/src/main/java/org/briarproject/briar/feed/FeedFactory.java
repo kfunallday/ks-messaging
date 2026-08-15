@@ -1,10 +1,10 @@
-package org.briarproject.briar.feed;
+package com.ksmessaging.feed;
 
 import com.rometools.rome.feed.synd.SyndFeed;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.data.BdfDictionary;
-import org.briarproject.briar.api.feed.Feed;
+import com.ksmessaging.api.feed.Feed;
 
 import javax.annotation.Nullable;
 

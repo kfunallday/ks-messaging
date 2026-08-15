@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless
+package com.ksmessaging.headless
 
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.parameters.options.counted
@@ -11,7 +11,7 @@ import org.briarproject.bramble.BrambleCoreEagerSingletons
 import org.briarproject.bramble.BrambleJavaEagerSingletons
 import org.briarproject.bramble.util.OsUtils.isLinux
 import org.briarproject.bramble.util.OsUtils.isMac
-import org.briarproject.briar.BriarCoreEagerSingletons
+import com.ksmessaging.BriarCoreEagerSingletons
 import org.slf4j.impl.SimpleLogger.DEFAULT_LOG_LEVEL_KEY
 import java.io.File
 import java.io.File.separator

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.qrcode;
+package com.ksmessaging.android.qrcode;
 
 import android.graphics.Bitmap;
 import android.util.DisplayMetrics;

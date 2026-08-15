@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.BrambleCoreModule;
 import org.briarproject.bramble.mailbox.ModularMailboxModule;
@@ -6,19 +6,19 @@ import org.briarproject.bramble.test.BrambleCoreIntegrationTestModule;
 import org.briarproject.bramble.test.TestDnsModule;
 import org.briarproject.bramble.test.TestPluginConfigModule;
 import org.briarproject.bramble.test.TestSocksModule;
-import org.briarproject.briar.attachment.AttachmentModule;
-import org.briarproject.briar.autodelete.AutoDeleteModule;
-import org.briarproject.briar.avatar.AvatarModule;
-import org.briarproject.briar.blog.BlogModule;
-import org.briarproject.briar.client.BriarClientModule;
-import org.briarproject.briar.conversation.ConversationModule;
-import org.briarproject.briar.forum.ForumModule;
-import org.briarproject.briar.identity.IdentityModule;
-import org.briarproject.briar.messaging.MessagingModule;
-import org.briarproject.briar.privategroup.PrivateGroupModule;
-import org.briarproject.briar.privategroup.invitation.GroupInvitationModule;
-import org.briarproject.briar.sharing.SharingModule;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
+import com.ksmessaging.attachment.AttachmentModule;
+import com.ksmessaging.autodelete.AutoDeleteModule;
+import com.ksmessaging.avatar.AvatarModule;
+import com.ksmessaging.blog.BlogModule;
+import com.ksmessaging.client.BriarClientModule;
+import com.ksmessaging.conversation.ConversationModule;
+import com.ksmessaging.forum.ForumModule;
+import com.ksmessaging.identity.IdentityModule;
+import com.ksmessaging.messaging.MessagingModule;
+import com.ksmessaging.privategroup.PrivateGroupModule;
+import com.ksmessaging.privategroup.invitation.GroupInvitationModule;
+import com.ksmessaging.sharing.SharingModule;
+import com.ksmessaging.test.BriarIntegrationTestComponent;
 
 import javax.inject.Singleton;
 

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.reporting;
+package com.ksmessaging.android.reporting;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -15,9 +15,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -35,8 +35,8 @@ import static android.view.View.VISIBLE;
 import static android.widget.Toast.LENGTH_SHORT;
 import static java.util.Objects.requireNonNull;
 import static java.util.logging.Logger.getLogger;
-import static org.briarproject.briar.android.util.UiUtils.onSingleLinkClick;
-import static org.briarproject.briar.android.util.UiUtils.tryToStartActivity;
+import static com.ksmessaging.android.util.UiUtils.onSingleLinkClick;
+import static com.ksmessaging.android.util.UiUtils.tryToStartActivity;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

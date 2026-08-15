@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.BdfMessageContext;
@@ -10,7 +10,7 @@ import org.briarproject.bramble.api.plugin.TransportId;
 import org.briarproject.bramble.api.properties.TransportProperties;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.test.ValidatorTestCase;
-import org.briarproject.briar.api.client.SessionId;
+import com.ksmessaging.api.client.SessionId;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -27,16 +27,16 @@ import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
 import static org.briarproject.bramble.test.TestUtils.getTransportId;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.MAX_INTRODUCTION_TEXT_LENGTH;
-import static org.briarproject.briar.introduction.MessageType.ABORT;
-import static org.briarproject.briar.introduction.MessageType.ACCEPT;
-import static org.briarproject.briar.introduction.MessageType.ACTIVATE;
-import static org.briarproject.briar.introduction.MessageType.AUTH;
-import static org.briarproject.briar.introduction.MessageType.DECLINE;
-import static org.briarproject.briar.introduction.MessageType.REQUEST;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.introduction.IntroductionConstants.MAX_INTRODUCTION_TEXT_LENGTH;
+import static com.ksmessaging.introduction.MessageType.ABORT;
+import static com.ksmessaging.introduction.MessageType.ACCEPT;
+import static com.ksmessaging.introduction.MessageType.ACTIVATE;
+import static com.ksmessaging.introduction.MessageType.AUTH;
+import static com.ksmessaging.introduction.MessageType.DECLINE;
+import static com.ksmessaging.introduction.MessageType.REQUEST;
 import static org.junit.Assert.assertEquals;
 
 public class IntroductionValidatorTest extends ValidatorTestCase {

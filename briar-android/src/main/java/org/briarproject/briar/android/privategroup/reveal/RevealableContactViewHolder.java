@@ -1,21 +1,21 @@
-package org.briarproject.briar.android.privategroup.reveal;
+package com.ksmessaging.android.privategroup.reveal;
 
 import android.view.View;
 import android.widget.ImageView;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.contact.OnContactClickListener;
-import org.briarproject.briar.android.contactselection.BaseSelectableContactHolder;
+import com.ksmessaging.R;
+import com.ksmessaging.android.contact.OnContactClickListener;
+import com.ksmessaging.android.contactselection.BaseSelectableContactHolder;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;
 
 import androidx.annotation.UiThread;
 
-import static org.briarproject.briar.android.privategroup.VisibilityHelper.getVisibilityIcon;
-import static org.briarproject.briar.android.privategroup.VisibilityHelper.getVisibilityString;
-import static org.briarproject.briar.android.util.UiUtils.GREY_OUT;
-import static org.briarproject.briar.android.util.UiUtils.getContactDisplayName;
+import static com.ksmessaging.android.privategroup.VisibilityHelper.getVisibilityIcon;
+import static com.ksmessaging.android.privategroup.VisibilityHelper.getVisibilityString;
+import static com.ksmessaging.android.util.UiUtils.GREY_OUT;
+import static com.ksmessaging.android.util.UiUtils.getContactDisplayName;
 
 @UiThread
 @NotNullByDefault

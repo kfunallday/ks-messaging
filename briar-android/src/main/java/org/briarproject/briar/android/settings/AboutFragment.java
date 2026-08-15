@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.briarproject.briar.BuildConfig;
-import org.briarproject.briar.R;
+import com.ksmessaging.BuildConfig;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -21,7 +21,7 @@ import androidx.fragment.app.Fragment;
 
 import static android.content.Intent.ACTION_VIEW;
 import static java.util.logging.Logger.getLogger;
-import static org.briarproject.briar.android.util.UiUtils.tryToStartActivity;
+import static com.ksmessaging.android.util.UiUtils.tryToStartActivity;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

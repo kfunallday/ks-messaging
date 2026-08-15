@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FeatureFlags;
 import org.briarproject.bramble.api.cleanup.CleanupManager;
@@ -9,17 +9,17 @@ import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.validation.ValidationManager;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogFactory;
-import org.briarproject.briar.api.blog.BlogInvitationResponse;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogSharingManager;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumFactory;
-import org.briarproject.briar.api.forum.ForumInvitationResponse;
-import org.briarproject.briar.api.forum.ForumManager;
-import org.briarproject.briar.api.forum.ForumSharingManager;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogFactory;
+import com.ksmessaging.api.blog.BlogInvitationResponse;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogSharingManager;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.forum.ForumFactory;
+import com.ksmessaging.api.forum.ForumInvitationResponse;
+import com.ksmessaging.api.forum.ForumManager;
+import com.ksmessaging.api.forum.ForumSharingManager;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

@@ -1,18 +1,18 @@
-package org.briarproject.briar.android.privategroup.invitation;
+package com.ksmessaging.android.privategroup.invitation;
 
 import android.content.Context;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.sharing.InvitationActivity;
-import org.briarproject.briar.android.sharing.InvitationAdapter;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationItem;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.sharing.InvitationActivity;
+import com.ksmessaging.android.sharing.InvitationAdapter;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationItem;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
 import javax.inject.Inject;
 
-import static org.briarproject.briar.android.sharing.InvitationAdapter.InvitationClickListener;
+import static com.ksmessaging.android.sharing.InvitationAdapter.InvitationClickListener;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

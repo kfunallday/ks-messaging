@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.briarproject.briar.api.identity.AuthorInfo.Status;
-import org.briarproject.briar.R;
+import com.ksmessaging.api.identity.AuthorInfo.Status;
+import com.ksmessaging.R;
 
 import androidx.annotation.UiThread;
 import androidx.appcompat.widget.AppCompatImageView;

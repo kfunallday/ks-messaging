@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
@@ -15,7 +15,7 @@ import android.content.pm.Signature;
 import org.briarproject.bramble.api.lifecycle.Service;
 import org.briarproject.bramble.api.system.AndroidExecutor;
 import org.briarproject.bramble.util.StringUtils;
-import org.briarproject.briar.api.android.ScreenFilterMonitor;
+import com.ksmessaging.api.android.ScreenFilterMonitor;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.ByteArrayInputStream;

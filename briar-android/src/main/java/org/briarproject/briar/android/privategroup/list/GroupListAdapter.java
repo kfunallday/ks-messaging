@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.privategroup.list;
+package com.ksmessaging.android.privategroup.list;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.privategroup.list.GroupViewHolder.OnGroupRemoveClickListener;
+import com.ksmessaging.R;
+import com.ksmessaging.android.privategroup.list.GroupViewHolder.OnGroupRemoveClickListener;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

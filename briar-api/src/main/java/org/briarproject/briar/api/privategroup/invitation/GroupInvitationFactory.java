@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.privategroup.invitation;
+package com.ksmessaging.api.privategroup.invitation;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.crypto.CryptoExecutor;
@@ -8,7 +8,7 @@ import org.briarproject.bramble.api.identity.AuthorId;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.nullsafety.NotNullByDefault;
 
-import static org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager.CLIENT_ID;
+import static com.ksmessaging.api.privategroup.invitation.GroupInvitationManager.CLIENT_ID;
 
 @NotNullByDefault
 public interface GroupInvitationFactory {

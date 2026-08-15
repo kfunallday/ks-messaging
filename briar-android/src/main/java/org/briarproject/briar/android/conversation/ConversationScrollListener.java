@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
-import org.briarproject.briar.android.view.BriarRecyclerViewScrollListener;
+import com.ksmessaging.android.view.BriarRecyclerViewScrollListener;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 @NotNullByDefault

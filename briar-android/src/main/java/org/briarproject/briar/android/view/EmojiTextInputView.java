@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,8 +15,8 @@ import android.widget.LinearLayout;
 import com.vanniktech.emoji.EmojiPopup;
 import com.vanniktech.emoji.RecentEmoji;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.BriarApplication;
+import com.ksmessaging.R;
+import com.ksmessaging.android.BriarApplication;
 
 import javax.inject.Inject;
 
@@ -32,7 +32,7 @@ import static android.view.inputmethod.InputMethodManager.SHOW_IMPLICIT;
 import static java.lang.Character.isWhitespace;
 import static java.util.Objects.requireNonNull;
 import static org.briarproject.bramble.util.StringUtils.utf8IsTooLong;
-import static org.briarproject.briar.android.util.UiUtils.resolveColorAttribute;
+import static com.ksmessaging.android.util.UiUtils.resolveColorAttribute;
 
 public class EmojiTextInputView extends LinearLayout implements
 		TextWatcher {

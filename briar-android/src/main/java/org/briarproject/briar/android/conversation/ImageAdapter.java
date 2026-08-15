@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.attachment.AttachmentItem;
-import org.briarproject.briar.android.conversation.glide.Radii;
+import com.ksmessaging.R;
+import com.ksmessaging.android.attachment.AttachmentItem;
+import com.ksmessaging.android.conversation.glide.Radii;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import androidx.recyclerview.widget.RecyclerView.Adapter;
 
 import static android.content.Context.WINDOW_SERVICE;
 import static java.util.Objects.requireNonNull;
-import static org.briarproject.briar.android.util.UiUtils.isRtl;
+import static com.ksmessaging.android.util.UiUtils.isRtl;
 
 @NotNullByDefault
 class ImageAdapter extends Adapter<ImageViewHolder> {

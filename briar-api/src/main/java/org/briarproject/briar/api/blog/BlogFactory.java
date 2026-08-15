@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.blog;
+package com.ksmessaging.api.blog;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.identity.Author;

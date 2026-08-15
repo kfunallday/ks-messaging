@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.view;
+package com.ksmessaging.android.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

@@ -1,14 +1,14 @@
-package org.briarproject.briar.privategroup;
+package com.ksmessaging.privategroup;
 
 import org.briarproject.bramble.api.FeatureFlags;
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.data.MetadataEncoder;
 import org.briarproject.bramble.api.sync.validation.ValidationManager;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.privategroup.GroupMessageFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroupFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationFactory;
+import com.ksmessaging.api.privategroup.GroupMessageFactory;
+import com.ksmessaging.api.privategroup.PrivateGroupFactory;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationFactory;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -16,8 +16,8 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-import static org.briarproject.briar.api.privategroup.PrivateGroupManager.CLIENT_ID;
-import static org.briarproject.briar.api.privategroup.PrivateGroupManager.MAJOR_VERSION;
+import static com.ksmessaging.api.privategroup.PrivateGroupManager.CLIENT_ID;
+import static com.ksmessaging.api.privategroup.PrivateGroupManager.MAJOR_VERSION;
 
 @Module
 public class PrivateGroupModule {

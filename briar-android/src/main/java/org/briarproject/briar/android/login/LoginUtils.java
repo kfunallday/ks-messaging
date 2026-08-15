@@ -1,15 +1,15 @@
-package org.briarproject.briar.android.login;
+package com.ksmessaging.android.login;
 
 import android.content.Context;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.appcompat.app.AlertDialog;
 
-import static org.briarproject.briar.android.util.UiUtils.getDialogIcon;
+import static com.ksmessaging.android.util.UiUtils.getDialogIcon;
 
 @NotNullByDefault
 class LoginUtils {

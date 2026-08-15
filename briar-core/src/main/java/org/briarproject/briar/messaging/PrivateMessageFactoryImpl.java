@@ -1,13 +1,13 @@
-package org.briarproject.briar.messaging;
+package com.ksmessaging.messaging;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.data.BdfList;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.Message;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.messaging.PrivateMessage;
-import org.briarproject.briar.api.messaging.PrivateMessageFactory;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.messaging.PrivateMessage;
+import com.ksmessaging.api.messaging.PrivateMessageFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.List;
@@ -17,9 +17,9 @@ import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
 import static org.briarproject.bramble.util.StringUtils.utf8IsTooLong;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.messaging.MessagingConstants.MAX_PRIVATE_MESSAGE_TEXT_LENGTH;
-import static org.briarproject.briar.messaging.MessageTypes.PRIVATE_MESSAGE;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.messaging.MessagingConstants.MAX_PRIVATE_MESSAGE_TEXT_LENGTH;
+import static com.ksmessaging.messaging.MessageTypes.PRIVATE_MESSAGE;
 
 @Immutable
 @NotNullByDefault

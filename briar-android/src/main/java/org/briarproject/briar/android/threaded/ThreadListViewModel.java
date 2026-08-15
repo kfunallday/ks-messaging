@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.threaded;
+package com.ksmessaging.android.threaded;
 
 import android.app.Application;
 
@@ -17,14 +17,14 @@ import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.sync.event.GroupRemovedEvent;
 import org.briarproject.bramble.api.system.AndroidExecutor;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.android.sharing.SharingController;
-import org.briarproject.briar.android.sharing.SharingController.SharingInfo;
-import org.briarproject.briar.android.viewmodel.DbViewModel;
-import org.briarproject.briar.android.viewmodel.LiveResult;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.MessageTree;
-import org.briarproject.briar.client.MessageTreeImpl;
+import com.ksmessaging.android.sharing.SharingController;
+import com.ksmessaging.android.sharing.SharingController.SharingInfo;
+import com.ksmessaging.android.viewmodel.DbViewModel;
+import com.ksmessaging.android.viewmodel.LiveResult;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.MessageTree;
+import com.ksmessaging.client.MessageTreeImpl;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

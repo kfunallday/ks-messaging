@@ -1,4 +1,4 @@
-package org.briarproject.briar.blog;
+package com.ksmessaging.blog;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.BdfMessageContext;
@@ -15,9 +15,9 @@ import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageFactory;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogFactory;
-import org.briarproject.briar.api.blog.MessageType;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogFactory;
+import com.ksmessaging.api.blog.MessageType;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -29,24 +29,24 @@ import static java.util.Collections.singletonList;
 import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_SIGNATURE_LENGTH;
 import static org.briarproject.bramble.util.ValidationUtils.checkLength;
 import static org.briarproject.bramble.util.ValidationUtils.checkSize;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_AUTHOR;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_COMMENT;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_ORIGINAL_MSG_ID;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_ORIGINAL_PARENT_MSG_ID;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_PARENT_MSG_ID;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_READ;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_RSS_FEED;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_TIMESTAMP;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_TIME_RECEIVED;
-import static org.briarproject.briar.api.blog.BlogConstants.KEY_TYPE;
-import static org.briarproject.briar.api.blog.BlogConstants.MAX_BLOG_COMMENT_TEXT_LENGTH;
-import static org.briarproject.briar.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH;
-import static org.briarproject.briar.api.blog.BlogManager.CLIENT_ID;
-import static org.briarproject.briar.api.blog.BlogManager.MAJOR_VERSION;
-import static org.briarproject.briar.api.blog.BlogPostFactory.SIGNING_LABEL_COMMENT;
-import static org.briarproject.briar.api.blog.BlogPostFactory.SIGNING_LABEL_POST;
-import static org.briarproject.briar.api.blog.MessageType.COMMENT;
-import static org.briarproject.briar.api.blog.MessageType.POST;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_AUTHOR;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_COMMENT;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_ORIGINAL_MSG_ID;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_ORIGINAL_PARENT_MSG_ID;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_PARENT_MSG_ID;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_READ;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_RSS_FEED;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_TIMESTAMP;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_TIME_RECEIVED;
+import static com.ksmessaging.api.blog.BlogConstants.KEY_TYPE;
+import static com.ksmessaging.api.blog.BlogConstants.MAX_BLOG_COMMENT_TEXT_LENGTH;
+import static com.ksmessaging.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH;
+import static com.ksmessaging.api.blog.BlogManager.CLIENT_ID;
+import static com.ksmessaging.api.blog.BlogManager.MAJOR_VERSION;
+import static com.ksmessaging.api.blog.BlogPostFactory.SIGNING_LABEL_COMMENT;
+import static com.ksmessaging.api.blog.BlogPostFactory.SIGNING_LABEL_POST;
+import static com.ksmessaging.api.blog.MessageType.COMMENT;
+import static com.ksmessaging.api.blog.MessageType.POST;
 
 @Immutable
 @NotNullByDefault

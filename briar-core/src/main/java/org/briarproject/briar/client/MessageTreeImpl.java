@@ -1,7 +1,7 @@
-package org.briarproject.briar.client;
+package com.ksmessaging.client;
 
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.MessageTree;
+import com.ksmessaging.api.client.MessageTree;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;

@@ -1,12 +1,12 @@
-package org.briarproject.briar.android.privategroup.conversation;
+package com.ksmessaging.android.privategroup.conversation;
 
 import org.briarproject.bramble.api.identity.Author;
-import org.briarproject.briar.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorInfo;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.threaded.ThreadItem;
-import org.briarproject.briar.api.privategroup.GroupMessageHeader;
+import com.ksmessaging.R;
+import com.ksmessaging.android.threaded.ThreadItem;
+import com.ksmessaging.api.privategroup.GroupMessageHeader;
 
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.NotThreadSafe;

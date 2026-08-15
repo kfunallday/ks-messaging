@@ -1,12 +1,12 @@
-package org.briarproject.briar.headless.forums
+package com.ksmessaging.headless.forums
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import io.javalin.http.BadRequestResponse
 import io.javalin.http.Context
 import org.briarproject.bramble.util.StringUtils.utf8IsTooLong
-import org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH
-import org.briarproject.briar.api.forum.ForumManager
-import org.briarproject.briar.headless.getFromJson
+import com.ksmessaging.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH
+import com.ksmessaging.api.forum.ForumManager
+import com.ksmessaging.headless.getFromJson
 import javax.annotation.concurrent.Immutable
 import javax.inject.Inject
 import javax.inject.Singleton

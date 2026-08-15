@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.UniqueId;
@@ -12,7 +12,7 @@ import org.briarproject.bramble.api.sync.Group;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.client.SessionId;
+import com.ksmessaging.api.client.SessionId;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;
@@ -23,12 +23,12 @@ import static org.briarproject.bramble.api.crypto.CryptoConstants.MAX_SIGNATURE_
 import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_PUBLIC_KEY_LENGTH;
 import static org.briarproject.bramble.util.ValidationUtils.checkLength;
 import static org.briarproject.bramble.util.ValidationUtils.checkSize;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.MAX_INTRODUCTION_TEXT_LENGTH;
-import static org.briarproject.briar.introduction.MessageType.ACCEPT;
-import static org.briarproject.briar.introduction.MessageType.ACTIVATE;
-import static org.briarproject.briar.introduction.MessageType.AUTH;
-import static org.briarproject.briar.util.ValidationUtils.validateAutoDeleteTimer;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.introduction.IntroductionConstants.MAX_INTRODUCTION_TEXT_LENGTH;
+import static com.ksmessaging.introduction.MessageType.ACCEPT;
+import static com.ksmessaging.introduction.MessageType.ACTIVATE;
+import static com.ksmessaging.introduction.MessageType.AUTH;
+import static com.ksmessaging.util.ValidationUtils.validateAutoDeleteTimer;
 
 
 @Immutable

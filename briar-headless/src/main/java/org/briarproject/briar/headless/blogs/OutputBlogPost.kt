@@ -1,9 +1,9 @@
-package org.briarproject.briar.headless.blogs
+package com.ksmessaging.headless.blogs
 
 import org.briarproject.bramble.identity.output
-import org.briarproject.briar.api.blog.BlogPostHeader
-import org.briarproject.briar.api.blog.MessageType
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.api.blog.BlogPostHeader
+import com.ksmessaging.api.blog.MessageType
+import com.ksmessaging.headless.json.JsonDict
 import java.util.Locale
 
 internal fun BlogPostHeader.output(text: String) = JsonDict(

@@ -1,13 +1,13 @@
-package org.briarproject.briar.android.contactselection;
+package com.ksmessaging.android.contactselection;
 
 import org.briarproject.bramble.api.contact.Contact;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.sharing.SharingManager.SharingStatus;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.sharing.SharingManager.SharingStatus;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.NotThreadSafe;
 
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.SHAREABLE;
+import static com.ksmessaging.api.sharing.SharingManager.SharingStatus.SHAREABLE;
 
 @NotThreadSafe
 @NotNullByDefault

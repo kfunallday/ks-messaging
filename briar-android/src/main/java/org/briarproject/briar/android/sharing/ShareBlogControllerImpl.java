@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.sharing;
+package com.ksmessaging.android.sharing;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.contact.ContactId;
@@ -9,11 +9,11 @@ import org.briarproject.bramble.api.db.NoSuchContactException;
 import org.briarproject.bramble.api.db.NoSuchGroupException;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.android.contactselection.ContactSelectorControllerImpl;
-import org.briarproject.briar.android.controller.handler.ExceptionHandler;
-import org.briarproject.briar.api.blog.BlogSharingManager;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.sharing.SharingManager.SharingStatus;
+import com.ksmessaging.android.contactselection.ContactSelectorControllerImpl;
+import com.ksmessaging.android.controller.handler.ExceptionHandler;
+import com.ksmessaging.api.blog.BlogSharingManager;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.sharing.SharingManager.SharingStatus;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;

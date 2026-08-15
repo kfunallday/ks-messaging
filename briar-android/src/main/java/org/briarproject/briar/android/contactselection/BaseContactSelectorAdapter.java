@@ -1,11 +1,11 @@
-package org.briarproject.briar.android.contactselection;
+package com.ksmessaging.android.contactselection;
 
 import android.content.Context;
 
 import org.briarproject.bramble.api.contact.ContactId;
-import org.briarproject.briar.android.contact.BaseContactListAdapter;
-import org.briarproject.briar.android.contact.ContactItemViewHolder;
-import org.briarproject.briar.android.contact.OnContactClickListener;
+import com.ksmessaging.android.contact.BaseContactListAdapter;
+import com.ksmessaging.android.contact.ContactItemViewHolder;
+import com.ksmessaging.android.contact.OnContactClickListener;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;

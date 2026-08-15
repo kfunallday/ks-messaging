@@ -1,7 +1,7 @@
-package org.briarproject.briar.android.controller;
+package com.ksmessaging.android.controller;
 
 import org.briarproject.bramble.api.system.Wakeful;
-import org.briarproject.briar.android.controller.handler.ResultHandler;
+import com.ksmessaging.android.controller.handler.ResultHandler;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 @NotNullByDefault

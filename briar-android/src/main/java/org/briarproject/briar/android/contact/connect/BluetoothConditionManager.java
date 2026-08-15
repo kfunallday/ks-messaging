@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.contact.connect;
+package com.ksmessaging.android.contact.connect;
 
 import android.app.Activity;
 import android.widget.Toast;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.util.Permission;
+import com.ksmessaging.R;
+import com.ksmessaging.android.util.Permission;
 
 import java.util.Map;
 
@@ -18,17 +18,17 @@ import static android.Manifest.permission.BLUETOOTH_CONNECT;
 import static android.os.Build.VERSION.SDK_INT;
 import static android.widget.Toast.LENGTH_LONG;
 import static androidx.core.app.ActivityCompat.shouldShowRequestPermissionRationale;
-import static org.briarproject.briar.android.util.Permission.GRANTED;
-import static org.briarproject.briar.android.util.Permission.PERMANENTLY_DENIED;
-import static org.briarproject.briar.android.util.Permission.SHOW_RATIONALE;
-import static org.briarproject.briar.android.util.Permission.UNKNOWN;
-import static org.briarproject.briar.android.util.PermissionUtils.gotPermission;
-import static org.briarproject.briar.android.util.PermissionUtils.isLocationEnabledForBt;
-import static org.briarproject.briar.android.util.PermissionUtils.requestBluetoothPermissions;
-import static org.briarproject.briar.android.util.PermissionUtils.showDenialDialog;
-import static org.briarproject.briar.android.util.PermissionUtils.showLocationDialog;
-import static org.briarproject.briar.android.util.PermissionUtils.showRationale;
-import static org.briarproject.briar.android.util.PermissionUtils.wasGrantedBluetoothPermissions;
+import static com.ksmessaging.android.util.Permission.GRANTED;
+import static com.ksmessaging.android.util.Permission.PERMANENTLY_DENIED;
+import static com.ksmessaging.android.util.Permission.SHOW_RATIONALE;
+import static com.ksmessaging.android.util.Permission.UNKNOWN;
+import static com.ksmessaging.android.util.PermissionUtils.gotPermission;
+import static com.ksmessaging.android.util.PermissionUtils.isLocationEnabledForBt;
+import static com.ksmessaging.android.util.PermissionUtils.requestBluetoothPermissions;
+import static com.ksmessaging.android.util.PermissionUtils.showDenialDialog;
+import static com.ksmessaging.android.util.PermissionUtils.showLocationDialog;
+import static com.ksmessaging.android.util.PermissionUtils.showRationale;
+import static com.ksmessaging.android.util.PermissionUtils.wasGrantedBluetoothPermissions;
 
 class BluetoothConditionManager {
 

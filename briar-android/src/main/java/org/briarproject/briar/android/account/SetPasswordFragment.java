@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.account;
+package com.ksmessaging.android.account;
 
 import android.os.Bundle;
 import android.os.IBinder;
@@ -12,8 +12,8 @@ import android.widget.ProgressBar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.login.StrengthMeter;
+import com.ksmessaging.R;
+import com.ksmessaging.android.login.StrengthMeter;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -31,9 +31,9 @@ import static android.view.View.VISIBLE;
 import static androidx.core.content.ContextCompat.checkSelfPermission;
 import static org.briarproject.bramble.api.crypto.PasswordStrengthEstimator.QUITE_WEAK;
 import static org.briarproject.bramble.api.crypto.PasswordStrengthEstimator.STRONG;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
-import static org.briarproject.briar.android.util.UiUtils.setError;
-import static org.briarproject.briar.android.util.UiUtils.showOnboardingDialog;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.util.UiUtils.setError;
+import static com.ksmessaging.android.util.UiUtils.showOnboardingDialog;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

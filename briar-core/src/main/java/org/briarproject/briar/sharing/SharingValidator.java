@@ -1,4 +1,4 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.UniqueId;
@@ -20,10 +20,10 @@ import javax.annotation.concurrent.Immutable;
 import static java.util.Collections.singletonList;
 import static org.briarproject.bramble.util.ValidationUtils.checkLength;
 import static org.briarproject.bramble.util.ValidationUtils.checkSize;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.sharing.SharingConstants.MAX_INVITATION_TEXT_LENGTH;
-import static org.briarproject.briar.sharing.MessageType.INVITE;
-import static org.briarproject.briar.util.ValidationUtils.validateAutoDeleteTimer;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.sharing.SharingConstants.MAX_INVITATION_TEXT_LENGTH;
+import static com.ksmessaging.sharing.MessageType.INVITE;
+import static com.ksmessaging.util.ValidationUtils.validateAutoDeleteTimer;
 
 @Immutable
 @NotNullByDefault

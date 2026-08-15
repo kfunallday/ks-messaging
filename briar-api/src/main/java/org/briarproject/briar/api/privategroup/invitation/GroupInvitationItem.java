@@ -1,8 +1,8 @@
-package org.briarproject.briar.api.privategroup.invitation;
+package com.ksmessaging.api.privategroup.invitation;
 
 import org.briarproject.bramble.api.contact.Contact;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.sharing.InvitationItem;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.sharing.InvitationItem;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.concurrent.Immutable;

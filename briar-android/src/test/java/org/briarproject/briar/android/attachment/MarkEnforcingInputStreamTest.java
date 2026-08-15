@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.attachment;
+package com.ksmessaging.android.attachment;
 
 import com.bumptech.glide.util.MarkEnforcingInputStream;
 

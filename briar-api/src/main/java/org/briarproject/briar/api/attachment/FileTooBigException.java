@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.attachment;
+package com.ksmessaging.api.attachment;
 
 import java.io.IOException;
 

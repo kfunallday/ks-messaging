@@ -1,13 +1,13 @@
-package org.briarproject.briar.forum;
+package com.ksmessaging.forum;
 
 import org.briarproject.bramble.api.FeatureFlags;
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.data.MetadataEncoder;
 import org.briarproject.bramble.api.sync.validation.ValidationManager;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.forum.ForumFactory;
-import org.briarproject.briar.api.forum.ForumManager;
-import org.briarproject.briar.api.forum.ForumPostFactory;
+import com.ksmessaging.api.forum.ForumFactory;
+import com.ksmessaging.api.forum.ForumManager;
+import com.ksmessaging.api.forum.ForumPostFactory;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -15,8 +15,8 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-import static org.briarproject.briar.api.forum.ForumManager.CLIENT_ID;
-import static org.briarproject.briar.api.forum.ForumManager.MAJOR_VERSION;
+import static com.ksmessaging.api.forum.ForumManager.CLIENT_ID;
+import static com.ksmessaging.api.forum.ForumManager.MAJOR_VERSION;
 
 @Module
 public class ForumModule {

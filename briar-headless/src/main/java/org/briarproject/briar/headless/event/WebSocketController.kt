@@ -1,8 +1,8 @@
-package org.briarproject.briar.headless.event
+package com.ksmessaging.headless.event
 
 import io.javalin.websocket.WsContext
 import org.briarproject.bramble.api.lifecycle.IoExecutor
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.headless.json.JsonDict
 import javax.annotation.concurrent.ThreadSafe
 
 @ThreadSafe

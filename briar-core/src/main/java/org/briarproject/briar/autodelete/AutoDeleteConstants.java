@@ -1,4 +1,4 @@
-package org.briarproject.briar.autodelete;
+package com.ksmessaging.autodelete;
 
 interface AutoDeleteConstants {
 

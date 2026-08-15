@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.client;
+package com.ksmessaging.api.client;
 
 import org.briarproject.bramble.api.UniqueId;
 import org.briarproject.nullsafety.NotNullByDefault;

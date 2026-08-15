@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.UniqueId;
@@ -14,8 +14,8 @@ import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupFactory;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -26,16 +26,16 @@ import javax.annotation.concurrent.Immutable;
 import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_SIGNATURE_LENGTH;
 import static org.briarproject.bramble.util.ValidationUtils.checkLength;
 import static org.briarproject.bramble.util.ValidationUtils.checkSize;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.privategroup.PrivateGroupConstants.GROUP_SALT_LENGTH;
-import static org.briarproject.briar.api.privategroup.PrivateGroupConstants.MAX_GROUP_INVITATION_TEXT_LENGTH;
-import static org.briarproject.briar.api.privategroup.PrivateGroupConstants.MAX_GROUP_NAME_LENGTH;
-import static org.briarproject.briar.api.privategroup.invitation.GroupInvitationFactory.SIGNING_LABEL_INVITE;
-import static org.briarproject.briar.privategroup.invitation.MessageType.ABORT;
-import static org.briarproject.briar.privategroup.invitation.MessageType.INVITE;
-import static org.briarproject.briar.privategroup.invitation.MessageType.JOIN;
-import static org.briarproject.briar.privategroup.invitation.MessageType.LEAVE;
-import static org.briarproject.briar.util.ValidationUtils.validateAutoDeleteTimer;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.api.privategroup.PrivateGroupConstants.GROUP_SALT_LENGTH;
+import static com.ksmessaging.api.privategroup.PrivateGroupConstants.MAX_GROUP_INVITATION_TEXT_LENGTH;
+import static com.ksmessaging.api.privategroup.PrivateGroupConstants.MAX_GROUP_NAME_LENGTH;
+import static com.ksmessaging.api.privategroup.invitation.GroupInvitationFactory.SIGNING_LABEL_INVITE;
+import static com.ksmessaging.privategroup.invitation.MessageType.ABORT;
+import static com.ksmessaging.privategroup.invitation.MessageType.INVITE;
+import static com.ksmessaging.privategroup.invitation.MessageType.JOIN;
+import static com.ksmessaging.privategroup.invitation.MessageType.LEAVE;
+import static com.ksmessaging.util.ValidationUtils.validateAutoDeleteTimer;
 
 @Immutable
 @NotNullByDefault

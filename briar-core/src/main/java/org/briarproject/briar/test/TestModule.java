@@ -1,6 +1,6 @@
-package org.briarproject.briar.test;
+package com.ksmessaging.test;
 
-import org.briarproject.briar.api.test.TestDataCreator;
+import com.ksmessaging.api.test.TestDataCreator;
 
 import javax.inject.Singleton;
 

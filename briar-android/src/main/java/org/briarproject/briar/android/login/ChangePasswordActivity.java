@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.login;
+package com.ksmessaging.android.login;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -17,9 +17,9 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputLayout;
 
 import org.briarproject.bramble.api.crypto.DecryptionResult;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
 
 import javax.inject.Inject;
 
@@ -33,10 +33,10 @@ import static org.briarproject.bramble.api.crypto.DecryptionResult.KEY_STRENGTHE
 import static org.briarproject.bramble.api.crypto.DecryptionResult.SUCCESS;
 import static org.briarproject.bramble.api.crypto.PasswordStrengthEstimator.QUITE_WEAK;
 import static org.briarproject.bramble.api.crypto.PasswordStrengthEstimator.STRONG;
-import static org.briarproject.briar.android.login.LoginUtils.createKeyStrengthenerErrorDialog;
-import static org.briarproject.briar.android.util.UiUtils.hideSoftKeyboard;
-import static org.briarproject.briar.android.util.UiUtils.setError;
-import static org.briarproject.briar.android.util.UiUtils.showSoftKeyboard;
+import static com.ksmessaging.android.login.LoginUtils.createKeyStrengthenerErrorDialog;
+import static com.ksmessaging.android.util.UiUtils.hideSoftKeyboard;
+import static com.ksmessaging.android.util.UiUtils.setError;
+import static com.ksmessaging.android.util.UiUtils.showSoftKeyboard;
 
 public class ChangePasswordActivity extends BriarActivity
 		implements OnClickListener, OnEditorActionListener {

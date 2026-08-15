@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact.add.remote;
+package com.ksmessaging.android.contact.add.remote;
 
 import android.content.Context;
 import android.content.DialogInterface.OnClickListener;
@@ -18,10 +18,10 @@ import org.briarproject.bramble.api.contact.PendingContact;
 import org.briarproject.bramble.api.db.ContactExistsException;
 import org.briarproject.bramble.api.db.PendingContactExistsException;
 import org.briarproject.bramble.api.identity.Author;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.view.BriarButton;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.view.BriarButton;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -38,8 +38,8 @@ import static android.widget.Toast.LENGTH_LONG;
 import static java.util.Objects.requireNonNull;
 import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_AUTHOR_NAME_LENGTH;
 import static org.briarproject.bramble.util.StringUtils.utf8IsTooLong;
-import static org.briarproject.briar.android.util.UiUtils.getDialogIcon;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.util.UiUtils.getDialogIcon;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

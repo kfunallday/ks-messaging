@@ -1,6 +1,6 @@
-package org.briarproject.briar.attachment;
+package com.ksmessaging.attachment;
 
-import org.briarproject.briar.api.attachment.AttachmentReader;
+import com.ksmessaging.api.attachment.AttachmentReader;
 
 import javax.inject.Singleton;
 

@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless.event
+package com.ksmessaging.headless.event
 
 import dagger.Module
 import dagger.Provides

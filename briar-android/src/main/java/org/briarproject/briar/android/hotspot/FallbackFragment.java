@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.hotspot;
+package com.ksmessaging.android.hotspot;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.util.ActivityLaunchers.CreateDocumentAdvanced;
+import com.ksmessaging.R;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.util.ActivityLaunchers.CreateDocumentAdvanced;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -29,9 +29,9 @@ import static android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION;
 import static android.view.View.INVISIBLE;
 import static android.view.View.VISIBLE;
 import static androidx.transition.TransitionManager.beginDelayedTransition;
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.hotspot.HotspotViewModel.getApkFileName;
-import static org.briarproject.briar.android.util.UiUtils.tryToStartActivity;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.hotspot.HotspotViewModel.getApkFileName;
+import static com.ksmessaging.android.util.UiUtils.tryToStartActivity;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

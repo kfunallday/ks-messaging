@@ -1,10 +1,10 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -26,13 +26,13 @@ import androidx.preference.SwitchPreferenceCompat;
 
 import static android.Manifest.permission.BLUETOOTH_CONNECT;
 import static android.os.Build.VERSION.SDK_INT;
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.settings.SettingsActivity.enableAndPersist;
-import static org.briarproject.briar.android.util.PermissionUtils.areBluetoothPermissionsGranted;
-import static org.briarproject.briar.android.util.PermissionUtils.requestBluetoothPermissions;
-import static org.briarproject.briar.android.util.PermissionUtils.showDenialDialog;
-import static org.briarproject.briar.android.util.PermissionUtils.showRationale;
-import static org.briarproject.briar.android.util.PermissionUtils.wasGrantedBluetoothPermissions;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.settings.SettingsActivity.enableAndPersist;
+import static com.ksmessaging.android.util.PermissionUtils.areBluetoothPermissionsGranted;
+import static com.ksmessaging.android.util.PermissionUtils.requestBluetoothPermissions;
+import static com.ksmessaging.android.util.PermissionUtils.showDenialDialog;
+import static com.ksmessaging.android.util.PermissionUtils.showRationale;
+import static com.ksmessaging.android.util.PermissionUtils.wasGrantedBluetoothPermissions;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

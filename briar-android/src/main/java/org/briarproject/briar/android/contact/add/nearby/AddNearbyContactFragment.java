@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact.add.nearby;
+package com.ksmessaging.android.contact.add.nearby;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -10,18 +10,18 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.ContactExchangeStarted;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.Failed;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.KeyAgreementStarted;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.KeyAgreementWaiting;
-import org.briarproject.briar.android.contact.add.nearby.AddContactState.QrCodeScanned;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.qrcode.CameraException;
-import org.briarproject.briar.android.qrcode.CameraView;
-import org.briarproject.briar.android.view.InfoView;
-import org.briarproject.briar.android.view.QrCodeView;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.ContactExchangeStarted;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.Failed;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.KeyAgreementStarted;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.KeyAgreementWaiting;
+import com.ksmessaging.android.contact.add.nearby.AddContactState.QrCodeScanned;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.qrcode.CameraException;
+import com.ksmessaging.android.qrcode.CameraView;
+import com.ksmessaging.android.view.InfoView;
+import com.ksmessaging.android.view.QrCodeView;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 

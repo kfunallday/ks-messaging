@@ -1,16 +1,16 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.os.Bundle;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.android.blog.RssImportResult.FileImportError;
-import org.briarproject.briar.android.blog.RssImportResult.FileImportSuccess;
-import org.briarproject.briar.android.blog.RssImportResult.UrlImportError;
-import org.briarproject.briar.android.blog.RssImportResult.UrlImportSuccess;
-import org.briarproject.briar.android.fragment.BaseFragment.BaseFragmentListener;
-import org.briarproject.briar.android.fragment.ErrorFragment;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.android.blog.RssImportResult.FileImportError;
+import com.ksmessaging.android.blog.RssImportResult.FileImportSuccess;
+import com.ksmessaging.android.blog.RssImportResult.UrlImportError;
+import com.ksmessaging.android.blog.RssImportResult.UrlImportSuccess;
+import com.ksmessaging.android.fragment.BaseFragment.BaseFragmentListener;
+import com.ksmessaging.android.fragment.ErrorFragment;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -22,7 +22,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
 
 import static androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE;
-import static org.briarproject.briar.android.util.UiUtils.showFragment;
+import static com.ksmessaging.android.util.UiUtils.showFragment;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

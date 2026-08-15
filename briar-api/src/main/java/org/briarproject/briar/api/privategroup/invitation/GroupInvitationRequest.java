@@ -1,11 +1,11 @@
-package org.briarproject.briar.api.privategroup.invitation;
+package com.ksmessaging.api.privategroup.invitation;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationMessageVisitor;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.sharing.InvitationRequest;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationMessageVisitor;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.sharing.InvitationRequest;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

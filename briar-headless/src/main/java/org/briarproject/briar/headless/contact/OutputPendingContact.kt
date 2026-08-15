@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless.contact
+package com.ksmessaging.headless.contact
 
 import org.briarproject.bramble.api.contact.PendingContact
 import org.briarproject.bramble.api.contact.PendingContactState
@@ -10,7 +10,7 @@ import org.briarproject.bramble.api.contact.PendingContactState.WAITING_FOR_CONN
 import org.briarproject.bramble.api.contact.event.PendingContactAddedEvent
 import org.briarproject.bramble.api.contact.event.PendingContactRemovedEvent
 import org.briarproject.bramble.api.contact.event.PendingContactStateChangedEvent
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.headless.json.JsonDict
 
 internal fun PendingContact.output() = JsonDict(
     "pendingContactId" to id.bytes,

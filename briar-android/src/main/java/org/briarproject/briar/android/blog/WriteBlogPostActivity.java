@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.blog;
+package com.ksmessaging.android.blog;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,17 +13,17 @@ import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.identity.IdentityManager;
 import org.briarproject.bramble.api.identity.LocalAuthor;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.activity.BriarActivity;
-import org.briarproject.briar.android.view.TextInputView;
-import org.briarproject.briar.android.view.TextSendController;
-import org.briarproject.briar.android.view.TextSendController.SendListener;
-import org.briarproject.briar.api.android.AndroidNotificationManager;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogPost;
-import org.briarproject.briar.api.blog.BlogPostFactory;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.activity.BriarActivity;
+import com.ksmessaging.android.view.TextInputView;
+import com.ksmessaging.android.view.TextSendController;
+import com.ksmessaging.android.view.TextSendController.SendListener;
+import com.ksmessaging.api.android.AndroidNotificationManager;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogPost;
+import com.ksmessaging.api.blog.BlogPostFactory;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -48,10 +48,10 @@ import static java.util.logging.Level.WARNING;
 import static org.briarproject.bramble.util.LogUtils.logException;
 import static org.briarproject.bramble.util.StringUtils.isNullOrEmpty;
 import static org.briarproject.bramble.util.StringUtils.toUtf8;
-import static org.briarproject.briar.android.view.TextSendController.SendState;
-import static org.briarproject.briar.android.view.TextSendController.SendState.SENT;
-import static org.briarproject.briar.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH;
-import static org.briarproject.briar.util.HtmlUtils.cleanArticle;
+import static com.ksmessaging.android.view.TextSendController.SendState;
+import static com.ksmessaging.android.view.TextSendController.SendState.SENT;
+import static com.ksmessaging.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH;
+import static com.ksmessaging.util.HtmlUtils.cleanArticle;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

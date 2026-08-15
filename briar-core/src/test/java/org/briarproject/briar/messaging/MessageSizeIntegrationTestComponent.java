@@ -1,4 +1,4 @@
-package org.briarproject.briar.messaging;
+package com.ksmessaging.messaging;
 
 import org.briarproject.bramble.BrambleCoreIntegrationTestEagerSingletons;
 import org.briarproject.bramble.BrambleCoreModule;
@@ -7,12 +7,12 @@ import org.briarproject.bramble.test.BrambleCoreIntegrationTestModule;
 import org.briarproject.bramble.test.TestDnsModule;
 import org.briarproject.bramble.test.TestPluginConfigModule;
 import org.briarproject.bramble.test.TestSocksModule;
-import org.briarproject.briar.autodelete.AutoDeleteModule;
-import org.briarproject.briar.avatar.AvatarModule;
-import org.briarproject.briar.client.BriarClientModule;
-import org.briarproject.briar.conversation.ConversationModule;
-import org.briarproject.briar.forum.ForumModule;
-import org.briarproject.briar.identity.IdentityModule;
+import com.ksmessaging.autodelete.AutoDeleteModule;
+import com.ksmessaging.avatar.AvatarModule;
+import com.ksmessaging.client.BriarClientModule;
+import com.ksmessaging.conversation.ConversationModule;
+import com.ksmessaging.forum.ForumModule;
+import com.ksmessaging.identity.IdentityModule;
 
 import javax.inject.Singleton;
 

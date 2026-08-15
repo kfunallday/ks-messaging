@@ -1,12 +1,12 @@
-package org.briarproject.briar.api.introduction;
+package com.ksmessaging.api.introduction;
 
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationMessageVisitor;
-import org.briarproject.briar.api.conversation.ConversationRequest;
-import org.briarproject.briar.api.identity.AuthorInfo;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationMessageVisitor;
+import com.ksmessaging.api.conversation.ConversationRequest;
+import com.ksmessaging.api.identity.AuthorInfo;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

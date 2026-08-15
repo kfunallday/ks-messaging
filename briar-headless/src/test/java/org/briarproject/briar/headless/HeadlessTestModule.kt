@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless
+package com.ksmessaging.headless
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import dagger.Module
@@ -21,12 +21,12 @@ import org.briarproject.bramble.system.DefaultThreadFactoryModule
 import org.briarproject.bramble.system.DefaultWakefulIoExecutorModule
 import org.briarproject.bramble.test.TestFeatureFlagModule
 import org.briarproject.bramble.test.TestSecureRandomModule
-import org.briarproject.briar.api.test.TestAvatarCreator
-import org.briarproject.briar.headless.blogs.HeadlessBlogModule
-import org.briarproject.briar.headless.contact.HeadlessContactModule
-import org.briarproject.briar.headless.event.HeadlessEventModule
-import org.briarproject.briar.headless.forums.HeadlessForumModule
-import org.briarproject.briar.headless.messaging.HeadlessMessagingModule
+import com.ksmessaging.api.test.TestAvatarCreator
+import com.ksmessaging.headless.blogs.HeadlessBlogModule
+import com.ksmessaging.headless.contact.HeadlessContactModule
+import com.ksmessaging.headless.event.HeadlessEventModule
+import com.ksmessaging.headless.forums.HeadlessForumModule
+import com.ksmessaging.headless.messaging.HeadlessMessagingModule
 import java.io.File
 import java.util.Collections.emptyList
 import javax.inject.Singleton

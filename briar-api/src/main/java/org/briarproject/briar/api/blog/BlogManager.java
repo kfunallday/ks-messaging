@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.blog;
+package com.ksmessaging.api.blog;
 
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.db.Transaction;
@@ -20,7 +20,7 @@ public interface BlogManager {
 	/**
 	 * The unique ID of the blog client.
 	 */
-	ClientId CLIENT_ID = new ClientId("org.briarproject.briar.blog");
+	ClientId CLIENT_ID = new ClientId("com.ksmessaging.blog");
 
 	/**
 	 * The current major version of the blog client.

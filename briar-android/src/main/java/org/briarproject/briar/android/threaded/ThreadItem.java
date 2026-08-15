@@ -1,16 +1,16 @@
-package org.briarproject.briar.android.threaded;
+package com.ksmessaging.android.threaded;
 
 import org.briarproject.bramble.api.identity.Author;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.MessageTree.MessageNode;
-import org.briarproject.briar.api.identity.AuthorInfo;
+import com.ksmessaging.api.client.MessageTree.MessageNode;
+import com.ksmessaging.api.identity.AuthorInfo;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.NotThreadSafe;
 
-import static org.briarproject.briar.android.threaded.ThreadItemAdapter.UNDEFINED;
-import static org.briarproject.briar.android.util.UiUtils.getContactDisplayName;
+import static com.ksmessaging.android.threaded.ThreadItemAdapter.UNDEFINED;
+import static com.ksmessaging.android.util.UiUtils.getContactDisplayName;
 
 @NotThreadSafe
 @NotNullByDefault

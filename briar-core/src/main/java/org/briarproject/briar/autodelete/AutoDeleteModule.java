@@ -1,8 +1,8 @@
-package org.briarproject.briar.autodelete;
+package com.ksmessaging.autodelete;
 
 import org.briarproject.bramble.api.contact.ContactManager;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
+import com.ksmessaging.api.autodelete.AutoDeleteManager;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

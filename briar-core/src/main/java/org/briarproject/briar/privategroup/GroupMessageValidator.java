@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup;
+package com.ksmessaging.privategroup;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.BdfMessageContext;
@@ -13,9 +13,9 @@ import org.briarproject.bramble.api.sync.InvalidMessageException;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupFactory;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationFactory;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupFactory;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -27,19 +27,19 @@ import javax.annotation.concurrent.Immutable;
 import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_SIGNATURE_LENGTH;
 import static org.briarproject.bramble.util.ValidationUtils.checkLength;
 import static org.briarproject.bramble.util.ValidationUtils.checkSize;
-import static org.briarproject.briar.api.privategroup.GroupMessageFactory.SIGNING_LABEL_JOIN;
-import static org.briarproject.briar.api.privategroup.GroupMessageFactory.SIGNING_LABEL_POST;
-import static org.briarproject.briar.api.privategroup.MessageType.JOIN;
-import static org.briarproject.briar.api.privategroup.MessageType.POST;
-import static org.briarproject.briar.api.privategroup.PrivateGroupConstants.MAX_GROUP_POST_TEXT_LENGTH;
-import static org.briarproject.briar.api.privategroup.invitation.GroupInvitationFactory.SIGNING_LABEL_INVITE;
-import static org.briarproject.briar.privategroup.GroupConstants.KEY_INITIAL_JOIN_MSG;
-import static org.briarproject.briar.privategroup.GroupConstants.KEY_MEMBER;
-import static org.briarproject.briar.privategroup.GroupConstants.KEY_PARENT_MSG_ID;
-import static org.briarproject.briar.privategroup.GroupConstants.KEY_PREVIOUS_MSG_ID;
-import static org.briarproject.briar.privategroup.GroupConstants.KEY_READ;
-import static org.briarproject.briar.privategroup.GroupConstants.KEY_TIMESTAMP;
-import static org.briarproject.briar.privategroup.GroupConstants.KEY_TYPE;
+import static com.ksmessaging.api.privategroup.GroupMessageFactory.SIGNING_LABEL_JOIN;
+import static com.ksmessaging.api.privategroup.GroupMessageFactory.SIGNING_LABEL_POST;
+import static com.ksmessaging.api.privategroup.MessageType.JOIN;
+import static com.ksmessaging.api.privategroup.MessageType.POST;
+import static com.ksmessaging.api.privategroup.PrivateGroupConstants.MAX_GROUP_POST_TEXT_LENGTH;
+import static com.ksmessaging.api.privategroup.invitation.GroupInvitationFactory.SIGNING_LABEL_INVITE;
+import static com.ksmessaging.privategroup.GroupConstants.KEY_INITIAL_JOIN_MSG;
+import static com.ksmessaging.privategroup.GroupConstants.KEY_MEMBER;
+import static com.ksmessaging.privategroup.GroupConstants.KEY_PARENT_MSG_ID;
+import static com.ksmessaging.privategroup.GroupConstants.KEY_PREVIOUS_MSG_ID;
+import static com.ksmessaging.privategroup.GroupConstants.KEY_READ;
+import static com.ksmessaging.privategroup.GroupConstants.KEY_TIMESTAMP;
+import static com.ksmessaging.privategroup.GroupConstants.KEY_TYPE;
 
 @Immutable
 @NotNullByDefault

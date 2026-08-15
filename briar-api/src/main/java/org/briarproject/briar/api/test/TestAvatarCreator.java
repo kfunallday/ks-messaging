@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.test;
+package com.ksmessaging.api.test;
 
 import java.io.IOException;
 import java.io.InputStream;

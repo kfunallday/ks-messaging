@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.privategroup.memberlist;
+package com.ksmessaging.android.privategroup.memberlist;
 
 import org.briarproject.bramble.api.connection.ConnectionRegistry;
 import org.briarproject.bramble.api.contact.ContactId;
@@ -6,10 +6,10 @@ import org.briarproject.bramble.api.db.DatabaseExecutor;
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.android.controller.DbControllerImpl;
-import org.briarproject.briar.android.controller.handler.ResultExceptionHandler;
-import org.briarproject.briar.api.privategroup.GroupMember;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.android.controller.DbControllerImpl;
+import com.ksmessaging.android.controller.handler.ResultExceptionHandler;
+import com.ksmessaging.api.privategroup.GroupMember;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
 
 import java.util.ArrayList;
 import java.util.Collection;

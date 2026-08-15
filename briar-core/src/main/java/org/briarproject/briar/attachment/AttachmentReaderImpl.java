@@ -1,4 +1,4 @@
-package org.briarproject.briar.attachment;
+package com.ksmessaging.attachment;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -9,17 +9,17 @@ import org.briarproject.bramble.api.db.Transaction;
 import org.briarproject.bramble.api.db.TransactionManager;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.attachment.Attachment;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.attachment.AttachmentReader;
+import com.ksmessaging.api.attachment.Attachment;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.AttachmentReader;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 import javax.inject.Inject;
 
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
+import static com.ksmessaging.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
+import static com.ksmessaging.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
 
 public class AttachmentReaderImpl implements AttachmentReader {
 

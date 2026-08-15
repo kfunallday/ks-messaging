@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.avatar;
+package com.ksmessaging.api.avatar;
 
 import org.briarproject.bramble.api.Pair;
 import org.briarproject.bramble.api.data.BdfDictionary;

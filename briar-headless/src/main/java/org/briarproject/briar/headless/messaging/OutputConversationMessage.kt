@@ -1,14 +1,14 @@
-package org.briarproject.briar.headless.messaging
+package com.ksmessaging.headless.messaging
 
 import org.briarproject.bramble.api.contact.ContactId
 import org.briarproject.bramble.api.sync.MessageId
 import org.briarproject.bramble.api.sync.event.MessagesAckedEvent
 import org.briarproject.bramble.api.sync.event.MessagesSentEvent
-import org.briarproject.briar.api.conversation.ConversationMessageHeader
-import org.briarproject.briar.api.conversation.DeletionResult
-import org.briarproject.briar.api.messaging.PrivateMessage
-import org.briarproject.briar.api.messaging.PrivateMessageHeader
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.api.conversation.ConversationMessageHeader
+import com.ksmessaging.api.conversation.DeletionResult
+import com.ksmessaging.api.messaging.PrivateMessage
+import com.ksmessaging.api.messaging.PrivateMessageHeader
+import com.ksmessaging.headless.json.JsonDict
 
 internal fun ConversationMessageHeader.output(contactId: ContactId) = JsonDict(
     "contactId" to contactId.int,

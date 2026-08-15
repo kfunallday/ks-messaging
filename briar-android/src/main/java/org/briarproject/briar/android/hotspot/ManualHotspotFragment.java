@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.hotspot;
+package com.ksmessaging.android.hotspot;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -24,9 +24,9 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import static android.text.Spanned.SPAN_EXCLUSIVE_EXCLUSIVE;
 import static android.view.View.GONE;
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.hotspot.AbstractTabsFragment.ARG_FOR_WIFI_CONNECT;
-import static org.briarproject.briar.android.hotspot.HotspotState.HotspotStarted;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.hotspot.AbstractTabsFragment.ARG_FOR_WIFI_CONNECT;
+import static com.ksmessaging.android.hotspot.HotspotState.HotspotStarted;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

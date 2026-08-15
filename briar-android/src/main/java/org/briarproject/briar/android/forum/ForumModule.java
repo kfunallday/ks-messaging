@@ -1,6 +1,6 @@
-package org.briarproject.briar.android.forum;
+package com.ksmessaging.android.forum;
 
-import org.briarproject.briar.android.viewmodel.ViewModelKey;
+import com.ksmessaging.android.viewmodel.ViewModelKey;
 
 import androidx.lifecycle.ViewModel;
 import dagger.Binds;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.introduction;
+package com.ksmessaging.android.introduction;
 
 import android.app.Application;
 import android.widget.Toast;
@@ -13,15 +13,15 @@ import org.briarproject.bramble.api.db.TransactionManager;
 import org.briarproject.bramble.api.event.EventBus;
 import org.briarproject.bramble.api.lifecycle.LifecycleManager;
 import org.briarproject.bramble.api.system.AndroidExecutor;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.contact.ContactItem;
-import org.briarproject.briar.android.contact.ContactsViewModel;
-import org.briarproject.briar.android.viewmodel.LiveEvent;
-import org.briarproject.briar.android.viewmodel.MutableLiveEvent;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.identity.AuthorInfo;
-import org.briarproject.briar.api.identity.AuthorManager;
-import org.briarproject.briar.api.introduction.IntroductionManager;
+import com.ksmessaging.R;
+import com.ksmessaging.android.contact.ContactItem;
+import com.ksmessaging.android.contact.ContactsViewModel;
+import com.ksmessaging.android.viewmodel.LiveEvent;
+import com.ksmessaging.android.viewmodel.MutableLiveEvent;
+import com.ksmessaging.api.conversation.ConversationManager;
+import com.ksmessaging.api.identity.AuthorInfo;
+import com.ksmessaging.api.identity.AuthorManager;
+import com.ksmessaging.api.introduction.IntroductionManager;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.concurrent.Executor;

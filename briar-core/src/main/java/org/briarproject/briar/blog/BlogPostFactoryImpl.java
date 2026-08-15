@@ -1,4 +1,4 @@
-package org.briarproject.briar.blog;
+package com.ksmessaging.blog;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -9,9 +9,9 @@ import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
 import org.briarproject.bramble.util.StringUtils;
-import org.briarproject.briar.api.blog.BlogPost;
-import org.briarproject.briar.api.blog.BlogPostFactory;
-import org.briarproject.briar.api.blog.MessageType;
+import com.ksmessaging.api.blog.BlogPost;
+import com.ksmessaging.api.blog.BlogPostFactory;
+import com.ksmessaging.api.blog.MessageType;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -20,12 +20,12 @@ import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
-import static org.briarproject.briar.api.blog.BlogConstants.MAX_BLOG_COMMENT_TEXT_LENGTH;
-import static org.briarproject.briar.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH;
-import static org.briarproject.briar.api.blog.MessageType.COMMENT;
-import static org.briarproject.briar.api.blog.MessageType.POST;
-import static org.briarproject.briar.api.blog.MessageType.WRAPPED_COMMENT;
-import static org.briarproject.briar.api.blog.MessageType.WRAPPED_POST;
+import static com.ksmessaging.api.blog.BlogConstants.MAX_BLOG_COMMENT_TEXT_LENGTH;
+import static com.ksmessaging.api.blog.BlogConstants.MAX_BLOG_POST_TEXT_LENGTH;
+import static com.ksmessaging.api.blog.MessageType.COMMENT;
+import static com.ksmessaging.api.blog.MessageType.POST;
+import static com.ksmessaging.api.blog.MessageType.WRAPPED_COMMENT;
+import static com.ksmessaging.api.blog.MessageType.WRAPPED_POST;
 
 @Immutable
 @NotNullByDefault

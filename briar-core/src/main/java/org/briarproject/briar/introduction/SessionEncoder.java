@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.data.BdfDictionary;
 import org.briarproject.bramble.api.identity.Author;

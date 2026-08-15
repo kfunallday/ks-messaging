@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -15,21 +15,21 @@ import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.client.MessageTrackerConstants.MSG_KEY_READ;
-import static org.briarproject.briar.privategroup.invitation.GroupInvitationConstants.MSG_KEY_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.privategroup.invitation.GroupInvitationConstants.MSG_KEY_AVAILABLE_TO_ANSWER;
-import static org.briarproject.briar.privategroup.invitation.GroupInvitationConstants.MSG_KEY_INVITATION_ACCEPTED;
-import static org.briarproject.briar.privategroup.invitation.GroupInvitationConstants.MSG_KEY_IS_AUTO_DECLINE;
-import static org.briarproject.briar.privategroup.invitation.GroupInvitationConstants.MSG_KEY_LOCAL;
-import static org.briarproject.briar.privategroup.invitation.GroupInvitationConstants.MSG_KEY_MESSAGE_TYPE;
-import static org.briarproject.briar.privategroup.invitation.GroupInvitationConstants.MSG_KEY_PRIVATE_GROUP_ID;
-import static org.briarproject.briar.privategroup.invitation.GroupInvitationConstants.MSG_KEY_TIMESTAMP;
-import static org.briarproject.briar.privategroup.invitation.GroupInvitationConstants.MSG_KEY_VISIBLE_IN_UI;
-import static org.briarproject.briar.privategroup.invitation.MessageType.ABORT;
-import static org.briarproject.briar.privategroup.invitation.MessageType.INVITE;
-import static org.briarproject.briar.privategroup.invitation.MessageType.JOIN;
-import static org.briarproject.briar.privategroup.invitation.MessageType.LEAVE;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.client.MessageTrackerConstants.MSG_KEY_READ;
+import static com.ksmessaging.privategroup.invitation.GroupInvitationConstants.MSG_KEY_AUTO_DELETE_TIMER;
+import static com.ksmessaging.privategroup.invitation.GroupInvitationConstants.MSG_KEY_AVAILABLE_TO_ANSWER;
+import static com.ksmessaging.privategroup.invitation.GroupInvitationConstants.MSG_KEY_INVITATION_ACCEPTED;
+import static com.ksmessaging.privategroup.invitation.GroupInvitationConstants.MSG_KEY_IS_AUTO_DECLINE;
+import static com.ksmessaging.privategroup.invitation.GroupInvitationConstants.MSG_KEY_LOCAL;
+import static com.ksmessaging.privategroup.invitation.GroupInvitationConstants.MSG_KEY_MESSAGE_TYPE;
+import static com.ksmessaging.privategroup.invitation.GroupInvitationConstants.MSG_KEY_PRIVATE_GROUP_ID;
+import static com.ksmessaging.privategroup.invitation.GroupInvitationConstants.MSG_KEY_TIMESTAMP;
+import static com.ksmessaging.privategroup.invitation.GroupInvitationConstants.MSG_KEY_VISIBLE_IN_UI;
+import static com.ksmessaging.privategroup.invitation.MessageType.ABORT;
+import static com.ksmessaging.privategroup.invitation.MessageType.INVITE;
+import static com.ksmessaging.privategroup.invitation.MessageType.JOIN;
+import static com.ksmessaging.privategroup.invitation.MessageType.LEAVE;
 
 @Immutable
 @NotNullByDefault

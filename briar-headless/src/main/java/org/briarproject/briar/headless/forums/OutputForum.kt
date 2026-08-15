@@ -1,7 +1,7 @@
-package org.briarproject.briar.headless.forums
+package com.ksmessaging.headless.forums
 
-import org.briarproject.briar.api.forum.Forum
-import org.briarproject.briar.headless.json.JsonDict
+import com.ksmessaging.api.forum.Forum
+import com.ksmessaging.headless.json.JsonDict
 
 internal fun Forum.output() = JsonDict(
     "name" to name,

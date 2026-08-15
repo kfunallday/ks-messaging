@@ -1,13 +1,13 @@
-package org.briarproject.briar.avatar;
+package com.ksmessaging.avatar;
 
 import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.attachment.Attachment;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.attachment.AttachmentReader;
-import org.briarproject.briar.api.avatar.AvatarManager;
-import org.briarproject.briar.test.BriarIntegrationTest;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
-import org.briarproject.briar.test.DaggerBriarIntegrationTestComponent;
+import com.ksmessaging.api.attachment.Attachment;
+import com.ksmessaging.api.attachment.AttachmentHeader;
+import com.ksmessaging.api.attachment.AttachmentReader;
+import com.ksmessaging.api.avatar.AvatarManager;
+import com.ksmessaging.test.BriarIntegrationTest;
+import com.ksmessaging.test.BriarIntegrationTestComponent;
+import com.ksmessaging.test.DaggerBriarIntegrationTestComponent;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -18,7 +18,7 @@ import java.io.InputStream;
 import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
 import static org.briarproject.bramble.util.IoUtils.copyAndClose;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
+import static com.ksmessaging.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

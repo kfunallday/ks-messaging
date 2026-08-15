@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.messaging;
+package com.ksmessaging.api.messaging;
 
 public enum PrivateMessageFormat {
 

@@ -6,9 +6,9 @@ import android.content.SharedPreferences;
 import org.briarproject.bramble.api.crypto.CryptoComponent;
 import org.briarproject.bramble.api.db.DatabaseConfig;
 import org.briarproject.bramble.api.identity.IdentityManager;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.Localizer;
-import org.briarproject.briar.android.util.UiUtils;
+import com.ksmessaging.R;
+import com.ksmessaging.android.Localizer;
+import com.ksmessaging.android.util.UiUtils;
 
 import javax.inject.Inject;
 

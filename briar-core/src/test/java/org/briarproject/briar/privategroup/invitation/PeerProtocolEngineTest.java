@@ -1,7 +1,7 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.ProtocolStateException;
+import com.ksmessaging.api.client.ProtocolStateException;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -9,14 +9,14 @@ import static org.briarproject.bramble.api.sync.Group.Visibility.INVISIBLE;
 import static org.briarproject.bramble.api.sync.Group.Visibility.SHARED;
 import static org.briarproject.bramble.api.sync.Group.Visibility.VISIBLE;
 import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.privategroup.invitation.PeerState.AWAIT_MEMBER;
-import static org.briarproject.briar.privategroup.invitation.PeerState.BOTH_JOINED;
-import static org.briarproject.briar.privategroup.invitation.PeerState.ERROR;
-import static org.briarproject.briar.privategroup.invitation.PeerState.LOCAL_JOINED;
-import static org.briarproject.briar.privategroup.invitation.PeerState.LOCAL_LEFT;
-import static org.briarproject.briar.privategroup.invitation.PeerState.NEITHER_JOINED;
-import static org.briarproject.briar.privategroup.invitation.PeerState.START;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.privategroup.invitation.PeerState.AWAIT_MEMBER;
+import static com.ksmessaging.privategroup.invitation.PeerState.BOTH_JOINED;
+import static com.ksmessaging.privategroup.invitation.PeerState.ERROR;
+import static com.ksmessaging.privategroup.invitation.PeerState.LOCAL_JOINED;
+import static com.ksmessaging.privategroup.invitation.PeerState.LOCAL_LEFT;
+import static com.ksmessaging.privategroup.invitation.PeerState.NEITHER_JOINED;
+import static com.ksmessaging.privategroup.invitation.PeerState.START;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;

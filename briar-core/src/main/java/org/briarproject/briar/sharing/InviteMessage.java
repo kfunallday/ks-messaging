@@ -1,8 +1,8 @@
-package org.briarproject.briar.sharing;
+package com.ksmessaging.sharing;
 
 import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.sharing.Shareable;
+import com.ksmessaging.api.sharing.Shareable;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

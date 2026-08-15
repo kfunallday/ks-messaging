@@ -1,11 +1,11 @@
-package org.briarproject.briar.feed;
+package com.ksmessaging.feed;
 
 import org.briarproject.bramble.api.identity.LocalAuthor;
 import org.briarproject.bramble.api.sync.ClientId;
 import org.briarproject.bramble.test.BrambleTestCase;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.feed.Feed;
-import org.briarproject.briar.api.feed.RssProperties;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.feed.Feed;
+import com.ksmessaging.api.feed.RssProperties;
 import org.junit.Test;
 
 import java.util.Random;

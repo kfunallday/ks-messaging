@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.controller;
+package com.ksmessaging.android.controller;
 
 import org.briarproject.nullsafety.NotNullByDefault;
 

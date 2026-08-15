@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.cleanup.CleanupHook;
@@ -24,22 +24,22 @@ import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.sync.MessageStatus;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager;
 import org.briarproject.bramble.api.versioning.ClientVersioningManager.ClientVersioningHook;
-import org.briarproject.briar.api.autodelete.event.ConversationMessagesDeletedEvent;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.ProtocolStateException;
-import org.briarproject.briar.api.client.SessionId;
-import org.briarproject.briar.api.conversation.ConversationMessageHeader;
-import org.briarproject.briar.api.conversation.DeletionResult;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager.PrivateGroupHook;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationItem;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationRequest;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationResponse;
-import org.briarproject.briar.api.sharing.SharingManager.SharingStatus;
-import org.briarproject.briar.client.ConversationClientImpl;
+import com.ksmessaging.api.autodelete.event.ConversationMessagesDeletedEvent;
+import com.ksmessaging.api.client.MessageTracker;
+import com.ksmessaging.api.client.ProtocolStateException;
+import com.ksmessaging.api.client.SessionId;
+import com.ksmessaging.api.conversation.ConversationMessageHeader;
+import com.ksmessaging.api.conversation.DeletionResult;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupFactory;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.PrivateGroupManager.PrivateGroupHook;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationItem;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationManager;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationRequest;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationResponse;
+import com.ksmessaging.api.sharing.SharingManager.SharingStatus;
+import com.ksmessaging.client.ConversationClientImpl;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.ArrayList;
@@ -57,19 +57,19 @@ import javax.inject.Inject;
 
 import static org.briarproject.bramble.api.sync.Group.Visibility.SHARED;
 import static org.briarproject.bramble.api.sync.validation.IncomingMessageHook.DeliveryAction.ACCEPT_DO_NOT_SHARE;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.DISSOLVED;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.ERROR;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.INVITED;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.JOINED;
-import static org.briarproject.briar.privategroup.invitation.CreatorState.START;
-import static org.briarproject.briar.privategroup.invitation.MessageType.ABORT;
-import static org.briarproject.briar.privategroup.invitation.MessageType.INVITE;
-import static org.briarproject.briar.privategroup.invitation.MessageType.JOIN;
-import static org.briarproject.briar.privategroup.invitation.MessageType.LEAVE;
-import static org.briarproject.briar.privategroup.invitation.Role.CREATOR;
-import static org.briarproject.briar.privategroup.invitation.Role.INVITEE;
-import static org.briarproject.briar.privategroup.invitation.Role.PEER;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.privategroup.invitation.CreatorState.DISSOLVED;
+import static com.ksmessaging.privategroup.invitation.CreatorState.ERROR;
+import static com.ksmessaging.privategroup.invitation.CreatorState.INVITED;
+import static com.ksmessaging.privategroup.invitation.CreatorState.JOINED;
+import static com.ksmessaging.privategroup.invitation.CreatorState.START;
+import static com.ksmessaging.privategroup.invitation.MessageType.ABORT;
+import static com.ksmessaging.privategroup.invitation.MessageType.INVITE;
+import static com.ksmessaging.privategroup.invitation.MessageType.JOIN;
+import static com.ksmessaging.privategroup.invitation.MessageType.LEAVE;
+import static com.ksmessaging.privategroup.invitation.Role.CREATOR;
+import static com.ksmessaging.privategroup.invitation.Role.INVITEE;
+import static com.ksmessaging.privategroup.invitation.Role.PEER;
 
 @Immutable
 @NotNullByDefault

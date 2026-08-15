@@ -1,8 +1,8 @@
-package org.briarproject.briar.android.util;
+package com.ksmessaging.android.util;
 
 import android.content.Context;
 
-import org.briarproject.briar.R;
+import com.ksmessaging.R;
 
 import androidx.annotation.ColorRes;
 import androidx.core.app.NotificationCompat;

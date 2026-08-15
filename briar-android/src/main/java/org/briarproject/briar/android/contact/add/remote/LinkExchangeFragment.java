@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.contact.add.remote;
+package com.ksmessaging.android.contact.add.remote;
 
 import android.content.ActivityNotFoundException;
 import android.content.ClipData;
@@ -14,10 +14,10 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.activity.ActivityComponent;
-import org.briarproject.briar.android.fragment.BaseFragment;
-import org.briarproject.briar.android.view.InfoView;
+import com.ksmessaging.R;
+import com.ksmessaging.android.activity.ActivityComponent;
+import com.ksmessaging.android.fragment.BaseFragment;
+import com.ksmessaging.android.view.InfoView;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -37,8 +37,8 @@ import static java.util.logging.Level.WARNING;
 import static java.util.logging.Logger.getLogger;
 import static org.briarproject.bramble.api.contact.HandshakeLinkConstants.LINK_REGEX;
 import static org.briarproject.bramble.util.LogUtils.logException;
-import static org.briarproject.briar.android.util.UiUtils.hideViewOnSmallScreen;
-import static org.briarproject.briar.android.util.UiUtils.observeOnce;
+import static com.ksmessaging.android.util.UiUtils.hideViewOnSmallScreen;
+import static com.ksmessaging.android.util.UiUtils.observeOnce;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless.json
+package com.ksmessaging.headless.json
 
 class JsonDict(vararg pairs: Pair<String, Any?>) : HashMap<String, Any?>(pairs.size) {
     init {

@@ -1,4 +1,4 @@
-package org.briarproject.briar.headless
+package com.ksmessaging.headless
 
 import org.briarproject.bramble.api.account.AccountManager
 import org.briarproject.bramble.api.crypto.DecryptionException

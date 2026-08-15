@@ -1,4 +1,4 @@
-package org.briarproject.briar.android;
+package com.ksmessaging.android;
 
 import org.briarproject.bramble.BrambleAndroidModule;
 import org.briarproject.bramble.BrambleCoreModule;
@@ -6,12 +6,12 @@ import org.briarproject.bramble.account.BriarAccountModule;
 import org.briarproject.bramble.mailbox.ModularMailboxModule;
 import org.briarproject.bramble.plugin.file.RemovableDriveModule;
 import org.briarproject.bramble.system.ClockModule;
-import org.briarproject.briar.BriarCoreModule;
-import org.briarproject.briar.android.account.SignInTestCreateAccount;
-import org.briarproject.briar.android.account.SignInTestSignIn;
-import org.briarproject.briar.android.attachment.AttachmentModule;
-import org.briarproject.briar.android.attachment.media.MediaModule;
-import org.briarproject.briar.android.navdrawer.NavDrawerActivityTest;
+import com.ksmessaging.BriarCoreModule;
+import com.ksmessaging.android.account.SignInTestCreateAccount;
+import com.ksmessaging.android.account.SignInTestSignIn;
+import com.ksmessaging.android.attachment.AttachmentModule;
+import com.ksmessaging.android.attachment.media.MediaModule;
+import com.ksmessaging.android.navdrawer.NavDrawerActivityTest;
 
 import javax.inject.Singleton;
 

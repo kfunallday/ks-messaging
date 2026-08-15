@@ -1,18 +1,18 @@
-package org.briarproject.briar.android.reporting;
+package com.ksmessaging.android.reporting;
 
 import android.app.Application;
 import android.os.Process;
 import android.util.Log;
 
-import org.briarproject.briar.android.logging.LogEncrypter;
+import com.ksmessaging.android.logging.LogEncrypter;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.lang.Thread.UncaughtExceptionHandler;
 
 import javax.inject.Inject;
 
-import static org.briarproject.briar.android.TestingConstants.IS_DEBUG_BUILD;
-import static org.briarproject.briar.android.util.UiUtils.startDevReportActivity;
+import static com.ksmessaging.android.TestingConstants.IS_DEBUG_BUILD;
+import static com.ksmessaging.android.util.UiUtils.startDevReportActivity;
 
 @NotNullByDefault
 class BriarExceptionHandler implements UncaughtExceptionHandler {

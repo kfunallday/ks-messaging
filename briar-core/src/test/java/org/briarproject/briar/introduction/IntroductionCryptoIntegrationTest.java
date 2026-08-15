@@ -1,4 +1,4 @@
-package org.briarproject.briar.introduction;
+package com.ksmessaging.introduction;
 
 import org.briarproject.bramble.api.client.ClientHelper;
 import org.briarproject.bramble.api.crypto.CryptoComponent;
@@ -10,7 +10,7 @@ import org.briarproject.bramble.api.identity.LocalAuthor;
 import org.briarproject.bramble.api.plugin.TransportId;
 import org.briarproject.bramble.api.properties.TransportProperties;
 import org.briarproject.bramble.test.BrambleTestCase;
-import org.briarproject.briar.api.client.SessionId;
+import com.ksmessaging.api.client.SessionId;
 import org.junit.Test;
 
 import java.util.Map;
@@ -19,10 +19,10 @@ import javax.inject.Inject;
 
 import static org.briarproject.bramble.test.TestUtils.getSecretKey;
 import static org.briarproject.bramble.test.TestUtils.getTransportPropertiesMap;
-import static org.briarproject.briar.introduction.IntroduceeSession.Local;
-import static org.briarproject.briar.introduction.IntroduceeSession.Remote;
-import static org.briarproject.briar.test.BriarTestUtils.getRealAuthor;
-import static org.briarproject.briar.test.BriarTestUtils.getRealLocalAuthor;
+import static com.ksmessaging.introduction.IntroduceeSession.Local;
+import static com.ksmessaging.introduction.IntroduceeSession.Remote;
+import static com.ksmessaging.test.BriarTestUtils.getRealAuthor;
+import static com.ksmessaging.test.BriarTestUtils.getRealLocalAuthor;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.mailbox;
+package com.ksmessaging.android.mailbox;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -16,8 +16,8 @@ import android.widget.TextView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.briarproject.bramble.api.mailbox.MailboxStatus;
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.view.BriarButton;
+import com.ksmessaging.R;
+import com.ksmessaging.android.view.BriarButton;
 import org.briarproject.nullsafety.MethodsNotNullByDefault;
 import org.briarproject.nullsafety.ParametersNotNullByDefault;
 
@@ -39,11 +39,11 @@ import static androidx.core.content.ContextCompat.getColor;
 import static androidx.core.widget.ImageViewCompat.setImageTintList;
 import static androidx.transition.TransitionManager.beginDelayedTransition;
 import static org.briarproject.bramble.api.mailbox.MailboxConstants.API_CLIENT_TOO_OLD;
-import static org.briarproject.briar.android.AppModule.getAndroidComponent;
-import static org.briarproject.briar.android.util.UiUtils.MIN_DATE_RESOLUTION;
-import static org.briarproject.briar.android.util.UiUtils.formatDate;
-import static org.briarproject.briar.android.util.UiUtils.observeOnce;
-import static org.briarproject.briar.android.util.UiUtils.showFragment;
+import static com.ksmessaging.android.AppModule.getAndroidComponent;
+import static com.ksmessaging.android.util.UiUtils.MIN_DATE_RESOLUTION;
+import static com.ksmessaging.android.util.UiUtils.formatDate;
+import static com.ksmessaging.android.util.UiUtils.observeOnce;
+import static com.ksmessaging.android.util.UiUtils.showFragment;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault

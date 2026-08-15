@@ -1,7 +1,7 @@
-package org.briarproject.briar.android.conversation;
+package com.ksmessaging.android.conversation;
 
-import org.briarproject.briar.android.attachment.AttachmentItem;
-import org.briarproject.briar.api.messaging.PrivateMessageHeader;
+import com.ksmessaging.android.attachment.AttachmentItem;
+import com.ksmessaging.api.messaging.PrivateMessageHeader;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.List;

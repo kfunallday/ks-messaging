@@ -31,5 +31,5 @@ interface ContactExchangeConstants {
 	/**
 	 * Label for signing key binding nonces.
 	 */
-	String SIGNING_LABEL = "org.briarproject.briar.contact/EXCHANGE";
+	String SIGNING_LABEL = "com.ksmessaging.contact/EXCHANGE";
 }

@@ -1,13 +1,13 @@
-package org.briarproject.briar.android.privategroup.conversation;
+package com.ksmessaging.android.privategroup.conversation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.briarproject.briar.R;
-import org.briarproject.briar.android.threaded.BaseThreadItemViewHolder;
-import org.briarproject.briar.android.threaded.ThreadItemAdapter;
-import org.briarproject.briar.android.threaded.ThreadPostViewHolder;
+import com.ksmessaging.R;
+import com.ksmessaging.android.threaded.BaseThreadItemViewHolder;
+import com.ksmessaging.android.threaded.ThreadItemAdapter;
+import com.ksmessaging.android.threaded.ThreadPostViewHolder;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import androidx.annotation.LayoutRes;

@@ -1,4 +1,4 @@
-package org.briarproject.briar.test;
+package com.ksmessaging.test;
 
 import org.briarproject.bramble.api.FeatureFlags;
 import org.briarproject.bramble.api.FormatException;
@@ -27,26 +27,26 @@ import org.briarproject.bramble.api.sync.GroupId;
 import org.briarproject.bramble.api.sync.Message;
 import org.briarproject.bramble.api.sync.MessageId;
 import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.briar.api.avatar.AvatarManager;
-import org.briarproject.briar.api.avatar.AvatarMessageEncoder;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogPost;
-import org.briarproject.briar.api.blog.BlogPostFactory;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumManager;
-import org.briarproject.briar.api.forum.ForumPost;
-import org.briarproject.briar.api.messaging.MessagingManager;
-import org.briarproject.briar.api.messaging.PrivateMessage;
-import org.briarproject.briar.api.messaging.PrivateMessageFactory;
-import org.briarproject.briar.api.privategroup.GroupMessage;
-import org.briarproject.briar.api.privategroup.GroupMessageFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupFactory;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationFactory;
-import org.briarproject.briar.api.test.TestAvatarCreator;
-import org.briarproject.briar.api.test.TestDataCreator;
+import com.ksmessaging.api.avatar.AvatarManager;
+import com.ksmessaging.api.avatar.AvatarMessageEncoder;
+import com.ksmessaging.api.blog.Blog;
+import com.ksmessaging.api.blog.BlogManager;
+import com.ksmessaging.api.blog.BlogPost;
+import com.ksmessaging.api.blog.BlogPostFactory;
+import com.ksmessaging.api.forum.Forum;
+import com.ksmessaging.api.forum.ForumManager;
+import com.ksmessaging.api.forum.ForumPost;
+import com.ksmessaging.api.messaging.MessagingManager;
+import com.ksmessaging.api.messaging.PrivateMessage;
+import com.ksmessaging.api.messaging.PrivateMessageFactory;
+import com.ksmessaging.api.privategroup.GroupMessage;
+import com.ksmessaging.api.privategroup.GroupMessageFactory;
+import com.ksmessaging.api.privategroup.PrivateGroup;
+import com.ksmessaging.api.privategroup.PrivateGroupFactory;
+import com.ksmessaging.api.privategroup.PrivateGroupManager;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationFactory;
+import com.ksmessaging.api.test.TestAvatarCreator;
+import com.ksmessaging.api.test.TestDataCreator;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.IOException;
@@ -71,10 +71,10 @@ import static org.briarproject.bramble.api.plugin.BluetoothConstants.UUID_BYTES;
 import static org.briarproject.bramble.api.sync.Group.Visibility.SHARED;
 import static org.briarproject.bramble.util.LogUtils.logException;
 import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.test.TestData.AUTHOR_NAMES;
-import static org.briarproject.briar.test.TestData.GROUP_NAMES;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.ksmessaging.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.ksmessaging.test.TestData.AUTHOR_NAMES;
+import static com.ksmessaging.test.TestData.GROUP_NAMES;
 
 @NotNullByDefault
 public class TestDataCreatorImpl implements TestDataCreator {

@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.logout;
+package com.ksmessaging.android.logout;
 
 import android.app.Activity;
 import android.os.Bundle;

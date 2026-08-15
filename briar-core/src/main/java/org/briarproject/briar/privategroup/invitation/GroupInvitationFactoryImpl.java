@@ -1,4 +1,4 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.ksmessaging.privategroup.invitation;
 
 import org.briarproject.bramble.api.FormatException;
 import org.briarproject.bramble.api.client.ClientHelper;
@@ -9,7 +9,7 @@ import org.briarproject.bramble.api.data.BdfList;
 import org.briarproject.bramble.api.identity.AuthorId;
 import org.briarproject.bramble.api.sync.Group;
 import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationFactory;
+import com.ksmessaging.api.privategroup.invitation.GroupInvitationFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.security.GeneralSecurityException;
@@ -17,8 +17,8 @@ import java.security.GeneralSecurityException;
 import javax.annotation.concurrent.Immutable;
 import javax.inject.Inject;
 
-import static org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager.CLIENT_ID;
-import static org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager.MAJOR_VERSION;
+import static com.ksmessaging.api.privategroup.invitation.GroupInvitationManager.CLIENT_ID;
+import static com.ksmessaging.api.privategroup.invitation.GroupInvitationManager.MAJOR_VERSION;
 
 @Immutable
 @NotNullByDefault

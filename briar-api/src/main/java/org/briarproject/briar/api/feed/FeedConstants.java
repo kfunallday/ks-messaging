@@ -1,4 +1,4 @@
-package org.briarproject.briar.api.feed;
+package com.ksmessaging.api.feed;
 
 import java.util.concurrent.TimeUnit;
 

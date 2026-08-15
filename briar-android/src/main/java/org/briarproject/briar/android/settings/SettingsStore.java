@@ -1,4 +1,4 @@
-package org.briarproject.briar.android.settings;
+package com.ksmessaging.android.settings;
 
 import org.briarproject.bramble.api.db.DbException;
 import org.briarproject.bramble.api.settings.Settings;
