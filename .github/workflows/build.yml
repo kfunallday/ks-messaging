@@ -22,12 +22,13 @@ jobs:
           distribution: 'temurin'
           cache: 'gradle'
 
-      - name: Make Gradle Wrapper Executable
-        run: chmod +x gradlew
+      - name: Make Scripts and Gradle Executable
+        run: |
+          chmod +x gradlew
+          chmod +x replace_assets.sh
 
-      # Optional: Uncomment if using the auto-replace assets script
-       - name: Run Asset Replacer Script
-         run: bash replace_assets.sh
+      - name: Replace Custom Assets and Crypto Component
+        run: bash replace_assets.sh
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug --stacktrace
